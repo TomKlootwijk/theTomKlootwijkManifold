@@ -1,0 +1,29 @@
+TKM bounded-query validation summary
+====================================
+
+Release C++20 GCC build         PASS
+CTest GCC release               1/1 PASS
+Clang 17 C++20 build            PASS
+CTest Clang                     1/1 PASS
+Random reference state queries  20,000 PASS
+Exact sphere/plane guard tests  PASS
+Interval-certificate event test PASS
+Archive ambiguity rejection     PASS
+ASan/UBSan CTest                1/1 PASS
+Fixed-loop structural audit     PASS
+CUDA host-side syntax parse     PASS (Clang + declarations only)
+Sensitive-token runtime scan    PASS
+Native CUDA compilation         NOT EXECUTED
+Physical GPU run                NOT EXECUTED
+
+Source implementation audit:
+KLB source CPU tests             2/2 PASS
+KLB MANIFEST.sha256              PASS
+
+Correct claim:
+- one indexed query: O(1) under a fixed profile;
+- q queries / q outputs: Theta(q);
+- encoded/dense ratio: o(1) only for fixed/sublinear novelty as dense sampling N grows.
+
+Incorrect claim:
+- nontrivial runtime is literally o(1).

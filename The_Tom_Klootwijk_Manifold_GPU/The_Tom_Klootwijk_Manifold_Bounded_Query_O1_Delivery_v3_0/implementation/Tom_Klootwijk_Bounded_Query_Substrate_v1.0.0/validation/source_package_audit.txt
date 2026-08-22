@@ -1,0 +1,29 @@
+Requester source audit
+======================
+
+Source ZIP SHA-256:
+c3e00e94ff1c3c13ac9ae76ea84a95117551e022375cefda8c706a7bb14d1ad4
+
+UGTS-KC PDF SHA-256:
+a29dd9959ebd300c32d0e1df8fa2c0d4ee15f428892557b98b5f18cd3e878399
+
+Clean source CPU rebuild:
+- Compiler: GCC 14.2.0
+- CMake: 3.31.6
+- CTest suites: 2
+- Result: 2/2 passed
+- Source MANIFEST.sha256: verified
+
+Formal gaps found in KLSC1 hot query:
+- checkpoint walk is bounded by 64;
+- per-node novelty lookup is a binary search over variable novelty_count;
+- one 96-byte node is stored per frame;
+- therefore the implementation did not establish a universal little-o runtime or
+  sublinear archive size in frame count.
+
+Useful retained properties:
+- fixed-size seeds and device-shared functions;
+- fixed-trip predictor loops;
+- sparse novelty representation;
+- support/compatibility/guard/event separation;
+- explicit rejection and kill criteria in the supplied documentation.

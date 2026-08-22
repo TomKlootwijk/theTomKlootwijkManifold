@@ -1,0 +1,6 @@
+[ 25%] Building CXX object CMakeFiles/tkm_demo.dir/src/demo.cpp.o
+[ 50%] Building CXX object CMakeFiles/tkm_tests.dir/tests/test_tkm.cpp.o
+[ 75%] Linking CXX executable tkm_demo
+[ 75%] Built target tkm_demo
+[100%] Linking CXX executable tkm_tests
+[100%] Built target tkm_tests

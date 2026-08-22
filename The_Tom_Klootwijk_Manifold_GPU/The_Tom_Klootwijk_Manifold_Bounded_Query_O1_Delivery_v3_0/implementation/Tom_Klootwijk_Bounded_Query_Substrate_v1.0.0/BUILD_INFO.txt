@@ -1,0 +1,24 @@
+Tom Klootwijk Bounded-Query Manifold Substrate
+Build/occasion record
+==============================================
+
+Package version: 1.0.0
+Formal specification edition: replacement v3.0
+Document ID: TKM-BQ-O1-20260822-092536
+Local record: 2026-08-22T09:25:36+02:00 (Europe/Amsterdam)
+UTC record: 2026-08-22T07:25:36Z
+
+Preparation environment:
+- GCC 14.2.0
+- CMake 3.31.6
+- Python 3.13.5
+- GCC release tests: PASS
+- Clang 17 release tests: PASS
+- Address/undefined sanitizer tests: PASS
+- Structural fixed-bound audit: PASS
+- Clang CUDA host-side syntax parse with declaration stub: PASS
+- Native nvcc compilation: NOT EXECUTED
+- Physical GPU execution: NOT EXECUTED
+
+The private attribution record contains requester-supplied personal data. Runtime
+headers, CUDA buffers, tests and examples do not contain those values.

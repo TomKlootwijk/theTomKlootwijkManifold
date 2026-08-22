@@ -1,0 +1,10 @@
+The Tom Klootwijk Manifold - Bounded-Query O(1) Delivery v3.0
+SHA-256 manifest
+Document ID: TKM-BQ-O1-20260822-092536
+Local record: 2026-08-22T09:25:36+02:00
+UTC record: 2026-08-22T07:25:36Z
+
+8f6e8dada4755059bfdbd577569dcd3ce9b1407aba1b66b7eb210a51ff0eb1b8  The_Tom_Klootwijk_Manifold_Bounded_Query_O1_Formal_Specification_v3_0_PRIVATE.pdf
+c8e0d361b483ff92471a6770afc987360b22395f981ab2cebdadae50e23a29da  The_Tom_Klootwijk_Manifold_Bounded_Query_O1_Formal_Specification_v3_0_PUBLIC.pdf
+b563c1df41838935d3a1ce743ad265c619188643f9d4992ef7ca6708df4100d5  The_Tom_Klootwijk_Manifold_Literal_O1_Definition_Card_v3_0_PUBLIC.pdf
+27cfb6e663852f4b186f3999105af1487eda1ccfad095a36430eac5b5df308c8  The_Tom_Klootwijk_Manifold_Bounded_Query_O1_GPU_v3_0_Delivery_PRIVATE.zip

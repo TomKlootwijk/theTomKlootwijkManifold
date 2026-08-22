@@ -1,0 +1,16 @@
+{
+  "schema": "TKM-BQ-1",
+  "carrier": "R3_x_S1",
+  "profile": {
+    "max_segments": 8,
+    "max_patches_per_segment": 8,
+    "predictor": "quadratic_jet",
+    "segment_policy": "ordered_non_overlapping_half_open"
+  },
+  "complexity_claim": {
+    "single_indexed_query": "O(1) relative to represented sample count/history",
+    "batch_q_queries": "Theta(q)",
+    "little_o": "encoded_bytes/dense_sample_bytes = o(1) only under fixed/sublinear novelty"
+  },
+  "overflow_policy": "reject_split_or_select_new_profile"
+}

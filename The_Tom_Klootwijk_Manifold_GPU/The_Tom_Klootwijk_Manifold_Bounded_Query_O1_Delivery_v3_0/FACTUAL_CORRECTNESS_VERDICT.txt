@@ -1,0 +1,14 @@
+FACTUAL-CORRECTNESS VERDICT
+===========================
+
+YES, conditionally: the replacement formal definition and CPU reference
+implementation are factually correct under the declared finite profile,
+continuity, error-margin, support/compatibility and fixed/sublinear-novelty
+assumptions.
+
+NO: the phrase "runtime is o(1)" is not factually correct for a nontrivial
+computer query in the ordinary RAM/GPU cost model.
+
+The exact executable claim is O(1) per indexed query. The exact little-o claim is
+that encoded bytes divided by the bytes of N materialized dense samples tends to
+zero when external novelty is o(N).

@@ -1,0 +1,18 @@
+Tom Klootwijk Bounded-Query Manifold Substrate 1.0.0
+====================================================
+
+CPU validation:
+
+  cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DTKM_BUILD_CUDA=OFF
+  cmake --build build -j
+  ctest --test-dir build --output-on-failure
+  ./build/tkm_demo
+
+Optional CUDA validation:
+
+  cmake -S . -B build-cuda -DCMAKE_BUILD_TYPE=Release \
+    -DTKM_BUILD_CUDA=ON -DTKM_CUDA_ARCH=native
+  cmake --build build-cuda -j
+  ./build-cuda/tkm_cuda_smoke
+
+Read docs/FORMAL_DEFINITION.md before interpreting O(1) or o(1).

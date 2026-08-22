@@ -1,0 +1,5 @@
+State bytes: 32
+Seed bytes: 64
+Patch bytes: 64
+Segment<8> bytes: 544
+Archive<8,8> bytes: 4368

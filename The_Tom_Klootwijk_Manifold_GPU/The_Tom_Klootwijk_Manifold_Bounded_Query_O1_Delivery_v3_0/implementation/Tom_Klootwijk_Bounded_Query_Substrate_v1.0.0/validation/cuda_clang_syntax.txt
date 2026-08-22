@@ -1,0 +1,1 @@
+PASS: Clang CUDA host-side syntax parse with declaration stub

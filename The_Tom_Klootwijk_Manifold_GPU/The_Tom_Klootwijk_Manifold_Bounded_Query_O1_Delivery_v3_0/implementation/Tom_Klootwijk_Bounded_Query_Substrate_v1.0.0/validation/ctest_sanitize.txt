@@ -1,0 +1,8 @@
+Internal ctest changing into directory: /mnt/data/tkm_o1_work/build-sanitize
+Test project /mnt/data/tkm_o1_work/build-sanitize
+    Start 1: tkm_bounded_query_tests
+1/1 Test #1: tkm_bounded_query_tests ..........   Passed    0.04 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.04 sec

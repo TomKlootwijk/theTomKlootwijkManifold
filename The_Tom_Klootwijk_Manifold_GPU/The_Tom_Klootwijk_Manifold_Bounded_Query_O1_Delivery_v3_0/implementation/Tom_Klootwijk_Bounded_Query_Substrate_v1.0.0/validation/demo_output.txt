@@ -1,0 +1,10 @@
+Tom Klootwijk bounded-query substrate demo
+carrier: R^3 x S^1, fixed profile: 4 segments x 4 patch slots
+
+t=5.0000 p=(5.0000,0.0000,0.0000) phase=0.5000 mode=1 segment=0 patch_hits=0 guard=-3.0000
+t=9.0000 p=(9.0000,0.0000,0.0000) phase=0.9000 mode=1 segment=0 patch_hits=0 guard=1.0000
+t=11.0000 p=(11.0000,1.1000,0.0000) phase=1.3500 mode=2 segment=1 patch_hits=1 guard=3.0000
+t=15.0000 p=(15.0000,1.5000,0.0000) phase=1.7500 mode=2 segment=1 patch_hits=1 guard=7.0000
+
+certified crossing: 1 interpolation=0.5000
+fixed structural bound: segment tests=4, patch tests=4, seed evaluations=1
