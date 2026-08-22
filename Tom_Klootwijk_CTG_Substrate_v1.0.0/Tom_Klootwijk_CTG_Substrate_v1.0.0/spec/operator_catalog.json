@@ -1,0 +1,191 @@
+[
+  {
+    "id": "TK-01",
+    "domain": "Referential core",
+    "mechanism": "Literal definition node",
+    "formal_rule": "Store every geometry, topology, profile, event and schedule as a typed content-addressed record.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-02",
+    "domain": "Referential core",
+    "mechanism": "Dependency closure",
+    "formal_rule": "Reject unknown IDs, duplicate IDs, invalid hashes and cycles.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-03",
+    "domain": "Identity",
+    "mechanism": "Coordinate/address separation",
+    "formal_rule": "Retain durable address, mode and lineage separately from geometric coordinates.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-04",
+    "domain": "Geometry",
+    "mechanism": "Parametric chart",
+    "formal_rule": "Declare parameter domain, frame, regularity and codomain.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-05",
+    "domain": "Geometry",
+    "mechanism": "Implicit sign field",
+    "formal_rule": "Use negative/zero/positive for inside/boundary/outside.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-06",
+    "domain": "Geometry",
+    "mechanism": "Exact-SDF capability",
+    "formal_rule": "Claim exact distance only for definitions that establish it.",
+    "disposition": "CORRECTED"
+  },
+  {
+    "id": "TK-07",
+    "domain": "Geometry",
+    "mechanism": "Fractal offset regularization",
+    "formal_rule": "Round/thicken a declared set by d(x,F)-epsilon; do not infer smoothness automatically.",
+    "disposition": "CORRECTED"
+  },
+  {
+    "id": "TK-08",
+    "domain": "Topology",
+    "mechanism": "Explicit quotient/gluing",
+    "formal_rule": "Name ports, coordinate transport, orientation, sheet and lineage updates.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-09",
+    "domain": "Topology",
+    "mechanism": "Sheet-aware co-location",
+    "formal_rule": "Equal coordinates do not imply equality or coupling.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-10",
+    "domain": "Topology",
+    "mechanism": "Discrete Klein route",
+    "formal_rule": "Periodic x wrap plus y-seam x reflection and orientation bit.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-11",
+    "domain": "Hinge",
+    "mechanism": "Generic hinge tuple",
+    "formal_rule": "Use H=(pivot/state/map/guard/invariants) for continuous, discrete and connector hinges.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-12",
+    "domain": "Chronology",
+    "mechanism": "Explicit time domain",
+    "formal_rule": "Represent time as a declared coordinate/domain, not an implicit bit or homogeneous coordinate.",
+    "disposition": "CORRECTED"
+  },
+  {
+    "id": "TK-13",
+    "domain": "Chronology",
+    "mechanism": "Deterministic flow",
+    "formal_rule": "Use a versioned closed form or bounded predictor for state evolution.",
+    "disposition": "ENGINEERING"
+  },
+  {
+    "id": "TK-14",
+    "domain": "Events",
+    "mechanism": "Local support gate",
+    "formal_rule": "Prune candidates before compatibility and root solving.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-15",
+    "domain": "Events",
+    "mechanism": "Compatibility gate",
+    "formal_rule": "Admit only declared sheets/routes/branches/profiles.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-16",
+    "domain": "Events",
+    "mechanism": "Certified relation crossing",
+    "formal_rule": "Require root/sign evidence, guard band, direction, confidence and numerical margin.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-17",
+    "domain": "Transitions",
+    "mechanism": "Chronotemporal latch",
+    "formal_rule": "Keep mode state piecewise constant and change it atomically only at a verified event.",
+    "disposition": "ENGINEERING"
+  },
+  {
+    "id": "TK-18",
+    "domain": "Lineage",
+    "mechanism": "Ordered event log",
+    "formal_rule": "Append pre/post state, time, relation, residual, route, parents and definition trace.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-19",
+    "domain": "Implementation",
+    "mechanism": "KLB37 record",
+    "formal_rule": "Use 11/12/10/3/1 continuous log-spherical/symbol/parity bits.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-20",
+    "domain": "Implementation",
+    "mechanism": "XOR tile swizzle",
+    "formal_rule": "Use a self-inverse 16x16 logical address permutation.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-21",
+    "domain": "Implementation",
+    "mechanism": "KLSC1 seed chain",
+    "formal_rule": "Reconstruct from KLB37 base, fixed grammar, node predictor and bounded sparse novelty.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-22",
+    "domain": "Implementation",
+    "mechanism": "KLOC1 timeline",
+    "formal_rule": "Reconstruct coarse orbital state from 64-byte seeds and hash-linked time tiles.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-23",
+    "domain": "Evaluation",
+    "mechanism": "Ten-phase evaluator",
+    "formal_rule": "Parse, normalize, resolve, construct, evolve, support, compatibility, guard, transition, lineage.",
+    "disposition": "ENGINEERING"
+  },
+  {
+    "id": "TK-24",
+    "domain": "Geometry profile",
+    "mechanism": "Seven-axis profile",
+    "formal_rule": "R^7 supplies seven mutually orthogonal standard axes; this is optional and not the current R^3 KLB default.",
+    "disposition": "BOUNDED"
+  },
+  {
+    "id": "TK-25",
+    "domain": "Complexity",
+    "mechanism": "Bounded replay",
+    "formal_rule": "KLSC1 parent walk is bounded by checkpoint stride <=64; bounded is not zero-cost.",
+    "disposition": "SOURCE-DERIVED"
+  },
+  {
+    "id": "TK-26",
+    "domain": "Integrity",
+    "mechanism": "Dual hash boundary",
+    "formal_rule": "Use SHA-256 for definition content addressing and FNV-1a only for supplied binary-chain integrity.",
+    "disposition": "ENGINEERING"
+  },
+  {
+    "id": "TK-27",
+    "domain": "Acceptance",
+    "mechanism": "Error-before-claim",
+    "formal_rule": "Promote a profile only when reconstruction and solver error stay below the event margin at the required cost.",
+    "disposition": "SOURCE-DERIVED"
+  }
+]

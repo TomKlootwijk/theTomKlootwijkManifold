@@ -1,0 +1,17 @@
+claim,disposition,formal_treatment
+The name/identifier/date define geometric constants.,REJECT,They are requester-supplied provenance metadata only.
+Four homogeneous coordinates provide seven mutually perpendicular axes.,REJECT,At most four mutually orthogonal nonzero directions exist in Euclidean R^4.
+A declared R^7 profile can contain seven orthogonal axis lines.,BOUNDED,The seven standard basis axes are pairwise orthogonal; this is independent of SDF or LSB notation.
+SDF=0 defines a sphere.,CORRECTED,It defines the zero level set of the chosen field; a sphere requires f(x)=||x-c||-r.
+Every implicit field is an exact signed-distance function.,REJECT,Exact-distance status is an explicit capability and can fail after generic morphs/blends.
+SDF=0 automatically smooths a fractal or removes jaggedness.,REJECT,Rounding requires an explicit offset/filter/blend and may still have singularities.
+LSB or zero-based indexing reduces the Hamming distance between 943 and 937.,REJECT,"Indexing changes labels/access rules, not the numeric bit difference."
+A parity bit may select one of two declared maps/routes.,SUPPORTED,This is the narrow parity-hinge semantics used by the implementation.
+A parity bit by itself performs arbitrary multi-bit mutation.,REJECT,Route selection and numeric mutation are distinct operations.
+Chronology is obtained merely by treating w as time.,CORRECTED,"The substrate declares a time domain, flow/predictor, event solver and transition record."
+The chronotemporal latch makes topology state piecewise constant between events.,ENGINEERING,This is the formal interpretation adopted here.
+Compact notation gives zero-byte VRAM and constant-time infinite rendering.,REJECT,"Code and state still occupy memory and reconstruction has measurable ALU, cache and control cost."
+KLSC1/KLOC1 can avoid materializing a dense timeline for selected queries.,BOUNDED,Useful only when the model is reconstructible and reconstruction cost/error meet the application budget.
+Topology is explicit gluing/routing rather than physical self-intersection or energy creation.,SUPPORTED,This is the core semantics used in UGTS and KLB.
+The Tom Klootwijk Manifold is globally smooth in every profile.,CORRECTED,It is generally a hybrid stratified quotient; only regular strata are smooth manifolds under regularity assumptions.
+FNV chain hashes prove authorship or identity.,REJECT,"They are deterministic integrity checks, not signatures."

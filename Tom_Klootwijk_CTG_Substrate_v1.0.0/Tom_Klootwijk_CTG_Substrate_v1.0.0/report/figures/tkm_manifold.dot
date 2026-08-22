@@ -1,0 +1,23 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad=0.25, nodesep=0.55, ranksep=0.85, fontname="Helvetica", label="Tom Klootwijk Manifold: a hybrid stratified quotient", labelloc=t, fontsize=18];
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.14,0.10", color="#183746", penwidth=1.2];
+  edge [fontname="Helvetica", fontsize=9, color="#5b6f78", penwidth=1.3, arrowsize=0.8];
+
+  q0a [label="Regular stratum\nT x M_q0 x U_q0\nmode q0", fillcolor="#e9f5f5"];
+  e0 [shape=diamond, label="event surface\nf_j(t,x)=0\nsupport + compatibility", fillcolor="#fff2df"];
+  q1a [label="Regular stratum\nT x M_q1 x U_q1\nmode q1", fillcolor="#f2eef8"];
+  q2a [label="Regular stratum\nT x M_q2 x U_q2\nmode q2", fillcolor="#eaf5ec"];
+
+  q0a -> e0 [label="flow Phi_q0"];
+  e0 -> q1a [label="Delta_j: guarded latch"];
+  e0 -> q2a [label="finite branch", style=dashed];
+
+  p0 [label="boundary port P^-\norientation + sheet state", fillcolor="#eef2f5"];
+  p1 [label="boundary port P^+\ncoordinate transport gamma", fillcolor="#eef2f5"];
+  p0 -> p1 [label="explicit quotient/gluing", dir=both];
+  p0 -> q0a [style=dotted, arrowhead=none];
+  p1 -> q1a [style=dotted, arrowhead=none];
+
+  note [shape=note, label="The quotient is globally smooth only when\ngluing/transition maps meet regularity,\nHausdorff and non-branching conditions.\nOtherwise it is a hybrid stratified space.", fillcolor="#fffbe9", color="#b48b20"];
+  note -> e0 [style=dotted, arrowhead=none];
+}

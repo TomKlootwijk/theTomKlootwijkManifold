@@ -1,0 +1,8 @@
+PDF build summary
+=================
+Engine: pdfLaTeX through latexmk
+Result: PASS
+Pages: 23
+Undefined references: none
+Overfull boxes: none
+Non-fatal note: tcolorbox reported one page-placement warning; rendered output was visually verified and showed no clipping or overlap.

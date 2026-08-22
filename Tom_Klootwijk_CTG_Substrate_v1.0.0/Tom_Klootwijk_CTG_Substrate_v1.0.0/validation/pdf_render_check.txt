@@ -1,0 +1,8 @@
+PDF render verification
+=======================
+Input: report/Tom_Klootwijk_CTG_Substrate_v1.0.0.pdf
+Renderer wrapper: /home/oai/skills/pdfs/scripts/render_pdf.py
+DPI: 180
+Pages rendered: 23/23
+Visual inspection: contact sheets for pages 1-23; full-resolution inspection of dense appendix pages 22 and 23.
+Result: PASS - no clipped text, overlaps, black squares or broken glyphs observed.

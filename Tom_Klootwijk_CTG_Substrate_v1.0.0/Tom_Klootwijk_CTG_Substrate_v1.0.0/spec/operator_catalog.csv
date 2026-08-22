@@ -1,0 +1,28 @@
+id,domain,mechanism,formal_rule,disposition
+TK-01,Referential core,Literal definition node,"Store every geometry, topology, profile, event and schedule as a typed content-addressed record.",SOURCE-DERIVED
+TK-02,Referential core,Dependency closure,"Reject unknown IDs, duplicate IDs, invalid hashes and cycles.",SOURCE-DERIVED
+TK-03,Identity,Coordinate/address separation,"Retain durable address, mode and lineage separately from geometric coordinates.",SOURCE-DERIVED
+TK-04,Geometry,Parametric chart,"Declare parameter domain, frame, regularity and codomain.",SOURCE-DERIVED
+TK-05,Geometry,Implicit sign field,Use negative/zero/positive for inside/boundary/outside.,SOURCE-DERIVED
+TK-06,Geometry,Exact-SDF capability,Claim exact distance only for definitions that establish it.,CORRECTED
+TK-07,Geometry,Fractal offset regularization,"Round/thicken a declared set by d(x,F)-epsilon; do not infer smoothness automatically.",CORRECTED
+TK-08,Topology,Explicit quotient/gluing,"Name ports, coordinate transport, orientation, sheet and lineage updates.",SOURCE-DERIVED
+TK-09,Topology,Sheet-aware co-location,Equal coordinates do not imply equality or coupling.,SOURCE-DERIVED
+TK-10,Topology,Discrete Klein route,Periodic x wrap plus y-seam x reflection and orientation bit.,SOURCE-DERIVED
+TK-11,Hinge,Generic hinge tuple,"Use H=(pivot/state/map/guard/invariants) for continuous, discrete and connector hinges.",SOURCE-DERIVED
+TK-12,Chronology,Explicit time domain,"Represent time as a declared coordinate/domain, not an implicit bit or homogeneous coordinate.",CORRECTED
+TK-13,Chronology,Deterministic flow,Use a versioned closed form or bounded predictor for state evolution.,ENGINEERING
+TK-14,Events,Local support gate,Prune candidates before compatibility and root solving.,SOURCE-DERIVED
+TK-15,Events,Compatibility gate,Admit only declared sheets/routes/branches/profiles.,SOURCE-DERIVED
+TK-16,Events,Certified relation crossing,"Require root/sign evidence, guard band, direction, confidence and numerical margin.",SOURCE-DERIVED
+TK-17,Transitions,Chronotemporal latch,Keep mode state piecewise constant and change it atomically only at a verified event.,ENGINEERING
+TK-18,Lineage,Ordered event log,"Append pre/post state, time, relation, residual, route, parents and definition trace.",SOURCE-DERIVED
+TK-19,Implementation,KLB37 record,Use 11/12/10/3/1 continuous log-spherical/symbol/parity bits.,SOURCE-DERIVED
+TK-20,Implementation,XOR tile swizzle,Use a self-inverse 16x16 logical address permutation.,SOURCE-DERIVED
+TK-21,Implementation,KLSC1 seed chain,"Reconstruct from KLB37 base, fixed grammar, node predictor and bounded sparse novelty.",SOURCE-DERIVED
+TK-22,Implementation,KLOC1 timeline,Reconstruct coarse orbital state from 64-byte seeds and hash-linked time tiles.,SOURCE-DERIVED
+TK-23,Evaluation,Ten-phase evaluator,"Parse, normalize, resolve, construct, evolve, support, compatibility, guard, transition, lineage.",ENGINEERING
+TK-24,Geometry profile,Seven-axis profile,R^7 supplies seven mutually orthogonal standard axes; this is optional and not the current R^3 KLB default.,BOUNDED
+TK-25,Complexity,Bounded replay,KLSC1 parent walk is bounded by checkpoint stride <=64; bounded is not zero-cost.,SOURCE-DERIVED
+TK-26,Integrity,Dual hash boundary,Use SHA-256 for definition content addressing and FNV-1a only for supplied binary-chain integrity.,ENGINEERING
+TK-27,Acceptance,Error-before-claim,Promote a profile only when reconstruction and solver error stay below the event margin at the required cost.,SOURCE-DERIVED

@@ -1,0 +1,51 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad=0.25, nodesep=0.45, ranksep=0.65, fontname="Helvetica", label="TK-CTG substrate: definitions, state, gates, events and implementation profiles", labelloc=t, fontsize=18];
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.12,0.08", color="#183746", penwidth=1.2];
+  edge [fontname="Helvetica", fontsize=9, color="#5b6f78", penwidth=1.2, arrowsize=0.75];
+
+  subgraph cluster_ref {
+    label="Referential core"; color="#2aa3a3"; style="rounded";
+    D [label="Definition registry D\ntyped records + SHA-256", fillcolor="#e8f5f5"];
+    DAG [label="Dependency DAG\nreferential closure", fillcolor="#eef1f7"];
+    P [label="Phase schedule P\n0 parse ... 9 lineage", fillcolor="#fff6dc"];
+    D -> DAG -> P;
+  }
+
+  subgraph cluster_state {
+    label="Tom Klootwijk hybrid state carrier"; color="#7b6aa8"; style="rounded";
+    A [label="Durable address a\nidentity != coordinate", fillcolor="#f1eef8"];
+    T [label="Time t + flow Phi\nposition/velocity/acceleration", fillcolor="#eef7fb"];
+    M [label="Geometric stratum M_q\ncharts + implicit fields", fillcolor="#eaf6ee"];
+    Q [label="Topology mode q\nsheet/orientation/route/branch", fillcolor="#f7eef4"];
+    H [label="Hinge H=(p,h,M_h,g,F)\ncontinuous/discrete/connector", fillcolor="#fff3ea"];
+    A -> T -> M -> Q -> H;
+  }
+
+  subgraph cluster_query {
+    label="Query-first event calculus"; color="#d59f1b"; style="rounded";
+    S [label="Local support S", fillcolor="#fff8e7"];
+    C [label="Compatibility C", fillcolor="#f3eef8"];
+    R [label="Relation/guard f=0\nroot + residual certificate", fillcolor="#e9f6f6"];
+    E [label="Verified event E\ntime + direction + confidence", fillcolor="#fff0ea"];
+    X [label="Atomic transition Delta\nchrono-latch", fillcolor="#eef6ea"];
+    L [label="Lineage/novelty log L", fillcolor="#f1f3f5"];
+    S -> C -> R -> E -> X -> L;
+  }
+
+  subgraph cluster_impl {
+    label="Supplied implementation profiles"; color="#6a8794"; style="rounded";
+    K37 [label="KLB37\n37-bit log-spherical records", fillcolor="#eaf5f7"];
+    KSC [label="KLSC1\nseed + node predictor + sparse novelty", fillcolor="#f1eef8"];
+    KOC [label="KLOC1\norbital seeds + time tiles", fillcolor="#fff6e5"];
+    GPU [label="CPU/CUDA query kernels\ndirect state -> compact events", fillcolor="#edf4ed"];
+    K37 -> KSC -> GPU;
+    KOC -> GPU;
+  }
+
+  P -> A [label="construct/evaluate"];
+  H -> S;
+  DAG -> K37 [label="definitions select profile"];
+  DAG -> KOC;
+  GPU -> S [label="typed state/query"];
+  L -> D [label="inspectable trace", style=dashed];
+}

@@ -1,0 +1,41 @@
+{
+  "register_version": "1.0.0",
+  "raw_sources_included": false,
+  "sources": [
+    {
+      "id": "SRC-A",
+      "title": "UGTS-KC 3.6 - Unified Geometric-Topological Substrate",
+      "filename": "UGTS_KC_3_6_Tom_Klootwijk(6).pdf",
+      "sha256": "e21433cd8378368dafe4ae278d3c9c364725e45ae7fd75b743328bd2d6003a46",
+      "role": "Primary literal referential architecture, geometry/topology/hinge calculus, event order, evidence boundaries and implementation catalog."
+    },
+    {
+      "id": "SRC-B",
+      "title": "THE Tom Klootwijk manifold and not the Klootwijk family folding",
+      "filename": "THE Tom Klootwijk (NL200678942 10-07-1990) manifold and not the Klootwijk family folding(1).pdf",
+      "sha256": "5004ef709ddd2de3350069642fdd7c78f4cdf6aeea15a2e703b952766f6b97d2",
+      "role": "Requester naming, seven-axis, SDF-zero, LSB/parity, fractal-rounding and GPU compactness motifs; used only after explicit correction/bounding."
+    },
+    {
+      "id": "SRC-C",
+      "title": "The Tom Klootwijk exact SDF notation and chrono-latch dialogue",
+      "filename": "The Tom Klootwijk exact sdf notation and oppenheimer stating Trump home alone and needs support(1).pdf",
+      "sha256": "b3ab8e1d9f47171efa4f8370c94f3b4a48b58eb5bf30970312c7573d249b6aa3",
+      "role": "SDF sign/zero-level-set and higher-order chronotemporal latch motifs; speculative physical/quantum statements are not admitted."
+    },
+    {
+      "id": "SRC-D",
+      "title": "KLB SeedChain GPU 0.3.0 implementation",
+      "filename": "klb_seedchain_gpu_v0.3.0(5).zip",
+      "sha256": "c3e00e94ff1c3c13ac9ae76ea84a95117551e022375cefda8c706a7bb14d1ad4",
+      "role": "Concrete C++20/CUDA implementation of KLB37, KLSC1, KLOC1, tests, data formats, event queries and validation evidence."
+    }
+  ],
+  "identity_boundary": {
+    "name": "Tom Klootwijk",
+    "identifier": "NL200678942",
+    "date_string": "10-07-1990",
+    "status": "requester-supplied-unverified",
+    "mathematical_role": "provenance metadata only"
+  }
+}

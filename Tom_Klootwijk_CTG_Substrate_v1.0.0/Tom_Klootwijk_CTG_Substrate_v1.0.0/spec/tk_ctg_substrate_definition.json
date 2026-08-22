@@ -1,0 +1,896 @@
+{
+  "$schema": "tk_ctg_substrate.schema.json",
+  "schema_version": "1.0.0",
+  "substrate_id": "tk:ctg:1.0.0:formal-definition",
+  "metadata": {
+    "title": "Tom Klootwijk Chrono-Topological-Geometric Substrate and Manifold",
+    "version_date": "2026-08-22",
+    "requester_attribution": {
+      "name": "Tom Klootwijk",
+      "identifier": "NL200678942",
+      "date_string": "10-07-1990",
+      "country_marker": "NL",
+      "status": "requester-supplied-unverified",
+      "mathematical_role": "provenance metadata only"
+    },
+    "formal_decision": "The named manifold is a hybrid stratified quotient state space; regular strata are smooth manifolds only when the declared gluing and transition maps satisfy the regularity conditions.",
+    "evidence_boundary": "No claim of physical causation, universal compression, zero VRAM, constant-time rendering, authorship priority, patent status, identity verification or navigation-grade orbital accuracy."
+  },
+  "phase_schedule": [
+    {
+      "phase": 0,
+      "id": "parse",
+      "rule": "Parse literals, schemas, profiles and binary headers."
+    },
+    {
+      "phase": 1,
+      "id": "normalize",
+      "rule": "Normalize units, sign conventions, dimensions and profile versions."
+    },
+    {
+      "phase": 2,
+      "id": "resolve",
+      "rule": "Resolve definition references, verify SHA-256 content addresses and topologically order dependencies."
+    },
+    {
+      "phase": 3,
+      "id": "construct",
+      "rule": "Construct geometric objects, addresses, seeds, charts and timeline nodes."
+    },
+    {
+      "phase": 4,
+      "id": "evolve_transform",
+      "rule": "Evaluate flows/predictors and apply ordered hinges, gluing and coordinate transforms."
+    },
+    {
+      "phase": 5,
+      "id": "support",
+      "rule": "Apply cheap local support predicates."
+    },
+    {
+      "phase": 6,
+      "id": "compatibility",
+      "rule": "Apply sheet, route, branch, profile and policy compatibility."
+    },
+    {
+      "phase": 7,
+      "id": "guard_certify",
+      "rule": "Solve or bracket relation roots and certify residual, direction, confidence and numerical margin."
+    },
+    {
+      "phase": 8,
+      "id": "transition",
+      "rule": "Commit topology/mode transitions atomically; continuous field morphs do not change topology before this phase."
+    },
+    {
+      "phase": 9,
+      "id": "lineage",
+      "rule": "Append ordered lineage, event records, novelty and implementation trace."
+    }
+  ],
+  "profiles": {
+    "default_ambient_dimension": 3,
+    "time_domain": "declared interval or discrete monotone sample set embedded in R",
+    "topology_modes": [
+      "sheet",
+      "orientation",
+      "route",
+      "branch",
+      "node",
+      "profile"
+    ],
+    "formal_class": "hybrid_stratified_quotient",
+    "implementation_profiles": [
+      "profile:klsc1-seedchain-v1",
+      "profile:kloc1-orbit-v1"
+    ],
+    "optional_profiles": [
+      "profile:tk7-orthogonality-v1",
+      "profile:fractal-offset-v1"
+    ]
+  },
+  "definitions": [
+    {
+      "id": "def:literal-definition-node-v1",
+      "kind": "definition_record",
+      "domain": "typed literal record",
+      "codomain": "content-addressed definition",
+      "evaluation_phase": 0,
+      "dependencies": [],
+      "parameters": {
+        "hash": "SHA-256 over canonical JSON excluding content_hash"
+      },
+      "capabilities": [
+        "referential_closure",
+        "stable_id",
+        "typed_domain_codomain"
+      ],
+      "invariants": [
+        "all dependencies resolve",
+        "content hash verifies"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "UGTS-KC 3.6 definition node, carried into the chrono extension.",
+        "source_refs": [
+          "SRC-A pp.3-4"
+        ]
+      },
+      "content_hash": "sha256:6a49bbded417fda9c4b47f6e7de00d8f597921c7d9774e1fe1f50a75f1c0cb42"
+    },
+    {
+      "id": "schedule:tk-ctg-v1",
+      "kind": "phase_schedule",
+      "domain": "substrate document",
+      "codomain": "ordered evaluation phases",
+      "evaluation_phase": 0,
+      "dependencies": [
+        "def:literal-definition-node-v1"
+      ],
+      "parameters": {
+        "phases": [
+          {
+            "phase": 0,
+            "id": "parse",
+            "rule": "Parse literals, schemas, profiles and binary headers."
+          },
+          {
+            "phase": 1,
+            "id": "normalize",
+            "rule": "Normalize units, sign conventions, dimensions and profile versions."
+          },
+          {
+            "phase": 2,
+            "id": "resolve",
+            "rule": "Resolve definition references, verify SHA-256 content addresses and topologically order dependencies."
+          },
+          {
+            "phase": 3,
+            "id": "construct",
+            "rule": "Construct geometric objects, addresses, seeds, charts and timeline nodes."
+          },
+          {
+            "phase": 4,
+            "id": "evolve_transform",
+            "rule": "Evaluate flows/predictors and apply ordered hinges, gluing and coordinate transforms."
+          },
+          {
+            "phase": 5,
+            "id": "support",
+            "rule": "Apply cheap local support predicates."
+          },
+          {
+            "phase": 6,
+            "id": "compatibility",
+            "rule": "Apply sheet, route, branch, profile and policy compatibility."
+          },
+          {
+            "phase": 7,
+            "id": "guard_certify",
+            "rule": "Solve or bracket relation roots and certify residual, direction, confidence and numerical margin."
+          },
+          {
+            "phase": 8,
+            "id": "transition",
+            "rule": "Commit topology/mode transitions atomically; continuous field morphs do not change topology before this phase."
+          },
+          {
+            "phase": 9,
+            "id": "lineage",
+            "rule": "Append ordered lineage, event records, novelty and implementation trace."
+          }
+        ]
+      },
+      "capabilities": [
+        "deterministic_order",
+        "phase_barrier"
+      ],
+      "invariants": [
+        "dependencies sort within phases",
+        "transition follows certified guard"
+      ],
+      "provenance": {
+        "class": "engineering",
+        "note": "Ten-phase schedule extending the UGTS order with explicit chrono wording.",
+        "source_refs": [
+          "SRC-A pp.9-10",
+          "SRC-D docs/SEEDCHAIN_DEPLOYMENT.md",
+          "SRC-D docs/ORBIT_DEPLOYMENT.md"
+        ]
+      },
+      "content_hash": "sha256:90e9e2620fee19ebd90821ae099d5a3a72148560e3f74095e832a8a4e3d8383c"
+    },
+    {
+      "id": "state:tk-hybrid-v1",
+      "kind": "hybrid_state",
+      "domain": "address x time x mode x geometric jet x auxiliary x lineage",
+      "codomain": "typed state",
+      "evaluation_phase": 1,
+      "dependencies": [
+        "def:literal-definition-node-v1"
+      ],
+      "parameters": {
+        "tuple": "(a,t,q,xi,eta,ell)"
+      },
+      "capabilities": [
+        "coordinates_not_identity",
+        "kinematic_state",
+        "mode_state"
+      ],
+      "invariants": [
+        "address nonempty",
+        "mode declared",
+        "coordinate dimension matches profile"
+      ],
+      "provenance": {
+        "class": "engineering",
+        "note": "Separates durable identity, chronology, continuous geometry and discrete topology.",
+        "source_refs": [
+          "SRC-A pp.3,5,9",
+          "SRC-D docs/ARCHITECTURE_MAPPING.md"
+        ]
+      },
+      "content_hash": "sha256:e26ebc43a265c318adb12759474995a7b37b3a627046c7cad6ca8fd2abea0c83"
+    },
+    {
+      "id": "geom:implicit-sign-v1",
+      "kind": "implicit_field",
+      "domain": "M_q",
+      "codomain": "real scalar",
+      "evaluation_phase": 1,
+      "dependencies": [
+        "def:literal-definition-node-v1"
+      ],
+      "parameters": {
+        "sign": "f<0 interior; f=0 boundary/event; f>0 exterior"
+      },
+      "capabilities": [
+        "inside_outside_sign",
+        "zero_level_set"
+      ],
+      "invariants": [
+        "finite evaluation on declared domain"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "Literal implicit-field sign convention.",
+        "source_refs": [
+          "SRC-A p.4",
+          "SRC-C pp.5-8"
+        ]
+      },
+      "content_hash": "sha256:ce613b1b13c0f9958b4b4ad9e2d8872fb9e6a86e375377d0f8bd9f6f360c33d1"
+    },
+    {
+      "id": "geom:exact-sdf-capability-v1",
+      "kind": "capability_guard",
+      "domain": "implicit field",
+      "codomain": "boolean capability",
+      "evaluation_phase": 1,
+      "dependencies": [
+        "geom:implicit-sign-v1"
+      ],
+      "parameters": {
+        "criterion": "distance semantics must be proved/declared; |grad f|=1 where differentiable is a diagnostic, not a universal guarantee"
+      },
+      "capabilities": [
+        "exact_distance_flag"
+      ],
+      "invariants": [
+        "generic implicit field is not automatically exact SDF"
+      ],
+      "provenance": {
+        "class": "corrected",
+        "note": "Corrects source dialogue claims that SDF notation alone supplies exact distance or smoothness.",
+        "source_refs": [
+          "SRC-A pp.2,4,13",
+          "SRC-B pp.12-14",
+          "SRC-C pp.5-8"
+        ]
+      },
+      "content_hash": "sha256:1f6b17497555bc5de75e2e65fcb7c2d8d6b2646bb45e73b422448e751789a785"
+    },
+    {
+      "id": "topo:explicit-gluing-v1",
+      "kind": "quotient_gluing",
+      "domain": "named boundary ports x topology state",
+      "codomain": "transported coordinate and topology state",
+      "evaluation_phase": 1,
+      "dependencies": [
+        "state:tk-hybrid-v1"
+      ],
+      "parameters": {
+        "record": "(entry_port,exit_port,coordinate_map,orientation_map,sheet_update,lineage_update)"
+      },
+      "capabilities": [
+        "explicit_ports",
+        "orientation_transport",
+        "sheet_transport"
+      ],
+      "invariants": [
+        "same coordinate is not equality unless declared"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "Topology is an explicit routing/gluing law, not material magic.",
+        "source_refs": [
+          "SRC-A pp.2,5",
+          "SRC-D docs/ARCHITECTURE_MAPPING.md"
+        ]
+      },
+      "content_hash": "sha256:90d7a1d6bbd72ec16e203d80a9242ced66d6d53f3c0f2fb983f25d15d93a7615"
+    },
+    {
+      "id": "hinge:generic-v1",
+      "kind": "hinge",
+      "domain": "pivot/connector x hinge state x input state",
+      "codomain": "mapped state",
+      "evaluation_phase": 1,
+      "dependencies": [
+        "topo:explicit-gluing-v1"
+      ],
+      "parameters": {
+        "tuple": "H=(p,h,M_h,g,F)"
+      },
+      "capabilities": [
+        "continuous_hinge",
+        "discrete_hinge",
+        "connector_hinge"
+      ],
+      "invariants": [
+        "guarded state change",
+        "declared fixed subspace/invariants"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "Generic hinge interface including zero-magnitude structural connectors.",
+        "source_refs": [
+          "SRC-A pp.5-6"
+        ]
+      },
+      "content_hash": "sha256:99a4eb50826c407c3417e5e54658692a78835f688f6d8016186323d65ef8d759"
+    },
+    {
+      "id": "manifold:tom-klootwijk-v1",
+      "kind": "hybrid_stratified_quotient",
+      "domain": "profile Pi=(Q,{M_q},U,Gamma,Delta,T)",
+      "codomain": "TKM(Pi)",
+      "evaluation_phase": 2,
+      "dependencies": [
+        "state:tk-hybrid-v1",
+        "geom:implicit-sign-v1",
+        "topo:explicit-gluing-v1",
+        "hinge:generic-v1"
+      ],
+      "parameters": {
+        "formula": "(disjoint union over q of T x M_q x U_q x {q}) / (gluing and guarded transition equivalence)",
+        "formal_class": "hybrid stratified topological state space; smooth manifold only under stated regularity conditions",
+        "attribution": "Tom Klootwijk; NL200678942; 10-07-1990; requester-supplied-unverified"
+      },
+      "capabilities": [
+        "regular_strata",
+        "event_strata",
+        "profile_parameterization"
+      ],
+      "invariants": [
+        "personal metadata has no causal or geometric role",
+        "branching/merging may prevent global smooth-manifold status"
+      ],
+      "provenance": {
+        "class": "corrected",
+        "note": "Retains the requested name while giving the object a mathematically accurate category.",
+        "source_refs": [
+          "SRC-B pp.23-25",
+          "SRC-C pp.9-11",
+          "SRC-A pp.13-14"
+        ]
+      },
+      "content_hash": "sha256:a412ec947f6e57bfc8e64627bc3b14239827759f57c916d577306dd6912dd78e"
+    },
+    {
+      "id": "geom:klb37-log-spherical-v1",
+      "kind": "packed_coordinate_codec",
+      "domain": "point in bounded R^3 x 3-bit symbol",
+      "codomain": "37-bit even-parity record",
+      "evaluation_phase": 3,
+      "dependencies": [
+        "def:literal-definition-node-v1"
+      ],
+      "parameters": {
+        "bits": {
+          "rho": 11,
+          "theta": 12,
+          "phi": 10,
+          "symbol": 3,
+          "parity": 1
+        },
+        "log_k_default": 15.0,
+        "record_alignment": "continuous bitstream"
+      },
+      "capabilities": [
+        "log_spherical_decode",
+        "even_parity",
+        "cross_word_read"
+      ],
+      "invariants": [
+        "point positions only",
+        "radius normalized to declared scale",
+        "record parity even"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "Exact formalization of the KLB37 record used by the supplied implementation.",
+        "source_refs": [
+          "SRC-D docs/ARCHITECTURE_MAPPING.md",
+          "SRC-D include/klb/core.hpp"
+        ]
+      },
+      "content_hash": "sha256:cbaa8dbd7abe9c090d340b22fb8bfd89a3e675c020584c17e68368f90d0314a0"
+    },
+    {
+      "id": "chrono:deterministic-flow-v1",
+      "kind": "flow_predictor",
+      "domain": "time x state x profile parameters",
+      "codomain": "continuous geometric jet",
+      "evaluation_phase": 4,
+      "dependencies": [
+        "state:tk-hybrid-v1"
+      ],
+      "parameters": {
+        "forms": [
+          "closed-form kinematics",
+          "seed predictor",
+          "fixed-iteration numerical map"
+        ]
+      },
+      "capabilities": [
+        "time_evolution",
+        "velocity_acceleration",
+        "bounded_iteration"
+      ],
+      "invariants": [
+        "time origin and units explicit",
+        "predictor/model version explicit"
+      ],
+      "provenance": {
+        "class": "engineering",
+        "note": "Makes chronology explicit rather than treating a homogeneous coordinate or bit index as time by itself.",
+        "source_refs": [
+          "SRC-A p.9",
+          "SRC-C pp.9-11",
+          "SRC-D include/klb/orbit.hpp"
+        ]
+      },
+      "content_hash": "sha256:a9ab0c5de7fff12c5350ba208c379dad4156a85ab894bbf02563d18953196323"
+    },
+    {
+      "id": "topo:discrete-klein-v1",
+      "kind": "finite_quotient_map",
+      "domain": "integer grid coordinate x orientation",
+      "codomain": "wrapped coordinate x reflection bit",
+      "evaluation_phase": 4,
+      "dependencies": [
+        "topo:explicit-gluing-v1",
+        "geom:klb37-log-spherical-v1"
+      ],
+      "parameters": {
+        "identifications": [
+          "K(x+W,y)=K(x,y)",
+          "K(x,y+H)=K(W-1-x,y)"
+        ]
+      },
+      "capabilities": [
+        "bounded_in_range",
+        "orientation_flip",
+        "deterministic"
+      ],
+      "invariants": [
+        "W,H positive",
+        "no out-of-bounds memory access"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "Discrete Klein-style routing used by KLB37/KLSC1.",
+        "source_refs": [
+          "SRC-D docs/ARCHITECTURE_MAPPING.md",
+          "SRC-D include/klb/core.hpp"
+        ]
+      },
+      "content_hash": "sha256:dd939961b5b2a9bd09dab4b69559172edeab7e6a03273e7b340983797b584a31"
+    },
+    {
+      "id": "gate:local-support-v1",
+      "kind": "support_predicate",
+      "domain": "state x query",
+      "codomain": "boolean",
+      "evaluation_phase": 5,
+      "dependencies": [
+        "state:tk-hybrid-v1",
+        "chrono:deterministic-flow-v1"
+      ],
+      "parameters": {
+        "examples": [
+          "radial bound",
+          "angular cone",
+          "maximum slant range"
+        ]
+      },
+      "capabilities": [
+        "cheap_pruning"
+      ],
+      "invariants": [
+        "evaluated before compatibility and root solving"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "Local support gate in the query-first pipeline.",
+        "source_refs": [
+          "SRC-A pp.9-10",
+          "SRC-D docs/SEEDCHAIN_DEPLOYMENT.md",
+          "SRC-D docs/ORBIT_DEPLOYMENT.md"
+        ]
+      },
+      "content_hash": "sha256:acb9b5f44ee30a588ce50f41e2feecd67d49f504fc808e5e44fdf411837e7e33"
+    },
+    {
+      "id": "gate:compatibility-v1",
+      "kind": "compatibility_predicate",
+      "domain": "state x relation x policy",
+      "codomain": "boolean",
+      "evaluation_phase": 6,
+      "dependencies": [
+        "state:tk-hybrid-v1",
+        "topo:explicit-gluing-v1"
+      ],
+      "parameters": {
+        "state_fields": [
+          "sheet",
+          "orientation",
+          "route",
+          "branch",
+          "profile",
+          "policy"
+        ]
+      },
+      "capabilities": [
+        "state_separation"
+      ],
+      "invariants": [
+        "co-location alone is insufficient for coupling"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "Compatibility separates coincident coordinates on different sheets/routes.",
+        "source_refs": [
+          "SRC-A pp.2,5",
+          "SRC-D docs/ORBIT_DEPLOYMENT.md"
+        ]
+      },
+      "content_hash": "sha256:a10de2ca6962470707040b44a36999addd1c9b694bca3ff95d8abf72aa1207a0"
+    },
+    {
+      "id": "event:certified-crossing-v1",
+      "kind": "event_solver",
+      "domain": "two samples or continuous trajectory x relation guard",
+      "codomain": "verified event or rejection",
+      "evaluation_phase": 7,
+      "dependencies": [
+        "geom:implicit-sign-v1",
+        "gate:local-support-v1",
+        "gate:compatibility-v1",
+        "chrono:deterministic-flow-v1"
+      ],
+      "parameters": {
+        "condition": "earliest t>t0 with relation zero, support, compatibility, confidence and numerical margin",
+        "sampled_rule": "sign change + crossing band + gate admission + bounded interpolation"
+      },
+      "capabilities": [
+        "direction",
+        "residual",
+        "confidence",
+        "solver_status"
+      ],
+      "invariants": [
+        "no transition without certification"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "Formal event condition and bounded sampled crossing used by KLOC1.",
+        "source_refs": [
+          "SRC-A p.9",
+          "SRC-D include/klb/orbit.hpp"
+        ]
+      },
+      "content_hash": "sha256:9bf4e0a61ac2eb13760628d83eadfe1bd70c75ae65374b65820821179a0bb268"
+    },
+    {
+      "id": "transition:chrono-latch-v1",
+      "kind": "guarded_transition",
+      "domain": "pre-state x verified event",
+      "codomain": "post-state",
+      "evaluation_phase": 8,
+      "dependencies": [
+        "hinge:generic-v1",
+        "event:certified-crossing-v1",
+        "manifold:tom-klootwijk-v1"
+      ],
+      "parameters": {
+        "law": "q(t) is piecewise constant; at t* apply Delta_j atomically and set latch state"
+      },
+      "capabilities": [
+        "chronotemporal_latch",
+        "atomic_mode_change",
+        "event_surface_gluing"
+      ],
+      "invariants": [
+        "continuous field morph is distinct from topology change",
+        "transition time recorded"
+      ],
+      "provenance": {
+        "class": "engineering",
+        "note": "Rigorous interpretation of the source phrase chronotemporal latch.",
+        "source_refs": [
+          "SRC-C pp.9-11",
+          "SRC-A pp.9-10"
+        ]
+      },
+      "content_hash": "sha256:6431d69e0e17fed72aae7590f6dc345bbcfce9c95e843bc304a9f8d771921a19"
+    },
+    {
+      "id": "lineage:ordered-event-log-v1",
+      "kind": "lineage_rule",
+      "domain": "pre-state x event x post-state",
+      "codomain": "append-only record",
+      "evaluation_phase": 9,
+      "dependencies": [
+        "transition:chrono-latch-v1",
+        "def:literal-definition-node-v1"
+      ],
+      "parameters": {
+        "fields": [
+          "address",
+          "pre_mode",
+          "post_mode",
+          "time",
+          "relation",
+          "residual",
+          "route",
+          "parents",
+          "definition_trace"
+        ]
+      },
+      "capabilities": [
+        "ordered_provenance",
+        "split_merge_parentage"
+      ],
+      "invariants": [
+        "coordinates never replace identity"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "Lineage and novelty are retained as explicit ordered data.",
+        "source_refs": [
+          "SRC-A pp.3,9,14",
+          "SRC-D docs/SEEDCHAIN_DEPLOYMENT.md"
+        ]
+      },
+      "content_hash": "sha256:13af7b031743ce1b628cb6ac2ce66d540b311562fa4e96e15b33e68ed3f0a4e0"
+    },
+    {
+      "id": "profile:klsc1-seedchain-v1",
+      "kind": "implementation_profile",
+      "domain": "KLB37 base x frame nodes x sparse novelty x query",
+      "codomain": "reconstructed point events",
+      "evaluation_phase": 9,
+      "dependencies": [
+        "geom:klb37-log-spherical-v1",
+        "topo:discrete-klein-v1",
+        "chrono:deterministic-flow-v1",
+        "gate:local-support-v1",
+        "gate:compatibility-v1",
+        "event:certified-crossing-v1",
+        "lineage:ordered-event-log-v1"
+      ],
+      "parameters": {
+        "header_bytes": 256,
+        "node_bytes": 96,
+        "novelty_bytes": 16,
+        "checkpoint_stride_max": 64,
+        "reconstruction": "decode -> 4-level parity grammar -> Klein state -> deformation -> similarity -> bounded novelty sum"
+      },
+      "capabilities": [
+        "random_access",
+        "bounded_parent_walk",
+        "sparse_novelty"
+      ],
+      "invariants": [
+        "stable point correspondence",
+        "error below event margin",
+        "FNV hashes are integrity only"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "Concrete point-sequence profile of the TKM substrate.",
+        "source_refs": [
+          "SRC-D docs/FILE_FORMAT_KLSC1.md",
+          "SRC-D include/klb/seedchain.hpp"
+        ]
+      },
+      "content_hash": "sha256:92f251c705452e38896704194d2a5ffecb78e80f332c1962495ec4903e0240df"
+    },
+    {
+      "id": "profile:kloc1-orbit-v1",
+      "kind": "implementation_profile",
+      "domain": "OMM seed x timeline x station query",
+      "codomain": "coarse acquisition/loss events",
+      "evaluation_phase": 9,
+      "dependencies": [
+        "chrono:deterministic-flow-v1",
+        "gate:local-support-v1",
+        "gate:compatibility-v1",
+        "event:certified-crossing-v1",
+        "lineage:ordered-event-log-v1"
+      ],
+      "parameters": {
+        "header_bytes": 256,
+        "seed_bytes": 64,
+        "timeline_node_bytes": 64,
+        "predictor": "fixed-iteration Kepler + pack-time secular J2",
+        "guard": "sin(elevation_mask)-sin(elevation)"
+      },
+      "capabilities": [
+        "compact_seed_state",
+        "hash_linked_time_tiles",
+        "coarse_visibility"
+      ],
+      "invariants": [
+        "not SGP4",
+        "not navigation grade",
+        "full accuracy boundary must be declared"
+      ],
+      "provenance": {
+        "class": "source-derived",
+        "note": "Concrete orbital chrono-event profile of the TKM substrate.",
+        "source_refs": [
+          "SRC-D docs/FILE_FORMAT_KLOC1.md",
+          "SRC-D include/klb/orbit.hpp"
+        ]
+      },
+      "content_hash": "sha256:aa55558fe798122cc34e575c47514c7fddc0a0f3f19da9ce25badd1611d92a45"
+    },
+    {
+      "id": "profile:tk7-orthogonality-v1",
+      "kind": "optional_geometry_profile",
+      "domain": "R^7",
+      "codomain": "seven mutually orthogonal axis lines",
+      "evaluation_phase": 9,
+      "dependencies": [
+        "manifold:tom-klootwijk-v1"
+      ],
+      "parameters": {
+        "axes": "standard basis e_0,...,e_6"
+      },
+      "capabilities": [
+        "seven_axis_embedding"
+      ],
+      "invariants": [
+        "standard Euclidean result",
+        "not implied by SDF, LSB or current R^3 implementation"
+      ],
+      "provenance": {
+        "class": "bounded",
+        "note": "Formal bounded interpretation of the seven-perpendicular-lines motif.",
+        "source_refs": [
+          "SRC-B pp.12-16"
+        ]
+      },
+      "content_hash": "sha256:a6ba808a6f22bc7dedeb1181da41f0c762de20c6564caced10590e53f6722177"
+    },
+    {
+      "id": "profile:fractal-offset-v1",
+      "kind": "optional_geometry_profile",
+      "domain": "closed set F x epsilon>0",
+      "codomain": "implicit offset field d(x,F)-epsilon",
+      "evaluation_phase": 9,
+      "dependencies": [
+        "geom:implicit-sign-v1",
+        "geom:exact-sdf-capability-v1"
+      ],
+      "parameters": {
+        "purpose": "thicken/round a declared fractal or sparse set",
+        "boundary": "smoothness not guaranteed at medial-axis singularities"
+      },
+      "capabilities": [
+        "procedural_compactness",
+        "explicit_regularization"
+      ],
+      "invariants": [
+        "SDF=0 alone does not make a sphere or remove all jaggedness"
+      ],
+      "provenance": {
+        "class": "corrected",
+        "note": "Retains the round-versus-jagged artistic motif as an explicit offset/regularization operation.",
+        "source_refs": [
+          "SRC-B pp.16-19",
+          "SRC-A pp.2,4"
+        ]
+      },
+      "content_hash": "sha256:d851fd6f515e2c09934c7a84c4560a6d6ebb3db4828902d81d4c980d5ba12684"
+    },
+    {
+      "id": "substrate:tom-klootwijk-ctg-v1",
+      "kind": "composite_substrate",
+      "domain": "definitions x instances x profile x query",
+      "codomain": "deterministic trace and event lineage",
+      "evaluation_phase": 9,
+      "dependencies": [
+        "schedule:tk-ctg-v1",
+        "manifold:tom-klootwijk-v1",
+        "profile:klsc1-seedchain-v1",
+        "profile:kloc1-orbit-v1",
+        "profile:tk7-orthogonality-v1",
+        "profile:fractal-offset-v1"
+      ],
+      "parameters": {
+        "world_tuple": "(D,A,Q,{M_q},Gamma,T,Phi,F,S,C,H,E,Delta,I,L,P,B)"
+      },
+      "capabilities": [
+        "literal_referential_core",
+        "chrono_topological_geometric_state",
+        "implementation_bridge"
+      ],
+      "invariants": [
+        "all selected profile definitions verify and resolve",
+        "claims ledger boundary preserved"
+      ],
+      "provenance": {
+        "class": "engineering",
+        "note": "Top-level formal substrate requested by Tom Klootwijk.",
+        "source_refs": [
+          "SRC-A entire specification",
+          "SRC-B pp.23-25",
+          "SRC-C pp.9-11",
+          "SRC-D implementation"
+        ]
+      },
+      "content_hash": "sha256:9526b58b8d048300ee93885769a5d4c2a93bdc58a232bd68791000bb5d9e2fd1"
+    }
+  ],
+  "instances": [
+    {
+      "id": "instance:source-klsc1",
+      "definition_ref": "profile:klsc1-seedchain-v1",
+      "literal": {
+        "format_magic": "KLSC3701",
+        "record_bits": 37,
+        "checkpoint_stride_max": 64
+      },
+      "state": {
+        "status": "mapped-to-supplied-implementation"
+      }
+    },
+    {
+      "id": "instance:source-kloc1",
+      "definition_ref": "profile:kloc1-orbit-v1",
+      "literal": {
+        "format_magic": "KLOC1",
+        "seed_bytes": 64,
+        "timeline_node_bytes": 64
+      },
+      "state": {
+        "status": "mapped-to-supplied-implementation"
+      }
+    },
+    {
+      "id": "instance:tk7",
+      "definition_ref": "profile:tk7-orthogonality-v1",
+      "literal": {
+        "dimension": 7,
+        "axis_count": 7
+      },
+      "state": {
+        "status": "optional-not-current-klb-default"
+      }
+    }
+  ]
+}

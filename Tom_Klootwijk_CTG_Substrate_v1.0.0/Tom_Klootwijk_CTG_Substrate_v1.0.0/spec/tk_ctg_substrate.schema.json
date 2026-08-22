@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/tk_ctg_substrate.schema.json",
+  "title": "TK-CTG substrate schema 1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schema_version",
+    "substrate_id",
+    "metadata",
+    "phase_schedule",
+    "profiles",
+    "definitions",
+    "instances"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "substrate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "title",
+        "requester_attribution",
+        "formal_decision",
+        "evidence_boundary"
+      ]
+    },
+    "phase_schedule": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": [
+          "phase",
+          "id",
+          "rule"
+        ],
+        "properties": {
+          "phase": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9
+          },
+          "id": {
+            "type": "string"
+          },
+          "rule": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "profiles": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "default_ambient_dimension",
+        "formal_class",
+        "implementation_profiles"
+      ]
+    },
+    "definitions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/definition"
+      }
+    },
+    "instances": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/instance"
+      }
+    }
+  },
+  "$defs": {
+    "definition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "domain",
+        "codomain",
+        "evaluation_phase",
+        "dependencies",
+        "parameters",
+        "capabilities",
+        "invariants",
+        "provenance",
+        "content_hash"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_-]*:[A-Za-z0-9._:-]+$"
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "domain": {
+          "type": "string"
+        },
+        "codomain": {
+          "type": "string"
+        },
+        "evaluation_phase": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9
+        },
+        "dependencies": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "parameters": {
+          "type": "object"
+        },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "invariants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "class",
+            "note",
+            "source_refs"
+          ],
+          "properties": {
+            "class": {
+              "enum": [
+                "source-derived",
+                "engineering",
+                "corrected",
+                "bounded",
+                "demoted",
+                "rejected"
+              ]
+            },
+            "note": {
+              "type": "string"
+            },
+            "source_refs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "content_hash": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        }
+      }
+    },
+    "instance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "definition_ref",
+        "literal",
+        "state"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "definition_ref": {
+          "type": "string"
+        },
+        "literal": {
+          "type": "object"
+        },
+        "state": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

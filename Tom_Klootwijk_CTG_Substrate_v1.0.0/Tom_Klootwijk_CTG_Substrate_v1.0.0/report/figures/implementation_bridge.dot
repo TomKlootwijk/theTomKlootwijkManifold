@@ -1,0 +1,30 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad=0.25, nodesep=0.45, ranksep=0.55, fontname="Helvetica", label="Two concrete implementation profiles of the same substrate", labelloc=t, fontsize=18];
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.14,0.09", color="#183746", penwidth=1.2];
+  edge [fontname="Helvetica", fontsize=9, color="#5b6f78", penwidth=1.2, arrowsize=0.75];
+
+  core [label="TK-CTG formal core\naddress + time + geometry + topology + event + lineage", fillcolor="#e8f4f4"];
+
+  subgraph cluster_point {
+    label="Point-sequence profile"; color="#7b6aa8"; style="rounded";
+    b [label="KLB37 base\nlog-spherical point + symbol + parity", fillcolor="#eef4f8"];
+    n [label="KLSC1 frame node\ntime + predictor + parent/checkpoint", fillcolor="#f2eef8"];
+    v [label="Sparse novelty\n16-byte sorted residual records", fillcolor="#fff4e8"];
+    r [label="Reconstruct point\nparity grammar + Klein + transform", fillcolor="#eaf5ec"];
+    q [label="Point query\nradial/cone support -> route -> sphere guard", fillcolor="#fff8e6"];
+    b -> r; n -> r; v -> r; r -> q;
+  }
+
+  subgraph cluster_orbit {
+    label="Orbit profile"; color="#d59f1b"; style="rounded";
+    s [label="KLOC1 64-byte OMM seed\nidentity + orbital elements + rates", fillcolor="#eef4f8"];
+    t [label="64-byte time tile\nstart/duration/step + hash lineage", fillcolor="#f2eef8"];
+    p [label="Deterministic coarse predictor\n5-step Kepler + secular J2", fillcolor="#eaf5ec"];
+    g [label="Orbit query\nslant support -> route -> elevation guard", fillcolor="#fff8e6"];
+    s -> p; t -> p; p -> g;
+  }
+
+  e [label="Certified event + chrono-latch + lineage", fillcolor="#fff0ea"];
+  core -> b; core -> s;
+  q -> e; g -> e;
+}

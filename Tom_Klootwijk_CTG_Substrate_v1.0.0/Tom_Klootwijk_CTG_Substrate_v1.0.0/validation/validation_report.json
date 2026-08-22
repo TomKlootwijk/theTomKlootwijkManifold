@@ -1,0 +1,57 @@
+{
+  "report_version": "1.0.0",
+  "validation_date": "2026-08-22",
+  "scope": "Formal specification and local validation of the TK-CTG reference package, plus fresh CPU-only checks of the supplied KLB source tree.",
+  "source_inputs": {
+    "sha256_verified": true,
+    "source_register": "sources/source_register.json",
+    "supplied_klb_manifest": {
+      "entries_checked": 82,
+      "entries_ok": 82,
+      "result": "pass"
+    }
+  },
+  "supplied_implementation_validation": {
+    "configuration": "Fresh CMake Release build with KLB_BUILD_CUDA=OFF in this environment.",
+    "cpp_test_suites_run": 2,
+    "cpp_test_suites_passed": 2,
+    "result": "pass",
+    "gpu_execution_in_this_preparation": "not run",
+    "gpu_boundary": "The uploaded source archive contains its own CUDA/profile artifacts, but this package does not claim an independent new GPU execution."
+  },
+  "reference_package_validation": {
+    "json_schema": "pass",
+    "definition_count": 21,
+    "definition_sha256_content_addresses": "pass",
+    "dependency_order_and_cycle_rejection": "pass",
+    "python_tests_run": 19,
+    "python_tests_passed": 19,
+    "demo_trace": "pass",
+    "result": "pass"
+  },
+  "pdf_validation": {
+    "filename": "report/Tom_Klootwijk_CTG_Substrate_v1.0.0.pdf",
+    "sha256": "7aeaa9a5573012cd3bc0c6b4dc80583f77da854db466093d34480e1c4651422b",
+    "pages": 23,
+    "page_size": "A4",
+    "render_check": {
+      "renderer": "pdfium/poppler via render_pdf.py",
+      "dpi": 180,
+      "pages_rendered": 23,
+      "visual_review": "pass - contact sheets reviewed; dense appendix pages 22-23 inspected at full render resolution."
+    },
+    "preflight": {
+      "openable": true,
+      "encrypted": false,
+      "likely_scanned": false,
+      "fonts_embedded": true,
+      "undefined_references": false,
+      "overfull_boxes": false,
+      "non_fatal_build_note": "One tcolorbox page-placement warning; no clipping or overlap observed in rendered pages."
+    }
+  },
+  "claims_boundary": [
+    "Internal consistency and reproducibility are established for the bounded formal/reference package.",
+    "The checks do not establish a new physical law, identity/authorship priority, patent status, zero-cost rendering, universal compression, navigation-grade orbital accuracy or unrun GPU performance."
+  ]
+}

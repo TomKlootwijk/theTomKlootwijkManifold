@@ -1,0 +1,86 @@
+{
+  "chrono_latch": {
+    "crossing_time": 2.6666666666666665,
+    "latch": 1,
+    "lineage": [
+      "seed:demo",
+      "transition:sphere-entry"
+    ],
+    "post_mode": "inside",
+    "pre_mode": "outside",
+    "verified": true
+  },
+  "definition_count": 21,
+  "definition_order": [
+    "def:literal-definition-node-v1",
+    "schedule:tk-ctg-v1",
+    "geom:implicit-sign-v1",
+    "geom:exact-sdf-capability-v1",
+    "state:tk-hybrid-v1",
+    "topo:explicit-gluing-v1",
+    "hinge:generic-v1",
+    "manifold:tom-klootwijk-v1",
+    "geom:klb37-log-spherical-v1",
+    "chrono:deterministic-flow-v1",
+    "topo:discrete-klein-v1",
+    "gate:local-support-v1",
+    "gate:compatibility-v1",
+    "event:certified-crossing-v1",
+    "transition:chrono-latch-v1",
+    "lineage:ordered-event-log-v1",
+    "profile:fractal-offset-v1",
+    "profile:kloc1-orbit-v1",
+    "profile:klsc1-seedchain-v1",
+    "profile:tk7-orthogonality-v1",
+    "substrate:tom-klootwijk-ctg-v1"
+  ],
+  "klb37": {
+    "code_hex": "0xb768975e8",
+    "decoded_point": [
+      4.002470009427641,
+      0.9996299436093605,
+      1.9997888018997705
+    ],
+    "even_parity": true,
+    "maximum_abs_component_error": 0.0024700094276406404,
+    "source_point": [
+      4.0,
+      1.0,
+      2.0
+    ]
+  },
+  "schema_version": "1.0.0",
+  "substrate_trace": [
+    "def:literal-definition-node-v1",
+    "schedule:tk-ctg-v1",
+    "geom:implicit-sign-v1",
+    "geom:exact-sdf-capability-v1",
+    "state:tk-hybrid-v1",
+    "topo:explicit-gluing-v1",
+    "hinge:generic-v1",
+    "manifold:tom-klootwijk-v1",
+    "geom:klb37-log-spherical-v1",
+    "chrono:deterministic-flow-v1",
+    "topo:discrete-klein-v1",
+    "gate:local-support-v1",
+    "gate:compatibility-v1",
+    "event:certified-crossing-v1",
+    "transition:chrono-latch-v1",
+    "lineage:ordered-event-log-v1",
+    "profile:fractal-offset-v1",
+    "profile:kloc1-orbit-v1",
+    "profile:klsc1-seedchain-v1",
+    "profile:tk7-orthogonality-v1",
+    "substrate:tom-klootwijk-ctg-v1"
+  ],
+  "topology": {
+    "klein_coordinate": {
+      "reflected": true,
+      "x": 14,
+      "y": 0
+    },
+    "logical_index": 37,
+    "xor_swizzled_index": 39,
+    "xor_unswizzled_index": 37
+  }
+}

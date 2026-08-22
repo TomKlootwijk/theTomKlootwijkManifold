@@ -1,0 +1,82 @@
+[
+  {
+    "claim": "The name/identifier/date define geometric constants.",
+    "disposition": "REJECT",
+    "formal_treatment": "They are requester-supplied provenance metadata only."
+  },
+  {
+    "claim": "Four homogeneous coordinates provide seven mutually perpendicular axes.",
+    "disposition": "REJECT",
+    "formal_treatment": "At most four mutually orthogonal nonzero directions exist in Euclidean R^4."
+  },
+  {
+    "claim": "A declared R^7 profile can contain seven orthogonal axis lines.",
+    "disposition": "BOUNDED",
+    "formal_treatment": "The seven standard basis axes are pairwise orthogonal; this is independent of SDF or LSB notation."
+  },
+  {
+    "claim": "SDF=0 defines a sphere.",
+    "disposition": "CORRECTED",
+    "formal_treatment": "It defines the zero level set of the chosen field; a sphere requires f(x)=||x-c||-r."
+  },
+  {
+    "claim": "Every implicit field is an exact signed-distance function.",
+    "disposition": "REJECT",
+    "formal_treatment": "Exact-distance status is an explicit capability and can fail after generic morphs/blends."
+  },
+  {
+    "claim": "SDF=0 automatically smooths a fractal or removes jaggedness.",
+    "disposition": "REJECT",
+    "formal_treatment": "Rounding requires an explicit offset/filter/blend and may still have singularities."
+  },
+  {
+    "claim": "LSB or zero-based indexing reduces the Hamming distance between 943 and 937.",
+    "disposition": "REJECT",
+    "formal_treatment": "Indexing changes labels/access rules, not the numeric bit difference."
+  },
+  {
+    "claim": "A parity bit may select one of two declared maps/routes.",
+    "disposition": "SUPPORTED",
+    "formal_treatment": "This is the narrow parity-hinge semantics used by the implementation."
+  },
+  {
+    "claim": "A parity bit by itself performs arbitrary multi-bit mutation.",
+    "disposition": "REJECT",
+    "formal_treatment": "Route selection and numeric mutation are distinct operations."
+  },
+  {
+    "claim": "Chronology is obtained merely by treating w as time.",
+    "disposition": "CORRECTED",
+    "formal_treatment": "The substrate declares a time domain, flow/predictor, event solver and transition record."
+  },
+  {
+    "claim": "The chronotemporal latch makes topology state piecewise constant between events.",
+    "disposition": "ENGINEERING",
+    "formal_treatment": "This is the formal interpretation adopted here."
+  },
+  {
+    "claim": "Compact notation gives zero-byte VRAM and constant-time infinite rendering.",
+    "disposition": "REJECT",
+    "formal_treatment": "Code and state still occupy memory and reconstruction has measurable ALU, cache and control cost."
+  },
+  {
+    "claim": "KLSC1/KLOC1 can avoid materializing a dense timeline for selected queries.",
+    "disposition": "BOUNDED",
+    "formal_treatment": "Useful only when the model is reconstructible and reconstruction cost/error meet the application budget."
+  },
+  {
+    "claim": "Topology is explicit gluing/routing rather than physical self-intersection or energy creation.",
+    "disposition": "SUPPORTED",
+    "formal_treatment": "This is the core semantics used in UGTS and KLB."
+  },
+  {
+    "claim": "The Tom Klootwijk Manifold is globally smooth in every profile.",
+    "disposition": "CORRECTED",
+    "formal_treatment": "It is generally a hybrid stratified quotient; only regular strata are smooth manifolds under regularity assumptions."
+  },
+  {
+    "claim": "FNV chain hashes prove authorship or identity.",
+    "disposition": "REJECT",
+    "formal_treatment": "They are deterministic integrity checks, not signatures."
+  }
+]

@@ -1,0 +1,47 @@
+PDF: /mnt/data/Tom_Klootwijk_CTG_Substrate_v1.0.0/report/Tom_Klootwijk_CTG_Substrate_v1.0.0.pdf
+Pages: 23
+Encrypted: False
+Page sizes (pt, rounded):
+  - 595 x 842 (23 page(s))
+Metadata:
+  /Author: Requester attribution: Tom Klootwijk; formalization package v1.0.0
+  /CreationDate: D:20260822073452Z
+  /Creator: LaTeX with hyperref
+  /Keywords: chrono-topological geometry, hybrid manifold, signed distance field, topology, event calculus, KLB37, KLSC1, KLOC1
+  /ModDate: D:20260822073452Z
+  /PTEX.Fullbanner: This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) kpathsea version 6.4.0/dev
+  /Producer: pdfTeX-1.40.26
+  /Subject: Formal hybrid stratified substrate with KLB37, KLSC1 and KLOC1 implementation profiles
+  /Title: Tom Klootwijk Chrono-Topological-Geometric Substrate and Manifold
+  /Trapped: /False
+Outline items: 54
+Form fields: 0
+Attachments: 0
+Annotations: 57
+
+Fonts (pdffonts, first 25 lines):
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+QDOHCA+LMSans10-Bold                 Type 1            Custom           yes yes yes    262  0
+HIGWSW+LMSans12-Regular              Type 1            Custom           yes yes yes    263  0
+ZXYUYV+LMRoman10-Regular             Type 1            Custom           yes yes yes    264  0
+CWMTCG+LMRoman10-Bold                Type 1            Custom           yes yes yes    265  0
+HWDBJB+LMSans9-Regular               Type 1            Custom           yes yes yes    266  0
+URTORL+LMSans10-Regular              Type 1            Custom           yes yes yes    287  0
+UEMFJT+LMRoman10-Italic              Type 1            Custom           yes yes yes    288  0
+MSKKEX+LMMathItalic10-Regular        Type 1            Custom           yes yes yes    289  0
+ZXYUYV+LMRoman10-Regular             Type 1            Custom           yes yes yes    290  0
+YQFOYW+LMMathSymbols10-Regular       Type 1            Custom           yes yes yes    291  0
+CEYFYB+LMRoman7-Regular              Type 1            Custom           yes yes yes    292  0
+IIXFXX+LMMathExtension10-Regular     Type 1            Custom           yes yes yes    293  0
+EEMTYT+LMMathItalic7-Regular         Type 1            Custom           yes yes yes    294  0
+XYJCAP+LMMathSymbols7-Regular        Type 1            Custom           yes yes yes    295  0
+CILYQQ+MSBM10                        Type 1            Builtin          yes yes yes    296  0
+TJQBDV+EUFM10                        Type 1            Builtin          yes yes yes    297  0
+BCSKIQ+LMSans8-Regular               Type 1            Custom           yes yes yes    298  0
+SGJBLB+LMMono10-Regular              Type 1            Custom           yes yes yes    361  0
+RSNGVD+DejaVuSans                    TrueType          WinAnsi          yes yes yes    381  0
+SMZSKE+DejaVuSans                    CID TrueType      Identity-H       yes yes yes    382  0
+CJASEB+DejaVuSans                    TrueType          WinAnsi          yes yes yes    405  0
+AOWFXJ+DejaVuSans                    CID TrueType      Identity-H       yes yes yes    406  0
+CWMTCG+LMRoman10-Bold                Type 1            Custom           yes yes yes    432  0

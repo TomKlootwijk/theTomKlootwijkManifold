@@ -1,0 +1,24 @@
+test_01_canonical_key_order (test_tkctg.CanonicalTests.test_01_canonical_key_order) ... ok
+test_02_hash_attach_and_verify (test_tkctg.CanonicalTests.test_02_hash_attach_and_verify) ... ok
+test_15_verified_crossing_latches_mode (test_tkctg.ChronoEventTests.test_15_verified_crossing_latches_mode) ... ok
+test_16_support_or_compatibility_rejects_crossing (test_tkctg.ChronoEventTests.test_16_support_or_compatibility_rejects_crossing) ... ok
+test_17_implicit_guard_uses_abs_sdf_band (test_tkctg.ChronoEventTests.test_17_implicit_guard_uses_abs_sdf_band) ... ok
+test_03_schema_validation (test_tkctg.DefinitionGraphTests.test_03_schema_validation) ... ok
+test_04_all_definition_hashes_verify (test_tkctg.DefinitionGraphTests.test_04_all_definition_hashes_verify) ... ok
+test_05_topological_order_is_complete (test_tkctg.DefinitionGraphTests.test_05_topological_order_is_complete) ... ok
+test_06_cycle_is_rejected (test_tkctg.DefinitionGraphTests.test_06_cycle_is_rejected) ... ok
+test_07_klb37_even_parity (test_tkctg.GeometryTests.test_07_klb37_even_parity) ... ok
+test_08_klb37_roundtrip_is_bounded (test_tkctg.GeometryTests.test_08_klb37_roundtrip_is_bounded) ... ok
+test_09_sphere_zero_level (test_tkctg.GeometryTests.test_09_sphere_zero_level) ... ok
+test_10_csg_does_not_silently_claim_exact_distance (test_tkctg.GeometryTests.test_10_csg_does_not_silently_claim_exact_distance) ... ok
+test_11_tk7_axes_are_orthogonal (test_tkctg.GeometryTests.test_11_tk7_axes_are_orthogonal) ... ok
+test_18_checkpoint_path_is_bounded (test_tkctg.ProfileTests.test_18_checkpoint_path_is_bounded) ... ok
+test_19_checkpoint_cycle_is_rejected (test_tkctg.ProfileTests.test_19_checkpoint_cycle_is_rejected) ... ok
+test_12_xor_swizzle_is_involution (test_tkctg.TopologyTests.test_12_xor_swizzle_is_involution) ... ok
+test_13_klein_y_seam_reflects_x (test_tkctg.TopologyTests.test_13_klein_y_seam_reflects_x) ... ok
+test_14_coordinates_are_not_identity (test_tkctg.TopologyTests.test_14_coordinates_are_not_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.007s
+
+OK
