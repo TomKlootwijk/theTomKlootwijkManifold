@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "scope": "Static structure, delimiter, metadata, privacy, and semantic-presence checks; not a Unity compiler, shader compiler, or GPU test.",
+  "required_files_missing": [],
+  "json_parse": {
+    "package.json": "PASS",
+    "Editor/TomKlootwijk.Manifold.Editor.asmdef": "PASS",
+    "Runtime/TomKlootwijk.Manifold.Runtime.asmdef": "PASS",
+    "Tests/Runtime/TomKlootwijk.Manifold.Tests.asmdef": "PASS"
+  },
+  "delimiter_balance": {
+    "Editor/TKManifoldMenu.cs": {
+      "status": "PASS"
+    },
+    "Runtime/Shaders/TKProjectedSliceURP.shader": {
+      "status": "PASS"
+    },
+    "Runtime/Shaders/TKRoundedSDFSurrogateURP.shader": {
+      "status": "PASS"
+    },
+    "Runtime/Shaders/TKSpatiotemporalTorusSDFURP.shader": {
+      "status": "PASS"
+    },
+    "Runtime/TKAuthorMetadata.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKManifoldMath.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKManifoldVolume.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKPersonalizedParameters.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKProjectedAxesGizmo.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKProjectedSlice.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKSpacetimeProfile.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKSpacetimeSubstrateMath.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKSpacetimeTorusSdfWitness.cs": {
+      "status": "PASS"
+    },
+    "Tests/Runtime/TKManifoldTests.cs": {
+      "status": "PASS"
+    }
+  },
+  "runtime_sensitive_token_hits": {},
+  "manifest_checks": {
+    "name": true,
+    "version": true,
+    "unity": true,
+    "urp_dependency": true,
+    "spatiotemporal_sample": true
+  },
+  "content_checks": {
+    "both_fingerprints_embedded": true,
+    "original_dimensions_present": true,
+    "addendum_dimensions_present": true,
+    "normal_coordinate_formula_present": true,
+    "tubular_sdf_present": true,
+    "regular_tube_guard_present": true,
+    "eikonal_test_present": true,
+    "little_o_test_present": true,
+    "little_o_not_complexity_disclaimer": true,
+    "exact_torus_sdf_shader_formula": true,
+    "urp_core_include_count": true,
+    "source_hamming_test_retained": true
+  },
+  "file_count": 23,
+  "package_tree_sha256": "b002b4cf4256657ea35d6ea182c6f5ad7139c19e531ac4ad70c67ca520dc5360",
+  "unity_editor_compile_shader_gpu": "NOT EXECUTED - Unity Editor unavailable"
+}

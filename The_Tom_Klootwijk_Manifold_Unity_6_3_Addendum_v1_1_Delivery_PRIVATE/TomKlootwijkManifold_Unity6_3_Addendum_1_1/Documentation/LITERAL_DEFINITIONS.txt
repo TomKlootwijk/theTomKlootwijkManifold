@@ -1,0 +1,70 @@
+THE TOM KLOOTWIJK MANIFOLD - COMPACT LITERAL DEFINITIONS v1.1
+Original document ID: TKM-U63-A36-20260822-063439
+Addendum document ID: TKM-STSDF-U63-A36-20260822-072511
+
+A. ORIGINAL 7-DIMENSIONAL CORE
+
+For r_i > 0 and i = 0,...,6:
+
+PRODUCT LITERAL
+K_TK(r) := Product_{i=0}^6 S^1(r_i).
+
+IMPLICIT LITERAL
+K_TK(r) := {x in R^14 : x_{2i}^2 + x_{2i+1}^2 = r_i^2,
+                         i = 0,...,6}.
+
+PARAMETRIC LITERAL
+Phi(theta)_{2i}   := r_i cos(theta_i),
+Phi(theta)_{2i+1} := r_i sin(theta_i).
+
+METRIC / FRAME LITERAL
+g := Sum_{i=0}^6 r_i^2 dtheta_i^2,
+E_i := r_i^(-1) partial/partial theta_i,
+g(E_i,E_j) = delta_ij.
+
+TYPE
+K_TK is a smooth compact connected 7-manifold diffeomorphic to T^7.
+
+B. SPATIOTEMPORAL TUBULAR SDF ADDENDUM
+
+Let t belong to an interval I. Let Q(t) be an orthogonal 14x14 frame,
+c(t) in R^14, r_i(t) > 0, and
+
+0 < tau(t) < r_* := inf_{i,t} r_i(t).
+
+LOCAL COORDINATES
+y(x,t) := Q(t)^T (x - c(t)).
+
+VECTOR NORMAL COORDINATES
+Delta_i(x,t) := sqrt(y_{2i}^2 + y_{2i+1}^2) - r_i(t), i=0,...,6.
+
+EXACT CORE DISTANCE
+delta(x,t) := ||Delta(x,t)||_2 = dist(x, K_TK,t).
+
+SCALAR TUBULAR SIGNED DISTANCE
+D_tau(x,t) := delta(x,t) - tau(t).
+
+CORE WORLDVOLUME
+W_TK := Delta^(-1)(0) ~= T^7 x I.          Dimension: 8.
+
+SHELL WORLDVOLUME
+Sigma_TK,tau := D_tau^(-1)(0) ~= T^7 x S^6 x I.
+Spatial shell dimension: 13. Spatiotemporal shell dimension: 14.
+
+EIKONAL / NORMAL SPEED
+||grad_x D_tau||_2 = 1 in the regular band,
+V_n = -partial_t D_tau on D_tau = 0.
+
+LOWERCASE LITTLE-o CONSISTENCY
+For a numerical family D_hat_h and every compact regular band B,
+||D_hat_h - D_tau||_{L-infinity(B)} = o(1) as h -> 0.
+This means vanishing approximation error, not runtime complexity.
+
+COMPLEXITY DISTINCTION
+One exact field query performs seven pair lengths and one seven-vector length:
+O(7) = O(1) with respect to variable scene size. Rendering P pixels with at
+most S field samples remains O(P*S) and uses nonzero memory.
+
+COMPACT SUBSTRATE TRIPLE
+S_TK^ST := (Delta^(-1)(0), D_tau^(-1)(0), {D_hat_h}_{h>0}),
+subject to the regularity guard and the little-o consistency clause.

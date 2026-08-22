@@ -1,0 +1,26 @@
+{
+  "name": "com.tomklootwijk.manifold",
+  "version": "1.1.0",
+  "displayName": "The Tom Klootwijk Manifold",
+  "description": "A rigorous 7-torus definition plus a spatiotemporal tubular signed-distance substrate, deterministic visualizers, an exact 3D torus SDF witness, and validation tests for Unity 6.3 URP.",
+  "unity": "6000.3",
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "17.3.0"
+  },
+  "keywords": ["manifold", "torus", "procedural", "projection", "sdf", "spacetime", "level-set", "urp"],
+  "author": {
+    "name": "Tom Klootwijk"
+  },
+  "samples": [
+    {
+      "displayName": "Projected 7-Torus Demo Notes",
+      "description": "Setup notes for the projected slice and rounded SDF surrogate.",
+      "path": "Samples~/Projected7Torus"
+    },
+    {
+      "displayName": "Spatiotemporal SDF Addendum Notes",
+      "description": "Setup notes for the exact 3D torus SDF witness and the high-dimensional substrate API.",
+      "path": "Samples~/SpatiotemporalSDF"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "TomKlootwijk.Manifold.Editor",
+  "rootNamespace": "TomKlootwijk.Manifold.Editor",
+  "references": ["TomKlootwijk.Manifold.Runtime"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

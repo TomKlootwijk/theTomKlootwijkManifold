@@ -1,0 +1,162 @@
+{
+  "schema": "tom-klootwijk-manifold-delivery/1.1",
+  "definition_name": "The Tom Klootwijk Manifold",
+  "addendum_name": "Spatiotemporal SDF o(1) Geometrical Topological Substrate",
+  "documents": {
+    "original_document_id": "TKM-U63-A36-20260822-063439",
+    "addendum_document_id": "TKM-STSDF-U63-A36-20260822-072511",
+    "addendum_edition_code": "ST-SDF-o1-U6.3-A36"
+  },
+  "occasion": {
+    "local_iso8601": "2026-08-22T07:25:11+02:00",
+    "timezone": "Europe/Amsterdam",
+    "utc_iso8601": "2026-08-22T05:25:11Z",
+    "author_age": 36
+  },
+  "author_metadata": {
+    "name": "Tom Klootwijk",
+    "private_record_path": "Documentation/PRIVATE_AUTHOR_RECORD.txt",
+    "public_record_path": "Documentation/PUBLIC_AUTHOR_RECORD.txt",
+    "original_record_sha256": "7d85cc5019309659b8279866b0bf6dde69ef18373d25dc71051fe8824ee2e3b4",
+    "addendum_record_sha256": "ee007f23936d94c39d1f96cd1806b2a4f15177a4ba56debb8eb8a23f85027f18",
+    "identity_verified": false,
+    "identifier_checksum_only": true,
+    "note": "Full supplied BSN and birth date are confined to explicitly private documentation and supplied source dossiers; runtime package scanning found no direct sensitive tokens."
+  },
+  "formal_core": {
+    "product_literal": "K_TK(r) = Product_{i=0}^6 S^1(r_i), r_i > 0",
+    "implicit_literal": "K_TK(r) = {x in R^14 : x_(2i)^2 + x_(2i+1)^2 = r_i^2, i=0,...,6}",
+    "spatial_dimension": 7,
+    "ambient_dimension": 14,
+    "diffeomorphism_type": "T^7"
+  },
+  "spatiotemporal_addendum": {
+    "normal_coordinates": "Delta_i(x,t) = norm(y_(2i:2i+1)) - r_i(t), y = Q(t)^T(x-c(t))",
+    "exact_core_distance": "delta(x,t) = norm(Delta(x,t)) = dist(x,K_t)",
+    "tubular_sdf": "D_tau(x,t) = delta(x,t) - tau(t)",
+    "regularity_guard": "0 < tau(t) < inf_{i,t} r_i(t)",
+    "core_worldvolume": "Delta^{-1}(0) ~= T^7 x I",
+    "shell_worldvolume": "D_tau^{-1}(0) ~= T^7 x S^6 x I",
+    "dimensions": {
+      "core_worldvolume": 8,
+      "shell_spatial": 13,
+      "shell_worldvolume": 14
+    },
+    "eikonal": "norm(grad_x D_tau) = 1 in the regular band",
+    "normal_velocity": "V_n = -partial_t D_tau on D_tau=0",
+    "little_o_clause": "norm(D_hat_h-D_tau)_{L-infinity(B)} = o(1) as h -> 0",
+    "complexity_scope": "One fixed seven-factor query is O(7)=O(1) relative to variable scene size; rendering remains O(P*S).",
+    "proof_assistant_checked": false
+  },
+  "unity_target": {
+    "package": "com.tomklootwijk.manifold@1.1.0",
+    "editor_api_line": "6000.3",
+    "verified_documentation_baseline": "6000.3.22f1",
+    "render_pipeline": "Universal Render Pipeline",
+    "urp_version": "17.3.0",
+    "installable_tarball": "UnityPackage/com.tomklootwijk.manifold-1.1.0.tgz"
+  },
+  "validation": {
+    "mathematics": "PASS",
+    "randomized_samples": 500,
+    "max_errors": {
+      "samples": 500,
+      "max_core_normal_coordinate_norm": 3.6821932062951477e-16,
+      "max_exact_core_distance_error": 6.661338147750939e-16,
+      "max_shell_sdf_residual": 4.718447854656915e-16,
+      "max_eikonal_norm_error": 2.220446049250313e-16,
+      "minimum_sampled_shell_pair_radius": 0.6873140272610566
+    },
+    "little_o_temporal_check": {
+      "step_sizes": [
+        0.01,
+        0.005,
+        0.0025,
+        0.00125
+      ],
+      "absolute_remainder_divided_by_h": [
+        2.2240947509471305e-05,
+        1.112458220065487e-05,
+        5.5633177572559874e-06,
+        2.7819156708290224e-06
+      ],
+      "successive_ratios": [
+        0.5001847244105706,
+        0.5000922872347054,
+        0.5000461581042523
+      ],
+      "interpretation": "Ratios approach 1/2 under step halving, consistent with an O(h^2) Taylor remainder and hence R(h)/h = o(1)."
+    },
+    "static_package": "PASS",
+    "package_tree_sha256": "b002b4cf4256657ea35d6ea182c6f5ad7139c19e531ac4ad70c67ca520dc5360",
+    "unity_editor_import_compile_shader_gpu": "NOT EXECUTED - Unity Editor unavailable in build environment"
+  },
+  "selected_artifacts": [
+    {
+      "path": "Documentation/The_Tom_Klootwijk_Manifold_Formal_Specification_v1_1_PRIVATE.pdf",
+      "bytes": 433354,
+      "sha256": "5a0cd05e4c07333b3ff7c125d30b947113c59dc42738ea4d6ef0568971936343"
+    },
+    {
+      "path": "Documentation/The_Tom_Klootwijk_Manifold_Formal_Specification_v1_1_PUBLIC.pdf",
+      "bytes": 433410,
+      "sha256": "27979c70c262a133fdd7a819713572bb3f985fb6c6bacddb716953ec0d20adb5"
+    },
+    {
+      "path": "Documentation/The_Tom_Klootwijk_Manifold_Spatiotemporal_SDF_Addendum_PRIVATE.pdf",
+      "bytes": 132262,
+      "sha256": "d7a59d1a35869ac8443b9703ec8774824c5762807aa6b0677b0d59f2b677b470"
+    },
+    {
+      "path": "Documentation/The_Tom_Klootwijk_Manifold_Spatiotemporal_SDF_Addendum_PUBLIC.pdf",
+      "bytes": 132397,
+      "sha256": "2aedad1697b48f7f5cc244db5e149ff24b3bacb6b6a658629aa3ca5c995c264a"
+    },
+    {
+      "path": "Documentation/The_Tom_Klootwijk_Manifold_Compact_Definition_Card_v1_1_PUBLIC.pdf",
+      "bytes": 69446,
+      "sha256": "d917eeb8d02a59d296186e4dbf87247110acb515bd7638e4301271a15e6baad6"
+    },
+    {
+      "path": "UnityPackage/com.tomklootwijk.manifold-1.1.0.tgz",
+      "bytes": 17635,
+      "sha256": "2bd622ddcc9f72d93b576fd946157b69e4fb6ac24d9b19cf8dc2124fe929a4bb"
+    },
+    {
+      "path": "UnityPackage/com.tomklootwijk.manifold/package.json",
+      "bytes": 1005,
+      "sha256": "b6cc3c6245318f7f399003e324c07174e4b02e59d47326191a9ebbbf5c437d43"
+    },
+    {
+      "path": "UnityPackage/com.tomklootwijk.manifold/Runtime/TKSpacetimeSubstrateMath.cs",
+      "bytes": 17760,
+      "sha256": "622c929c32140d767c46bb4f1d35f0cf619e5ffd8641edacb5f7574852aff96f"
+    },
+    {
+      "path": "UnityPackage/com.tomklootwijk.manifold/Runtime/Shaders/TKSpatiotemporalTorusSDFURP.shader",
+      "bytes": 5216,
+      "sha256": "0779bced1c03ae854be32a9a228644370b68e6031ac2cf033d393a34ca4588b7"
+    },
+    {
+      "path": "Validation/validation_report.json",
+      "bytes": 2568,
+      "sha256": "51447142294e9a588891920b6d5c14c3b10fbe528c5bdd28b8077a57db08163e"
+    },
+    {
+      "path": "Validation/package_validation_report.json",
+      "bytes": 2373,
+      "sha256": "52cc2a2259d327705ec4ae05dd1ee9ecdaec42491bcf42cbc2bbfaef6ea0fcda"
+    },
+    {
+      "path": "Source/source_dossier.pdf",
+      "bytes": 297553,
+      "sha256": "5004ef709ddd2de3350069642fdd7c78f4cdf6aeea15a2e703b952766f6b97d2"
+    },
+    {
+      "path": "Source/source_spatiotemporal_sdf_addendum_dossier.pdf",
+      "bytes": 205208,
+      "sha256": "b3ab8e1d9f47171efa4f8370c94f3b4a48b58eb5bf30970312c7573d249b6aa3"
+    }
+  ],
+  "privacy_classification": "PRIVATE DELIVERY: contains full supplied personal identifier data in explicitly marked private files and source dossiers."
+}

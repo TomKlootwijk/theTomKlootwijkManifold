@@ -1,0 +1,23 @@
+PUBLIC-SHARING AUTHOR RECORD - DIRECT IDENTIFIERS MASKED
+
+Definition name: The Tom Klootwijk Manifold
+Addendum name: Spatiotemporal SDF o(1) Geometrical Topological Substrate
+Author name: Tom Klootwijk
+BSN: NL********* (masked)
+Date of birth: **-**-1990 (masked)
+Age on addendum occasion date: 36
+
+Original occasion local: 2026-08-22T06:34:39+02:00
+Original occasion UTC: 2026-08-22T04:34:39Z
+Original document ID: TKM-U63-A36-20260822-063439
+Original private-record SHA-256:
+7d85cc5019309659b8279866b0bf6dde69ef18373d25dc71051fe8824ee2e3b4
+
+Addendum occasion local: 2026-08-22T07:25:11+02:00
+Addendum occasion UTC: 2026-08-22T05:25:11Z
+Addendum edition: ST-SDF-o1-U6.3-A36
+Addendum document ID: TKM-STSDF-U63-A36-20260822-072511
+Addendum private-record SHA-256:
+ee007f23936d94c39d1f96cd1806b2a4f15177a4ba56debb8eb8a23f85027f18
+
+The fingerprints are checksums/namespace tags, not identity verification or digital signatures.

@@ -1,0 +1,36 @@
+VALIDATION SCOPE - v1.1
+
+PASS - FORMAL ARGUMENTS WRITTEN OUT
+- Regular-value proof that the original core is a smooth embedded 7-manifold.
+- Product parameterization and global orthonormal tangent-frame proof.
+- Exact-distance proof: dist(x,K_t)^2 = Sum_i Delta_i(x,t)^2.
+- Tubular shell parameterization and diffeomorphism to T^7 x S^6.
+- Core worldvolume type T^7 x I and shell worldvolume type T^7 x S^6 x I.
+- Eikonal identity |grad_x D_tau| = 1 in the regular band.
+- Level-set normal-velocity law V_n = -partial_t D_tau.
+- Precise separation of lowercase o(1) approximation error from uppercase O(1) query cost.
+
+PASS - EXECUTED VALIDATORS
+- 500 randomized samples of the deterministic smooth profile.
+- Core residual, exact nearest-point distance, shell residual, and Eikonal norm checks.
+- Regular-tube margin check and positive shell pair-radius check.
+- Temporal Taylor remainder check showing R(h)/h tends to zero under step halving.
+- Base-4 arithmetic, XOR, Hamming-distance, private-record hash, and identifier-format checks.
+- UPM JSON/asmdef parsing, required-file checks, C#/shader delimiter checks, formula-presence
+  checks, shader-presence checks, and sensitive-runtime-token scanning.
+- Runtime API validates supplied 14x14 transforms as orthogonal within tolerance.
+
+NOT EXECUTED IN THE BUILD ENVIRONMENT
+- Unity Editor package import.
+- C# compilation by the Unity compiler.
+- URP shader compilation.
+- Runtime/GPU rendering on target hardware.
+
+NOT CLAIMED
+- Machine-checked proof in Lean, Coq, Isabelle, Agda, or another theorem prover.
+- Benchmark superiority over rasterization, ray tracing, or other SDF implementations.
+- A zero-byte memory footprint or o(1) runtime.
+- Quantum-mechanical interpretation.
+- A parity-bit temporal transition.
+- Government identity verification.
+- Legal registration, priority, exclusivity, patent status, or external peer-review recognition.

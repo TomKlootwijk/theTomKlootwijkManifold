@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "document_id": "TKM-STSDF-U63-A36-20260822-072511",
+  "target": {
+    "unity_api_line": "6000.3 LTS",
+    "verified_patch_baseline": "6000.3.22f1",
+    "current_6000_3_stream_observed": "6000.3.23f1",
+    "urp": "17.3.0"
+  },
+  "canonical_definition": {
+    "core_worldvolume": "Delta^{-1}(0) ~= T^7 x I",
+    "shell_worldvolume": "D_tau^{-1}(0) ~= T^7 x S^6 x I",
+    "delta_i": "norm(pair_i) - r_i(t)",
+    "scalar_sdf": "D_tau = norm(Delta) - tau(t)",
+    "regularity_guard": "0 < tau(t) < min_i r_i(t)",
+    "little_o_clause": "sup_B |D_hat_h - D_tau| = o(1) as h -> 0"
+  },
+  "dimensions": {
+    "core_spatial": 7,
+    "core_worldvolume": 8,
+    "shell_spatial": 13,
+    "shell_worldvolume": 14,
+    "normal_sphere": 6
+  },
+  "randomized_checks": {
+    "samples": 500,
+    "max_core_normal_coordinate_norm": 3.6821932062951477e-16,
+    "max_exact_core_distance_error": 6.661338147750939e-16,
+    "max_shell_sdf_residual": 4.718447854656915e-16,
+    "max_eikonal_norm_error": 2.220446049250313e-16,
+    "minimum_sampled_shell_pair_radius": 0.6873140272610566
+  },
+  "little_o_temporal_check": {
+    "step_sizes": [
+      0.01,
+      0.005,
+      0.0025,
+      0.00125
+    ],
+    "absolute_remainder_divided_by_h": [
+      2.2240947509471305e-05,
+      1.112458220065487e-05,
+      5.5633177572559874e-06,
+      2.7819156708290224e-06
+    ],
+    "successive_ratios": [
+      0.5001847244105706,
+      0.5000922872347054,
+      0.5000461581042523
+    ],
+    "interpretation": "Ratios approach 1/2 under step halving, consistent with an O(h^2) Taylor remainder and hence R(h)/h = o(1)."
+  },
+  "topology_guard": {
+    "conservative_minimum_factor_radius": 0.84832,
+    "maximum_profile_tube_radius": 0.208,
+    "guard_margin": 0.64032
+  },
+  "source_number_checks": {
+    "973_base4": "33031",
+    "943_base4": "32233",
+    "937_base4": "32221",
+    "943_xor_937": 6,
+    "943_to_937_hamming_distance": 2,
+    "single_bit_transition_claim": "FAIL"
+  },
+  "private_identifier_format_check": {
+    "eleven_test_weighted_sum": 154,
+    "passes_arithmetic_checksum": true,
+    "identity_verified": false
+  },
+  "fingerprints": {
+    "original_private_author_record_sha256": "7d85cc5019309659b8279866b0bf6dde69ef18373d25dc71051fe8824ee2e3b4",
+    "addendum_private_author_record_sha256": "ee007f23936d94c39d1f96cd1806b2a4f15177a4ba56debb8eb8a23f85027f18"
+  },
+  "implementation_validation": {
+    "python_math_validator": "PASS",
+    "unity_editor_import_compile_shader_gpu_run": "NOT EXECUTED - Unity Editor unavailable in build environment"
+  }
+}
