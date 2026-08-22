@@ -1,0 +1,9 @@
+Test project C:/Users/Tom/Documents/TomKlootwijkVentureCorp/Klootwijk/klb_seedchain_gpu_v0.3.0/klb_seedchain_gpu_v0.3.0/build-cuda128-vs
+    Start 1: klb_cpu_tests
+1/2 Test #1: klb_cpu_tests ....................   Passed    0.13 sec
+    Start 2: klb_orbit_tests
+2/2 Test #2: klb_orbit_tests ..................   Passed    0.05 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.28 sec

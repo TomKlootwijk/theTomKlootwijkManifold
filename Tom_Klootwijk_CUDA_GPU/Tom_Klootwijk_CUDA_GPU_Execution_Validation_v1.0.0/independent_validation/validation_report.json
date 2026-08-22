@@ -1,0 +1,1067 @@
+{
+  "checks": [
+    {
+      "details": {
+        "entry_count": 82,
+        "failures": 0
+      },
+      "id": "original_manifest",
+      "status": "PASS",
+      "summary": "82/82 original manifest entries verified"
+    },
+    {
+      "details": {
+        "ctest_marker_found": true
+      },
+      "id": "fresh_cpu_build_and_tests",
+      "status": "PASS",
+      "summary": "Fresh Linux CPU build completed and both CTest suites passed"
+    },
+    {
+      "details": {
+        "bundled_rows_including_header": 718,
+        "bundled_sha256": "a08b9295d29c94dac7244d3a70aea2e0196ad56e5c25733c909e4fbdf68d4f86",
+        "fresh_rows_including_header": 718,
+        "fresh_sha256": "a08b9295d29c94dac7244d3a70aea2e0196ad56e5c25733c909e4fbdf68d4f86"
+      },
+      "id": "fresh_cpu_full_horizon_determinism",
+      "status": "PASS",
+      "summary": "Fresh 7-day CPU pass-event CSV is byte-for-byte identical to the bundled reference"
+    },
+    {
+      "details": {
+        "compute_120_ptx": true,
+        "fatbin_elf_sm120": true,
+        "fatbin_ptx_sm120": true,
+        "nvcc_12_8": true,
+        "ptxas_orbit_kernel": true,
+        "sm_120_codegen": true,
+        "windows_ctest": true
+      },
+      "id": "cuda_build_artifacts",
+      "status": "PASS",
+      "summary": "Supplied Windows build evidence shows NVCC 12.8, native sm_120 cubin, compute_120 PTX, and passing host tests"
+    },
+    {
+      "details": {
+        "klb_bench.exe": {
+          "has_nvFatBi_section": true,
+          "has_nv_fatb_section": true,
+          "nv_fatb_size_hex": "00043c68",
+          "path": "/mnt/data/Tom_Klootwijk_CUDA_GPU_Execution_Validation_v1.0.0/implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_bench.exe",
+          "sha256": "b9c9cd7fd190b9bf7c6ed65ccac230514cab69d6aa298335651f3521c9247cb1",
+          "size": 538624
+        },
+        "klb_orbit_bench.exe": {
+          "has_nvFatBi_section": true,
+          "has_nv_fatb_section": true,
+          "nv_fatb_size_hex": "001349d8",
+          "path": "/mnt/data/Tom_Klootwijk_CUDA_GPU_Execution_Validation_v1.0.0/implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_orbit_bench.exe",
+          "sha256": "15d8feb318ba7cff102203552613ddb6b167cbb7a83f9dc995263d743770bb3c",
+          "size": 1586688
+        },
+        "klb_seedchain_bench.exe": {
+          "has_nvFatBi_section": true,
+          "has_nv_fatb_section": true,
+          "nv_fatb_size_hex": "000460b8",
+          "path": "/mnt/data/Tom_Klootwijk_CUDA_GPU_Execution_Validation_v1.0.0/implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_seedchain_bench.exe",
+          "sha256": "e5d48579dcd3ae6a2c1431380552ea4cd132768b4b5f54507bd1f6127200ca35",
+          "size": 557056
+        }
+      },
+      "id": "cuda_binary_sections",
+      "status": "PASS",
+      "summary": "All three supplied CUDA benchmark executables contain NVIDIA fatbinary sections"
+    },
+    {
+      "details": {
+        "compute_capability_12_0": true,
+        "device": true,
+        "event_set_equal": true,
+        "laptop_event_set": true,
+        "no_truncation_seed": true,
+        "oracle_prefix_exact": true,
+        "sanitizer_zero_errors": true,
+        "vram_event_set": true
+      },
+      "id": "actual_gpu_execution_evidence",
+      "status": "PASS",
+      "summary": "Supplied execution logs satisfy the package's documented GPU acceptance checks and Compute Sanitizer reports zero errors"
+    },
+    {
+      "details": {
+        "compute_capability": "12.0",
+        "counter_tuples": {
+          "compact_dense_events": [
+            19353600,
+            19214154,
+            19214154,
+            717
+          ],
+          "compact_seed_events": [
+            19353600,
+            19214154,
+            19214154,
+            717
+          ],
+          "materialize_plus_query": [
+            19353600,
+            19214154,
+            19214154,
+            717
+          ],
+          "query_dense": [
+            19353600,
+            19214154,
+            19214154,
+            717
+          ],
+          "query_seed_direct": [
+            19353600,
+            19214154,
+            19214154,
+            717
+          ]
+        },
+        "dense_bytes": 309658112,
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "direct_vs_end_to_end_dense_p50_ratio": 0.9907093369556925,
+        "direct_vs_resident_dense_p50_ratio": 4.695656633569195,
+        "effective_sample_ms_from_p50_x_inner_repeats": {
+          "compact_dense_events": 156.12594604475,
+          "compact_seed_events": 145.75984191906,
+          "materialize_dense": 150.02943420416,
+          "materialize_plus_query": 111.70780944810001,
+          "query_dense": 193.262374877958,
+          "query_seed_direct": 154.93795776354
+        },
+        "event_count": 717,
+        "problems": [],
+        "row_count": 6
+      },
+      "id": "gpu_results_file",
+      "status": "PASS",
+      "summary": "file GPU CSV has six consistent modes"
+    },
+    {
+      "details": {
+        "compute_capability": "12.0",
+        "counter_tuples": {
+          "compact_dense_events": [
+            33554432,
+            33311183,
+            33311183,
+            1243
+          ],
+          "compact_seed_events": [
+            33554432,
+            33311183,
+            33311183,
+            1243
+          ],
+          "materialize_plus_query": [
+            33554432,
+            33311183,
+            33311183,
+            1243
+          ],
+          "query_dense": [
+            33554432,
+            33311183,
+            33311183,
+            1243
+          ],
+          "query_seed_direct": [
+            33554432,
+            33311183,
+            33311183,
+            1243
+          ]
+        },
+        "dense_bytes": 536871424,
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "direct_vs_end_to_end_dense_p50_ratio": 0.9780631554316311,
+        "direct_vs_resident_dense_p50_ratio": 4.483467568039606,
+        "effective_sample_ms_from_p50_x_inner_repeats": {
+          "compact_dense_events": 263.6575012206,
+          "compact_seed_events": 232.37426757802,
+          "materialize_dense": 244.39782714856,
+          "materialize_plus_query": 229.72409057619998,
+          "query_dense": 290.36663818457,
+          "query_seed_direct": 257.72653198227
+        },
+        "event_count": 1243,
+        "problems": [],
+        "row_count": 6
+      },
+      "id": "gpu_results_laptop",
+      "status": "PASS",
+      "summary": "laptop GPU CSV has six consistent modes"
+    },
+    {
+      "details": {
+        "compute_capability": "12.0",
+        "counter_tuples": {
+          "compact_dense_events": [
+            134217728,
+            133241751,
+            133241751,
+            4970
+          ],
+          "compact_seed_events": [
+            134217728,
+            133241751,
+            133241751,
+            4970
+          ],
+          "materialize_plus_query": [
+            134217728,
+            133241751,
+            133241751,
+            4970
+          ],
+          "query_dense": [
+            134217728,
+            133241751,
+            133241751,
+            4970
+          ],
+          "query_seed_direct": [
+            134217728,
+            133241751,
+            133241751,
+            4970
+          ]
+        },
+        "dense_bytes": 2147484160,
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "direct_vs_end_to_end_dense_p50_ratio": 0.9750400310061009,
+        "direct_vs_resident_dense_p50_ratio": 4.512259757435885,
+        "effective_sample_ms_from_p50_x_inner_repeats": {
+          "compact_dense_events": 274.58532714844,
+          "compact_seed_events": 270.116485596,
+          "materialize_dense": 256.2764892576,
+          "materialize_plus_query": 271.796295166,
+          "query_dense": 305.40435791008,
+          "query_seed_direct": 265.012268066
+        },
+        "event_count": 4970,
+        "problems": [],
+        "row_count": 6
+      },
+      "id": "gpu_results_vram",
+      "status": "PASS",
+      "summary": "vram GPU CSV has six consistent modes"
+    },
+    {
+      "details": {
+        "demo": {
+          "active_power_average_w": 132.00621621621622,
+          "active_samples": 37,
+          "active_sm_clock_average_mhz": 2590.2162162162163,
+          "device_names": [
+            "NVIDIA GeForce RTX 5070 Ti Laptop GPU"
+          ],
+          "first_timestamp": "2026/08/16 15:30:36.167",
+          "last_timestamp": "2026/08/16 15:30:51.606",
+          "memory_max_mib": 870.0,
+          "power_max_w": 143.51,
+          "samples": 72,
+          "temperature_max_c": 75.0,
+          "utilization_max_pct": 100.0
+        },
+        "laptop": {
+          "active_power_average_w": 133.6946153846154,
+          "active_samples": 78,
+          "active_sm_clock_average_mhz": 2558.730769230769,
+          "device_names": [
+            "NVIDIA GeForce RTX 5070 Ti Laptop GPU"
+          ],
+          "first_timestamp": "2026/08/16 15:31:23.217",
+          "last_timestamp": "2026/08/16 15:31:42.327",
+          "memory_max_mib": 1090.0,
+          "power_max_w": 140.12,
+          "samples": 90,
+          "temperature_max_c": 79.0,
+          "utilization_max_pct": 100.0
+        },
+        "vram": {
+          "active_power_average_w": 134.8132558139535,
+          "active_samples": 86,
+          "active_sm_clock_average_mhz": 2590.046511627907,
+          "device_names": [
+            "NVIDIA GeForce RTX 5070 Ti Laptop GPU"
+          ],
+          "first_timestamp": "2026/08/16 15:31:55.837",
+          "last_timestamp": "2026/08/16 15:32:16.611",
+          "memory_max_mib": 2626.0,
+          "power_max_w": 140.32,
+          "samples": 98,
+          "temperature_max_c": 84.0,
+          "utilization_max_pct": 100.0
+        }
+      },
+      "id": "gpu_telemetry",
+      "status": "PASS",
+      "summary": "nvidia-smi telemetry contains sustained active samples and reaches 100% reported utilization in all three primary runs"
+    },
+    {
+      "details": {
+        "fresh_cpu_support_count": 19214155,
+        "fresh_cpu_verified_events": 717,
+        "gpu_file_support_count": 19214154,
+        "gpu_verified_events": 717,
+        "historical_strict_full_horizon_log_records_mismatch": true,
+        "support_delta_gpu_minus_cpu": -1
+      },
+      "id": "full_horizon_cpu_gpu_boundary",
+      "status": "DOCUMENTED_BOUNDARY",
+      "summary": "Full-horizon CPU/GPU support counters differ by one candidate, while verified event count remains 717; the shipped acceptance test therefore uses an exact 4096-epoch oracle prefix"
+    },
+    {
+      "details": {
+        "fresh_gpu_available": false
+      },
+      "id": "new_gpu_run_in_audit_environment",
+      "status": "NOT_RUN",
+      "summary": "No NVIDIA device, driver tools, CUDA toolkit, or CUDA libraries were exposed in the independent audit environment; the GPU portion is an audit of supplied hardware execution evidence, not a newly generated run"
+    }
+  ],
+  "essential_failures": [],
+  "evidence_classification": {
+    "compute_capability_claimed_by_supplied_execution": "12.0",
+    "device_claimed_by_supplied_execution": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+    "fresh_cpu_execution_in_audit_environment": true,
+    "fresh_gpu_execution_in_audit_environment": false,
+    "supplied_actual_gpu_execution_evidence_audited": true
+  },
+  "generated_utc": "2026-08-22T09:00:52.437080+00:00",
+  "implementation_version": "KLB SeedChain GPU 0.3.0",
+  "key_file_sha256": {
+    "implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_orbit_bench.exe": "15d8feb318ba7cff102203552613ddb6b167cbb7a83f9dc995263d743770bb3c",
+    "implementation/klb_seedchain_gpu_v0.3.0/compute_sanitizer_orbit_console.txt": "4ca73216085756e9dad639d96f8e6255f91b1bb7d0f7cf1a64c90dcc2ac1b727",
+    "implementation/klb_seedchain_gpu_v0.3.0/orbit_file_results.csv": "1755bc7c420ac6ebe6f9c0610d4e5379c0cd45b73985b69418c63b5b469b9279",
+    "implementation/klb_seedchain_gpu_v0.3.0/orbit_laptop_results.csv": "02e93b7f20cdc67d18134078eadf2cc9f0f84a7d779b29e134293f465d88f628",
+    "implementation/klb_seedchain_gpu_v0.3.0/orbit_seed_compact_profile.ncu-rep": "0960be05b669a4dc10e128837841cbe364aae2a3d524c6b036fd2b02edbe7215",
+    "implementation/klb_seedchain_gpu_v0.3.0/orbit_seed_profile.ncu-rep": "163c322f9c0819649fbd7ee122d2ed03fe0d2211e98339e29ee7374c041958ef",
+    "implementation/klb_seedchain_gpu_v0.3.0/orbit_vram_results.csv": "5c44187713da9b364c0b440b46b840fed4adfb4940a7fc2af3343ce77172fc4a",
+    "implementation/klb_seedchain_gpu_v0.3.0/src/orbit_bench.cu": "5c2eefa705ca61c23edecbc2dfdf88f6fdd6375c70225b50ca5b8351d78dd48c",
+    "independent_validation/fresh_cpu/orbit_pass_events_fresh.csv": "a08b9295d29c94dac7244d3a70aea2e0196ad56e5c25733c909e4fbdf68d4f86"
+  },
+  "manifest_entries": [
+    {
+      "actual": "d2aba1419ba2b2c76ec1e4682af0c24da513914eb365d73935c36271aaef1ad1",
+      "expected": "d2aba1419ba2b2c76ec1e4682af0c24da513914eb365d73935c36271aaef1ad1",
+      "ok": true,
+      "path": ".gitignore"
+    },
+    {
+      "actual": "10c5fd5382e0fae0de79c25c7fa93f4b40fc3b9b58776fe49496e25ed65f59db",
+      "expected": "10c5fd5382e0fae0de79c25c7fa93f4b40fc3b9b58776fe49496e25ed65f59db",
+      "ok": true,
+      "path": "AUTHORSHIP_NOTICE.md"
+    },
+    {
+      "actual": "51519f18ec0db835da5b5607dd6e60ab2cb46dde36c71a549cb75c87c09f85f4",
+      "expected": "51519f18ec0db835da5b5607dd6e60ab2cb46dde36c71a549cb75c87c09f85f4",
+      "ok": true,
+      "path": "CHANGELOG.md"
+    },
+    {
+      "actual": "3dc79a156867900941fc5d70c2ed11ad01eb8e668e293b6067027a1d335e9c0b",
+      "expected": "3dc79a156867900941fc5d70c2ed11ad01eb8e668e293b6067027a1d335e9c0b",
+      "ok": true,
+      "path": "CMakeLists.txt"
+    },
+    {
+      "actual": "2e2ea85527c5eed0dc6793d6cdbcaf39f30814de3f9963b772f1acdfefa440f5",
+      "expected": "2e2ea85527c5eed0dc6793d6cdbcaf39f30814de3f9963b772f1acdfefa440f5",
+      "ok": true,
+      "path": "LICENSE"
+    },
+    {
+      "actual": "a4dd28e70fc5ad8ed18e28e17083de6d4bf20f5fe9660f4b6489267a1032435e",
+      "expected": "a4dd28e70fc5ad8ed18e28e17083de6d4bf20f5fe9660f4b6489267a1032435e",
+      "ok": true,
+      "path": "README.md"
+    },
+    {
+      "actual": "f6d618fe6e97fcad670b9b2ae2b724269712b1016c671b8b46fc7c1f2dc1a0c8",
+      "expected": "f6d618fe6e97fcad670b9b2ae2b724269712b1016c671b8b46fc7c1f2dc1a0c8",
+      "ok": true,
+      "path": "RUN_ME_FIRST.txt"
+    },
+    {
+      "actual": "c1e87e012b5e525164516023f6ed990d3881c3ef16dd76ac7471ab02ffa159fc",
+      "expected": "c1e87e012b5e525164516023f6ed990d3881c3ef16dd76ac7471ab02ffa159fc",
+      "ok": true,
+      "path": "THIRD_PARTY_DATA.md"
+    },
+    {
+      "actual": "24943564c5988ef4430a0d7915a512dbbfce372bf703e3840c8934520e59f574",
+      "expected": "24943564c5988ef4430a0d7915a512dbbfce372bf703e3840c8934520e59f574",
+      "ok": true,
+      "path": "benchmarks/rtx5070ti_v0.2/bunny_seedchain_results.csv"
+    },
+    {
+      "actual": "3edf662dea59ec1ea2104b4da48cbc4100dcbcfdd598966f203ead81c013fa4b",
+      "expected": "3edf662dea59ec1ea2104b4da48cbc4100dcbcfdd598966f203ead81c013fa4b",
+      "ok": true,
+      "path": "benchmarks/rtx5070ti_v0.2/fitted_sequence_results.csv"
+    },
+    {
+      "actual": "1e23e41a4a1d27e2babaeec9ba655782deff6a46485d8ac87b14cd56b100f8c1",
+      "expected": "1e23e41a4a1d27e2babaeec9ba655782deff6a46485d8ac87b14cd56b100f8c1",
+      "ok": true,
+      "path": "benchmarks/rtx5070ti_v0.2/seedchain_depth_sweep.csv"
+    },
+    {
+      "actual": "e7972f9518adb02a45206b217ec511eb841bdd0cc700aa8db2959efb40b94ec3",
+      "expected": "e7972f9518adb02a45206b217ec511eb841bdd0cc700aa8db2959efb40b94ec3",
+      "ok": true,
+      "path": "benchmarks/rtx5070ti_v0.2/seedchain_full_verify_results.csv"
+    },
+    {
+      "actual": "2550ccd4bf51c1c11c0c332b6a8b48bdc8f6150e4ec11ff6c64e0e9175103000",
+      "expected": "2550ccd4bf51c1c11c0c332b6a8b48bdc8f6150e4ec11ff6c64e0e9175103000",
+      "ok": true,
+      "path": "benchmarks/rtx5070ti_v0.2/seedchain_high_yield.csv"
+    },
+    {
+      "actual": "7360ec4ce6da5a0dfef4d1ae112aa1f6a1958fcb95eca625fcd2558688e9aa36",
+      "expected": "7360ec4ce6da5a0dfef4d1ae112aa1f6a1958fcb95eca625fcd2558688e9aa36",
+      "ok": true,
+      "path": "benchmarks/rtx5070ti_v0.2/seedchain_process_runs.csv"
+    },
+    {
+      "actual": "a2df9014cb8a90b59c5eeace71aeb88e40dd2cee92be1319bc439ef7c6d91ca7",
+      "expected": "a2df9014cb8a90b59c5eeace71aeb88e40dd2cee92be1319bc439ef7c6d91ca7",
+      "ok": true,
+      "path": "benchmarks/rtx5070ti_v0.2/seedchain_results.csv"
+    },
+    {
+      "actual": "a3efeab67732df8a9678c5146d6376747da1b191a526c0eface6547feb911e35",
+      "expected": "a3efeab67732df8a9678c5146d6376747da1b191a526c0eface6547feb911e35",
+      "ok": true,
+      "path": "benchmarks/rtx5070ti_v0.2/seedchain_sustained_output.txt"
+    },
+    {
+      "actual": "238e43e33c15e985980396a01de66c507d085265bb9aa6f1087ef94f163cfec7",
+      "expected": "238e43e33c15e985980396a01de66c507d085265bb9aa6f1087ef94f163cfec7",
+      "ok": true,
+      "path": "data/README.md"
+    },
+    {
+      "actual": "3063c77e625e502dec183be2d2737c2d57005f178cb4e009801482504165d77e",
+      "expected": "3063c77e625e502dec183be2d2737c2d57005f178cb4e009801482504165d77e",
+      "ok": true,
+      "path": "data/orbit/README.md"
+    },
+    {
+      "actual": "edc754cbb6c6d5e7e59ff51130d9cdb7e9f65783fb57041590394ae65c97c302",
+      "expected": "edc754cbb6c6d5e7e59ff51130d9cdb7e9f65783fb57041590394ae65c97c302",
+      "ok": true,
+      "path": "data/orbit/gps_ops_2026-08-16.source.json"
+    },
+    {
+      "actual": "a08b9295d29c94dac7244d3a70aea2e0196ad56e5c25733c909e4fbdf68d4f86",
+      "expected": "a08b9295d29c94dac7244d3a70aea2e0196ad56e5c25733c909e4fbdf68d4f86",
+      "ok": true,
+      "path": "data/orbit/gps_ops_2026-08-16_52N_5E_pass_events.csv"
+    },
+    {
+      "actual": "ce6520994094e6cfa6226e0233774779ebe0e00007db362b4bf4e645f31881fe",
+      "expected": "ce6520994094e6cfa6226e0233774779ebe0e00007db362b4bf4e645f31881fe",
+      "ok": true,
+      "path": "data/orbit/gps_ops_2026-08-16_52N_5E_pass_events.summary.txt"
+    },
+    {
+      "actual": "62b9e1a1fb5347af26ef305377a034a23a746a0df1894287b48cb169589f3aaa",
+      "expected": "62b9e1a1fb5347af26ef305377a034a23a746a0df1894287b48cb169589f3aaa",
+      "ok": true,
+      "path": "data/orbit/gps_ops_2026-08-16_7d_1s.inspect.txt"
+    },
+    {
+      "actual": "fe0036df05ad0f4036f8cfcf489a3d371557924bd8868f00c8e525cf6d2c6f73",
+      "expected": "fe0036df05ad0f4036f8cfcf489a3d371557924bd8868f00c8e525cf6d2c6f73",
+      "ok": true,
+      "path": "data/orbit/gps_ops_2026-08-16_7d_1s.kloc"
+    },
+    {
+      "actual": "9474f1fbe1eb0669a07ae454aa12b857694d20d58036754b04a075b521d29151",
+      "expected": "9474f1fbe1eb0669a07ae454aa12b857694d20d58036754b04a075b521d29151",
+      "ok": true,
+      "path": "data/orbit/gps_ops_2026-08-16_7d_1s.verify.txt"
+    },
+    {
+      "actual": "c2ac53cb8507a0be80978717d4442ac71faac99360edad39bec79be12c330ec4",
+      "expected": "c2ac53cb8507a0be80978717d4442ac71faac99360edad39bec79be12c330ec4",
+      "ok": true,
+      "path": "data/orbit/gps_ops_2026-08-16_7d_cpu_reference.txt"
+    },
+    {
+      "actual": "3fb8460ddb97c52ed23c7eb6320bbddb3b6b8159204fa0a82c7c959d51eec1e3",
+      "expected": "3fb8460ddb97c52ed23c7eb6320bbddb3b6b8159204fa0a82c7c959d51eec1e3",
+      "ok": true,
+      "path": "data/orbit/gps_ops_2026-08-16_sample.csv"
+    },
+    {
+      "actual": "f45d43705e1cdc9121eb17d15baa3bc0ad0d97e0c21e94a78c44d4ddd6ddb8fb",
+      "expected": "f45d43705e1cdc9121eb17d15baa3bc0ad0d97e0c21e94a78c44d4ddd6ddb8fb",
+      "ok": true,
+      "path": "data/orbit/source/gps_ops_2026-08-16_omm.csv"
+    },
+    {
+      "actual": "a99eedeeab56527ef70bbc76a37399d6787d7f117e15469cb0123bd7043ef2a7",
+      "expected": "a99eedeeab56527ef70bbc76a37399d6787d7f117e15469cb0123bd7043ef2a7",
+      "ok": true,
+      "path": "data/procedural_65536.klb"
+    },
+    {
+      "actual": "dd7c4111ffb025dfbdd8e1a347749f47fbc2362e31d9dacfb0ab4f8e4dfe0d8e",
+      "expected": "dd7c4111ffb025dfbdd8e1a347749f47fbc2362e31d9dacfb0ab4f8e4dfe0d8e",
+      "ok": true,
+      "path": "data/procedural_65536.manifest.json"
+    },
+    {
+      "actual": "a650a8005225577e9b377b7d45304b03ee4cdb01ee75e38dea8d2f00c1c39a16",
+      "expected": "a650a8005225577e9b377b7d45304b03ee4cdb01ee75e38dea8d2f00c1c39a16",
+      "ok": true,
+      "path": "data/procedural_65536_240f.build.txt"
+    },
+    {
+      "actual": "41ef01fd9743c961bb831258b4cbb6e94a4d75fc2d6c9f8fffccd4be10c2263d",
+      "expected": "41ef01fd9743c961bb831258b4cbb6e94a4d75fc2d6c9f8fffccd4be10c2263d",
+      "ok": true,
+      "path": "data/procedural_65536_240f.inspect.txt"
+    },
+    {
+      "actual": "eb0680b72a3a5f6b2cc9f05a1f60a6a09a858bb6d831f63de275f7b3aa0f4fe9",
+      "expected": "eb0680b72a3a5f6b2cc9f05a1f60a6a09a858bb6d831f63de275f7b3aa0f4fe9",
+      "ok": true,
+      "path": "data/procedural_65536_240f.klsc"
+    },
+    {
+      "actual": "5c3280ff80c9c6069cb93d65cf9ee3941936df5232d3a45e469f4f342106c3ca",
+      "expected": "5c3280ff80c9c6069cb93d65cf9ee3941936df5232d3a45e469f4f342106c3ca",
+      "ok": true,
+      "path": "data/procedural_65536_240f.manifest.json"
+    },
+    {
+      "actual": "8841afb164b88f063d8fa7f469a9e986a4f25bfdabfe8eed3ec1d176eb051a78",
+      "expected": "8841afb164b88f063d8fa7f469a9e986a4f25bfdabfe8eed3ec1d176eb051a78",
+      "ok": true,
+      "path": "docs/ARCHITECTURE_MAPPING.md"
+    },
+    {
+      "actual": "99a363e4daa6abc5495afe49de2c9f9a18c26c54c21d6fe2ce7ceab96bf26467",
+      "expected": "99a363e4daa6abc5495afe49de2c9f9a18c26c54c21d6fe2ce7ceab96bf26467",
+      "ok": true,
+      "path": "docs/CURRENT_DEPLOYMENT_ANALYSIS.md"
+    },
+    {
+      "actual": "b5f374bdbbe94a25ccbd1ba6ab81aec93d2233f484629de0b428835f7fed9a1a",
+      "expected": "b5f374bdbbe94a25ccbd1ba6ab81aec93d2233f484629de0b428835f7fed9a1a",
+      "ok": true,
+      "path": "docs/FILE_FORMAT_KLOC1.md"
+    },
+    {
+      "actual": "14e1b1c81a64419ac3a00ac535f3961617b831574905ac9e9919bb6a05758785",
+      "expected": "14e1b1c81a64419ac3a00ac535f3961617b831574905ac9e9919bb6a05758785",
+      "ok": true,
+      "path": "docs/FILE_FORMAT_KLSC1.md"
+    },
+    {
+      "actual": "62097bd12ba674115129221006b21d7b322d50ade8b80a4e20f5f70cce318fc4",
+      "expected": "62097bd12ba674115129221006b21d7b322d50ade8b80a4e20f5f70cce318fc4",
+      "ok": true,
+      "path": "docs/ORBIT_DEPLOYMENT.md"
+    },
+    {
+      "actual": "4fb371ab580869b5bda7f1f0a397cc9151fc8c1bf82e5342fe21a33c741c5f25",
+      "expected": "4fb371ab580869b5bda7f1f0a397cc9151fc8c1bf82e5342fe21a33c741c5f25",
+      "ok": true,
+      "path": "docs/SEEDCHAIN_DEPLOYMENT.md"
+    },
+    {
+      "actual": "cc7dacb0bc0b0ee6cad7093cc88de1f8a7404e2f6c168de1fb1ed23839750f21",
+      "expected": "cc7dacb0bc0b0ee6cad7093cc88de1f8a7404e2f6c168de1fb1ed23839750f21",
+      "ok": true,
+      "path": "docs/SOURCE_REGISTER.md"
+    },
+    {
+      "actual": "65a3f19d464357bb07fe6b7e791e045adaa1d0cb72b78dd641fb4b023117443b",
+      "expected": "65a3f19d464357bb07fe6b7e791e045adaa1d0cb72b78dd641fb4b023117443b",
+      "ok": true,
+      "path": "docs/VALIDATION.md"
+    },
+    {
+      "actual": "8c66449b07606f2c00ca50a0296286bdfe828b221e0b709dea3fbd85706b1d1c",
+      "expected": "8c66449b07606f2c00ca50a0296286bdfe828b221e0b709dea3fbd85706b1d1c",
+      "ok": true,
+      "path": "include/klb/core.hpp"
+    },
+    {
+      "actual": "56cf9c59fe3611ea9476e5a0a79fc65fcd7c5d54aa630b326235f043a50f5d24",
+      "expected": "56cf9c59fe3611ea9476e5a0a79fc65fcd7c5d54aa630b326235f043a50f5d24",
+      "ok": true,
+      "path": "include/klb/format.hpp"
+    },
+    {
+      "actual": "e782d31bd729a7fbe8825f64dae74fc220d305a60d9fa6dc41d34e1738c1aab1",
+      "expected": "e782d31bd729a7fbe8825f64dae74fc220d305a60d9fa6dc41d34e1738c1aab1",
+      "ok": true,
+      "path": "include/klb/orbit.hpp"
+    },
+    {
+      "actual": "f2a9b44bf850a4c0cde322ecc61aa24ff4ad2efb926ae5b717d8b778a22f3711",
+      "expected": "f2a9b44bf850a4c0cde322ecc61aa24ff4ad2efb926ae5b717d8b778a22f3711",
+      "ok": true,
+      "path": "include/klb/ply.hpp"
+    },
+    {
+      "actual": "ea45cfa47df8f3916904c0cee37eb2f3e70ad8282aae8f9442bde5c13be16637",
+      "expected": "ea45cfa47df8f3916904c0cee37eb2f3e70ad8282aae8f9442bde5c13be16637",
+      "ok": true,
+      "path": "include/klb/seedchain.hpp"
+    },
+    {
+      "actual": "d7e4239f49884769a60119ec309326c87ef915ef040d56dba7e9301ff9346a5f",
+      "expected": "d7e4239f49884769a60119ec309326c87ef915ef040d56dba7e9301ff9346a5f",
+      "ok": true,
+      "path": "scripts/build_linux.sh"
+    },
+    {
+      "actual": "9aa05103ed09bf3eed6410dbb1e6f6edd588b7c59b7aadf99fb45342937e6c55",
+      "expected": "9aa05103ed09bf3eed6410dbb1e6f6edd588b7c59b7aadf99fb45342937e6c55",
+      "ok": true,
+      "path": "scripts/build_windows.ps1"
+    },
+    {
+      "actual": "54f5c31f0427d3b17a5676e398e0b84a88fa7dcf822b36576a7d12bc20f96196",
+      "expected": "54f5c31f0427d3b17a5676e398e0b84a88fa7dcf822b36576a7d12bc20f96196",
+      "ok": true,
+      "path": "scripts/demo_orbit_linux.sh"
+    },
+    {
+      "actual": "f7f52f0d3d2c8b9f9c78be45967e9e0b69cb9acfd5fbce680aa8ebc9ed9f5916",
+      "expected": "f7f52f0d3d2c8b9f9c78be45967e9e0b69cb9acfd5fbce680aa8ebc9ed9f5916",
+      "ok": true,
+      "path": "scripts/demo_orbit_windows.ps1"
+    },
+    {
+      "actual": "da82cb746c90e236c33abfb1d096ac656f851e007b2a2a305082edbc7345c3cc",
+      "expected": "da82cb746c90e236c33abfb1d096ac656f851e007b2a2a305082edbc7345c3cc",
+      "ok": true,
+      "path": "scripts/demo_seedchain_linux.sh"
+    },
+    {
+      "actual": "36ef30937f262729ae3bfa7b3e012212242bd874b54203fa61f15543f92f7cfe",
+      "expected": "36ef30937f262729ae3bfa7b3e012212242bd874b54203fa61f15543f92f7cfe",
+      "ok": true,
+      "path": "scripts/demo_seedchain_windows.ps1"
+    },
+    {
+      "actual": "cf742493ec62f6a5a7eba752dfa3044a0f7066b9fe0bb749dfd8de0e5f9acb81",
+      "expected": "cf742493ec62f6a5a7eba752dfa3044a0f7066b9fe0bb749dfd8de0e5f9acb81",
+      "ok": true,
+      "path": "scripts/fetch_bunny_linux.sh"
+    },
+    {
+      "actual": "7a3e35ff9ddf6270928410f47d609e13f6b0057ff2b96a8816b65fb756db711b",
+      "expected": "7a3e35ff9ddf6270928410f47d609e13f6b0057ff2b96a8816b65fb756db711b",
+      "ok": true,
+      "path": "scripts/fetch_bunny_windows.ps1"
+    },
+    {
+      "actual": "6c148e17910aea3af73a2f8ae393832e8037954f067dfe8299987b45f2129456",
+      "expected": "6c148e17910aea3af73a2f8ae393832e8037954f067dfe8299987b45f2129456",
+      "ok": true,
+      "path": "scripts/fetch_gps_ops_linux.sh"
+    },
+    {
+      "actual": "2c46005fcbc18fc718c3cc25751bd61b35272e1ccf6591f849ff49d51894d471",
+      "expected": "2c46005fcbc18fc718c3cc25751bd61b35272e1ccf6591f849ff49d51894d471",
+      "ok": true,
+      "path": "scripts/fetch_gps_ops_windows.ps1"
+    },
+    {
+      "actual": "1867d39835273ff934ce1f06375da20c20404033f9f6415341eb0c3c360934a5",
+      "expected": "1867d39835273ff934ce1f06375da20c20404033f9f6415341eb0c3c360934a5",
+      "ok": true,
+      "path": "scripts/fit_sequence_linux.sh"
+    },
+    {
+      "actual": "ae9f8ee9ee198c30b47ee1d3a7a7af331e16fb892e7f797a577652c5ff734846",
+      "expected": "ae9f8ee9ee198c30b47ee1d3a7a7af331e16fb892e7f797a577652c5ff734846",
+      "ok": true,
+      "path": "scripts/fit_sequence_windows.ps1"
+    },
+    {
+      "actual": "29aafef646ab5f4110e1f2e02638659849908b597e2274b9f9f9de512d045d5a",
+      "expected": "29aafef646ab5f4110e1f2e02638659849908b597e2274b9f9f9de512d045d5a",
+      "ok": true,
+      "path": "scripts/profile_linux.sh"
+    },
+    {
+      "actual": "53c66c74d90acba73746f42684c7cb7a9e13e782bd3908493dcad7beeacedac8",
+      "expected": "53c66c74d90acba73746f42684c7cb7a9e13e782bd3908493dcad7beeacedac8",
+      "ok": true,
+      "path": "scripts/profile_orbit_linux.sh"
+    },
+    {
+      "actual": "2084855438e6a0ac78ec9c4beeb7b55c7dfdac11a2d9fb7fea184450da429fb8",
+      "expected": "2084855438e6a0ac78ec9c4beeb7b55c7dfdac11a2d9fb7fea184450da429fb8",
+      "ok": true,
+      "path": "scripts/profile_orbit_windows.ps1"
+    },
+    {
+      "actual": "9b69ce8934ec533bfb9a5fe0b86516cabfbedfd1a181b5ec1ed12a2dd06a6150",
+      "expected": "9b69ce8934ec533bfb9a5fe0b86516cabfbedfd1a181b5ec1ed12a2dd06a6150",
+      "ok": true,
+      "path": "scripts/profile_seedchain_linux.sh"
+    },
+    {
+      "actual": "5f9f1af98c9e4181d784c77875b34ba47e5ad0ee42ec3485aa54575de2dd74c7",
+      "expected": "5f9f1af98c9e4181d784c77875b34ba47e5ad0ee42ec3485aa54575de2dd74c7",
+      "ok": true,
+      "path": "scripts/profile_seedchain_windows.ps1"
+    },
+    {
+      "actual": "2bfc14537a23966a2a9306042544eb3092703a2089872a054f8e97b91ddd4120",
+      "expected": "2bfc14537a23966a2a9306042544eb3092703a2089872a054f8e97b91ddd4120",
+      "ok": true,
+      "path": "scripts/profile_windows.ps1"
+    },
+    {
+      "actual": "28ab3b1f645869d37292192be6b1ce868685327cb43ad70fd2e3e6b20a1c28ea",
+      "expected": "28ab3b1f645869d37292192be6b1ce868685327cb43ad70fd2e3e6b20a1c28ea",
+      "ok": true,
+      "path": "scripts/stress_orbit_linux.sh"
+    },
+    {
+      "actual": "7852da9ee889ef7c4aaf48a9c3ed71901ecc9dfcb6acf4195fd0496a6722509a",
+      "expected": "7852da9ee889ef7c4aaf48a9c3ed71901ecc9dfcb6acf4195fd0496a6722509a",
+      "ok": true,
+      "path": "scripts/stress_orbit_windows.ps1"
+    },
+    {
+      "actual": "f15eeb4d752c7feddb6a891eb14621feece15afebe86e3a4c32e4ab2c688d3be",
+      "expected": "f15eeb4d752c7feddb6a891eb14621feece15afebe86e3a4c32e4ab2c688d3be",
+      "ok": true,
+      "path": "src/bench.cu"
+    },
+    {
+      "actual": "5c04a305f21089b58035498ff392a30026adba90b74de130127780bf2a083be2",
+      "expected": "5c04a305f21089b58035498ff392a30026adba90b74de130127780bf2a083be2",
+      "ok": true,
+      "path": "src/format.cpp"
+    },
+    {
+      "actual": "c52c9454dcd55ffeefc4d91f841efe54d8fc5095c98b6b27a3fd6d3d5dd294cc",
+      "expected": "c52c9454dcd55ffeefc4d91f841efe54d8fc5095c98b6b27a3fd6d3d5dd294cc",
+      "ok": true,
+      "path": "src/orbit.cpp"
+    },
+    {
+      "actual": "5c2eefa705ca61c23edecbc2dfdf88f6fdd6375c70225b50ca5b8351d78dd48c",
+      "expected": "5c2eefa705ca61c23edecbc2dfdf88f6fdd6375c70225b50ca5b8351d78dd48c",
+      "ok": true,
+      "path": "src/orbit_bench.cu"
+    },
+    {
+      "actual": "b56a51f0e9cbbe906910f9a4e916299003f3441754ef45b4a9eba84030427ab4",
+      "expected": "b56a51f0e9cbbe906910f9a4e916299003f3441754ef45b4a9eba84030427ab4",
+      "ok": true,
+      "path": "src/orbit_main.cpp"
+    },
+    {
+      "actual": "509b92b8ae491583ce19a6143ea9809c6b0e3f3513278519e72662739ef28b7a",
+      "expected": "509b92b8ae491583ce19a6143ea9809c6b0e3f3513278519e72662739ef28b7a",
+      "ok": true,
+      "path": "src/pack_main.cpp"
+    },
+    {
+      "actual": "783b751b3866685d7607f38239d8cf642dafc55294964d2fb3b063f06bbb4716",
+      "expected": "783b751b3866685d7607f38239d8cf642dafc55294964d2fb3b063f06bbb4716",
+      "ok": true,
+      "path": "src/ply.cpp"
+    },
+    {
+      "actual": "0d74224dc643d4307f19e7c8e313fd6daae15706bc54c315de495266fd788200",
+      "expected": "0d74224dc643d4307f19e7c8e313fd6daae15706bc54c315de495266fd788200",
+      "ok": true,
+      "path": "src/seedchain.cpp"
+    },
+    {
+      "actual": "4098ca3aeafd67565d5f204d7b6cddd5ef69ae15f75012779f6fe87383590dbe",
+      "expected": "4098ca3aeafd67565d5f204d7b6cddd5ef69ae15f75012779f6fe87383590dbe",
+      "ok": true,
+      "path": "src/seedchain_bench.cu"
+    },
+    {
+      "actual": "19c7c051eccf12031ee5b55a4671124db374b1c9bdb5a27f4a428f4ea992cb29",
+      "expected": "19c7c051eccf12031ee5b55a4671124db374b1c9bdb5a27f4a428f4ea992cb29",
+      "ok": true,
+      "path": "src/seedchain_main.cpp"
+    },
+    {
+      "actual": "2084a9217dfe6d21dd2d18aaeb637ed64086a68b9bc7e84b01c3773e85768a0e",
+      "expected": "2084a9217dfe6d21dd2d18aaeb637ed64086a68b9bc7e84b01c3773e85768a0e",
+      "ok": true,
+      "path": "tests/test_cpu.cpp"
+    },
+    {
+      "actual": "b2ac0d8f72a9d306483c0cb9a8e81baca8b22ac6f808a074b264b6bd03a8ef5a",
+      "expected": "b2ac0d8f72a9d306483c0cb9a8e81baca8b22ac6f808a074b264b6bd03a8ef5a",
+      "ok": true,
+      "path": "tests/test_orbit.cpp"
+    },
+    {
+      "actual": "1d0901018f34edabd4a253bf03f0de6d6ed6559105b4c3890ef5762a2cbb6663",
+      "expected": "1d0901018f34edabd4a253bf03f0de6d6ed6559105b4c3890ef5762a2cbb6663",
+      "ok": true,
+      "path": "tools/make_frame_list.py"
+    },
+    {
+      "actual": "c5dc90ef2eb2d7157dd204b8ac3569cbeb739e5b422b2eecfa25f5b99cc3c5e6",
+      "expected": "c5dc90ef2eb2d7157dd204b8ac3569cbeb739e5b422b2eecfa25f5b99cc3c5e6",
+      "ok": true,
+      "path": "tools/xyz_to_ply.py"
+    },
+    {
+      "actual": "3f57c05a42091c8fdfa1c2012d7ec09f012a87f070647422022594cf94f55640",
+      "expected": "3f57c05a42091c8fdfa1c2012d7ec09f012a87f070647422022594cf94f55640",
+      "ok": true,
+      "path": "validation/CPU_VALIDATION.txt"
+    },
+    {
+      "actual": "3b75ca40e81a75fdc2b389f85c9df0a9c312a395a7af42ab4a6ed25c76083565",
+      "expected": "3b75ca40e81a75fdc2b389f85c9df0a9c312a395a7af42ab4a6ed25c76083565",
+      "ok": true,
+      "path": "validation/CUDA_SYNTAX_VALIDATION.txt"
+    }
+  ],
+  "overall_status": "PASS_WITH_DOCUMENTED_FULL_HORIZON_SUPPORT_BOUNDARY",
+  "package_version": "1.0.0",
+  "report_schema": "tom-klootwijk-cuda-gpu-validation-v1",
+  "result_summaries": {
+    "file": {
+      "compute_capability": "12.0",
+      "counter_tuples": {
+        "compact_dense_events": [
+          19353600,
+          19214154,
+          19214154,
+          717
+        ],
+        "compact_seed_events": [
+          19353600,
+          19214154,
+          19214154,
+          717
+        ],
+        "materialize_plus_query": [
+          19353600,
+          19214154,
+          19214154,
+          717
+        ],
+        "query_dense": [
+          19353600,
+          19214154,
+          19214154,
+          717
+        ],
+        "query_seed_direct": [
+          19353600,
+          19214154,
+          19214154,
+          717
+        ]
+      },
+      "dense_bytes": 309658112,
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "direct_vs_end_to_end_dense_p50_ratio": 0.9907093369556925,
+      "direct_vs_resident_dense_p50_ratio": 4.695656633569195,
+      "effective_sample_ms_from_p50_x_inner_repeats": {
+        "compact_dense_events": 156.12594604475,
+        "compact_seed_events": 145.75984191906,
+        "materialize_dense": 150.02943420416,
+        "materialize_plus_query": 111.70780944810001,
+        "query_dense": 193.262374877958,
+        "query_seed_direct": 154.93795776354
+      },
+      "event_count": 717,
+      "problems": [],
+      "row_count": 6
+    },
+    "laptop": {
+      "compute_capability": "12.0",
+      "counter_tuples": {
+        "compact_dense_events": [
+          33554432,
+          33311183,
+          33311183,
+          1243
+        ],
+        "compact_seed_events": [
+          33554432,
+          33311183,
+          33311183,
+          1243
+        ],
+        "materialize_plus_query": [
+          33554432,
+          33311183,
+          33311183,
+          1243
+        ],
+        "query_dense": [
+          33554432,
+          33311183,
+          33311183,
+          1243
+        ],
+        "query_seed_direct": [
+          33554432,
+          33311183,
+          33311183,
+          1243
+        ]
+      },
+      "dense_bytes": 536871424,
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "direct_vs_end_to_end_dense_p50_ratio": 0.9780631554316311,
+      "direct_vs_resident_dense_p50_ratio": 4.483467568039606,
+      "effective_sample_ms_from_p50_x_inner_repeats": {
+        "compact_dense_events": 263.6575012206,
+        "compact_seed_events": 232.37426757802,
+        "materialize_dense": 244.39782714856,
+        "materialize_plus_query": 229.72409057619998,
+        "query_dense": 290.36663818457,
+        "query_seed_direct": 257.72653198227
+      },
+      "event_count": 1243,
+      "problems": [],
+      "row_count": 6
+    },
+    "vram": {
+      "compute_capability": "12.0",
+      "counter_tuples": {
+        "compact_dense_events": [
+          134217728,
+          133241751,
+          133241751,
+          4970
+        ],
+        "compact_seed_events": [
+          134217728,
+          133241751,
+          133241751,
+          4970
+        ],
+        "materialize_plus_query": [
+          134217728,
+          133241751,
+          133241751,
+          4970
+        ],
+        "query_dense": [
+          134217728,
+          133241751,
+          133241751,
+          4970
+        ],
+        "query_seed_direct": [
+          134217728,
+          133241751,
+          133241751,
+          4970
+        ]
+      },
+      "dense_bytes": 2147484160,
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "direct_vs_end_to_end_dense_p50_ratio": 0.9750400310061009,
+      "direct_vs_resident_dense_p50_ratio": 4.512259757435885,
+      "effective_sample_ms_from_p50_x_inner_repeats": {
+        "compact_dense_events": 274.58532714844,
+        "compact_seed_events": 270.116485596,
+        "materialize_dense": 256.2764892576,
+        "materialize_plus_query": 271.796295166,
+        "query_dense": 305.40435791008,
+        "query_seed_direct": 265.012268066
+      },
+      "event_count": 4970,
+      "problems": [],
+      "row_count": 6
+    }
+  },
+  "scope_boundary": {
+    "not_validated": [
+      "a new GPU run inside this audit environment",
+      "cryptographic attestation that supplied logs were not edited before upload",
+      "SGP4 or navigation-grade orbital accuracy",
+      "safety-critical operation",
+      "universal performance advantage"
+    ],
+    "validated": [
+      "source manifest integrity",
+      "fresh CPU compilation and unit tests",
+      "fresh deterministic 7-day CPU output reproduction",
+      "CUDA 12.8 sm_120/compute_120 compilation evidence",
+      "presence of NVIDIA fatbinary sections in supplied PE executables",
+      "internal consistency of three GPU benchmark CSVs",
+      "documented CPU/GPU prefix oracle, direct/dense event parity, no truncation",
+      "Compute Sanitizer zero-error report",
+      "nvidia-smi telemetry and Nsight Compute artifact presence"
+    ]
+  },
+  "telemetry_summary": {
+    "demo": {
+      "active_power_average_w": 132.00621621621622,
+      "active_samples": 37,
+      "active_sm_clock_average_mhz": 2590.2162162162163,
+      "device_names": [
+        "NVIDIA GeForce RTX 5070 Ti Laptop GPU"
+      ],
+      "first_timestamp": "2026/08/16 15:30:36.167",
+      "last_timestamp": "2026/08/16 15:30:51.606",
+      "memory_max_mib": 870.0,
+      "power_max_w": 143.51,
+      "samples": 72,
+      "temperature_max_c": 75.0,
+      "utilization_max_pct": 100.0
+    },
+    "laptop": {
+      "active_power_average_w": 133.6946153846154,
+      "active_samples": 78,
+      "active_sm_clock_average_mhz": 2558.730769230769,
+      "device_names": [
+        "NVIDIA GeForce RTX 5070 Ti Laptop GPU"
+      ],
+      "first_timestamp": "2026/08/16 15:31:23.217",
+      "last_timestamp": "2026/08/16 15:31:42.327",
+      "memory_max_mib": 1090.0,
+      "power_max_w": 140.12,
+      "samples": 90,
+      "temperature_max_c": 79.0,
+      "utilization_max_pct": 100.0
+    },
+    "vram": {
+      "active_power_average_w": 134.8132558139535,
+      "active_samples": 86,
+      "active_sm_clock_average_mhz": 2590.046511627907,
+      "device_names": [
+        "NVIDIA GeForce RTX 5070 Ti Laptop GPU"
+      ],
+      "first_timestamp": "2026/08/16 15:31:55.837",
+      "last_timestamp": "2026/08/16 15:32:16.611",
+      "memory_max_mib": 2626.0,
+      "power_max_w": 140.32,
+      "samples": 98,
+      "temperature_max_c": 84.0,
+      "utilization_max_pct": 100.0
+    }
+  }
+}

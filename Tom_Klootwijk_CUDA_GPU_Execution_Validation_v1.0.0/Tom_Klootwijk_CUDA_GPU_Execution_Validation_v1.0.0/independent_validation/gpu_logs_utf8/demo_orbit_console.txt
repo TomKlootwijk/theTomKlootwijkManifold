@@ -1,0 +1,135 @@
+Format                      : KLOC1 v1
+Predictor                   : Kepler + compiled secular J2 rates (coarse)
+Reference epoch             : 2026-08-16T05:33:12.693024Z
+Source label                : CelesTrak GP OMM CSV / GPS-OPS
+Source bytes                : 4852
+Source FNV-1a64             : 0x56eb74ff9610d21b
+Container bytes             : 3809
+Orbit seeds                 : 32
+Hash-linked timeline nodes  : 7
+Timeline duration           : 604800.000000 s
+Timeline step               : 1.000000 s
+Timeline state samples      : 604801
+Equivalent dense float4     : 309658112 bytes
+Horizon-relative ratio      : 81296.432659x
+Terminal chain hash         : 0x2ccf05789110dcd6
+Payload hash                : 0x4b0bdd3e929c3d08
+Default elevation mask      : 9.999999 degrees
+
+Seed preview:
+  [0] NORAD 26407, PRN 22, route 4, a=26560.830078 km, e=0.011950, GPS BIIR-5  (PRN 22) | 2000-040A
+  [1] NORAD 27663, PRN 16, route 4, a=26560.898438 km, e=0.014916, GPS BIIR-8  (PRN 16) | 2003-005A
+  [2] NORAD 28190, PRN 19, route 5, a=26561.318359 km, e=0.011810, GPS BIIR-11 (PRN 19) | 2004-009A
+  [3] NORAD 28474, PRN 2, route 5, a=26560.792969 km, e=0.017099, GPS BIIR-13 (PRN 02) | 2004-045A
+  [4] NORAD 28874, PRN 17, route 5, a=26560.525391 km, e=0.012862, GPS BIIRM-1 (PRN 17) | 2005-038A
+  [5] NORAD 29486, PRN 31, route 2, a=26560.085938 km, e=0.010806, GPS BIIRM-2 (PRN 31) | 2006-042A
+KLOC1 hash chain and payload : valid
+Seeds checked                : 32
+Sampled ECI radius range     : 26071.4 .. 27048.3 km
+Model boundary               : coarse benchmark predictor; not SGP4/navigation
+powershell.exe : KLOC1 coarse visibility schedule
+At line:2 char:436
++ ... nsole.txt'; & powershell -ExecutionPolicy Bypass -File .\scripts\demo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (KLOC1 coarse visibility schedule:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  intervals              : 604800
+  seeds                  : 32
+  candidate intervals    : 19353600
+  support survivors      : 19214155
+  compatible survivors   : 19214155
+  visible samples        : 5498030
+  acquisition/loss events: 717
+  model boundary         : coarse Kepler+J2; not SGP4/navigation
+Device                      : NVIDIA GeForce RTX 5070 Ti Laptop GPU
+Compute capability          : 12.0
+CUDA global memory          : 12226.562500 MiB
+Reported L2                 : 36864.000000 KiB
+SM count                    : 46
+Memory bus width            : 192 bits
+Predictor                   : coarse Kepler + compiled secular J2
+Reference epoch             : 2026-08-16T05:33:12.693024Z
+Seeds / chain nodes         : 32 / 7
+Query                       : crossing
+Epochs/intervals            : 604800
+Candidates                  : 19353600
+Dense float4 positions      : 19353632
+Dense working set           : 295.312988 MiB
+KLOC1 container             : 3809 bytes
+Working-set ratio           : 81296.432659x
+Auto-wrap stress timeline   : disabled
+Station                     : 52.000000, 5.000000 deg
+Elevation guard             : 10.000000 deg
+CPU/GPU oracle prefix       : 4096 epochs, exact counters
+Compacted event-set match   : 717 sorted events
+
+Mode                        : query_seed_direct
+p50 / p95 / p99             : 3.688999 / 3.704630 / 3.704630 ms
+Inner repeats               : 42
+Rate                        : 5246.301240 M candidates/s
+Candidates                  : 19353600
+Support survivors           : 19214154
+Compatible survivors        : 19214154
+Verified states/events      : 717
+Verified yield              : 0.003705%
+
+Mode                        : materialize_dense
+p50 / p95 / p99             : 3.061825 / 3.082572 / 3.082572 ms
+Inner repeats               : 49
+Rate                        : 6320.946107 M candidates/s
+Logical traffic             : 101.135138 GB/s
+
+Mode                        : query_dense
+p50 / p95 / p99             : 0.785619 / 0.809060 / 0.809060 ms
+Inner repeats               : 246
+Rate                        : 24634.829221 M candidates/s
+Logical traffic             : 788.314535 GB/s
+Candidates                  : 19353600
+Support survivors           : 19214154
+Compatible survivors        : 19214154
+Verified states/events      : 717
+Verified yield              : 0.003705%
+
+Mode                        : materialize_plus_query
+p50 / p95 / p99             : 3.723594 / 4.009174 / 4.009174 ms
+Inner repeats               : 30
+Rate                        : 5197.559623 M candidates/s
+Logical traffic             : 249.482862 GB/s
+Candidates                  : 19353600
+Support survivors           : 19214154
+Compatible survivors        : 19214154
+Verified states/events      : 717
+Verified yield              : 0.003705%
+
+Mode                        : compact_seed_events
+p50 / p95 / p99             : 4.287054 / 4.303504 / 4.303504 ms
+Inner repeats               : 34
+Rate                        : 4514.428606 M candidates/s
+Candidates                  : 19353600
+Support survivors           : 19214154
+Compatible survivors        : 19214154
+Verified states/events      : 717
+Verified yield              : 0.003705%
+Compacted event count       : 717
+Event output truncated      : no
+
+Mode                        : compact_dense_events
+p50 / p95 / p99             : 1.290297 / 1.337530 / 1.337530 ms
+Inner repeats               : 121
+Rate                        : 14999.336493 M candidates/s
+Candidates                  : 19353600
+Support survivors           : 19214154
+Compatible survivors        : 19214154
+Verified states/events      : 717
+Verified yield              : 0.003705%
+Compacted event count       : 717
+Event output truncated      : no
+
+Direct seed / dense p50     : 4.695657x
+Dense / direct rate         : 4.695657x
+
+Acceptance boundary         : promote only if measured memory savings justify
+                              predictor cost at the required error budget.
+Results: C:\Users\Tom\Documents\TomKlootwijkVentureCorp\Klootwijk\klb_seedchain_gpu_v0.3.0\klb_seedchain_gpu_v0.3.0\orbit_file_results.csv
+Coarse pass schedule: C:\Users\Tom\Documents\TomKlootwijkVentureCorp\Klootwijk\klb_seedchain_gpu_v0.3.0\klb_seedchain_gpu_v0.3.0\orbit_pass_events_rebuilt.csv

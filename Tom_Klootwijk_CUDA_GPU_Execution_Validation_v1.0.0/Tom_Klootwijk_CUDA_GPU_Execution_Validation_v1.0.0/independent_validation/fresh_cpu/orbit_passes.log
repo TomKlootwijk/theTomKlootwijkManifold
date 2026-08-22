@@ -1,0 +1,33 @@
+$ /mnt/data/klb_gpu_audit_build_cpu/klb_orbit passes /mnt/data/klb_gpu_src/klb_seedchain_gpu_v0.3.0/data/orbit/gps_ops_2026-08-16_7d_1s.kloc --lat 52 --lon 5 --alt-km 0.05 --elevation-deg 10 --crossing-band-deg 0.25 --hours 168 --step-seconds 1 --output /mnt/data/orbit_pass_events_fresh.csv
+KLOC1 coarse visibility schedule
+  intervals              : 604800
+  seeds                  : 32
+  candidate intervals    : 19353600
+  support survivors      : 19214155
+  compatible survivors   : 19214155
+  visible samples        : 5498030
+  acquisition/loss events: 717
+  model boundary         : coarse Kepler+J2; not SGP4/navigation
+	Command being timed: "/mnt/data/klb_gpu_audit_build_cpu/klb_orbit passes /mnt/data/klb_gpu_src/klb_seedchain_gpu_v0.3.0/data/orbit/gps_ops_2026-08-16_7d_1s.kloc --lat 52 --lon 5 --alt-km 0.05 --elevation-deg 10 --crossing-band-deg 0.25 --hours 168 --step-seconds 1 --output /mnt/data/orbit_pass_events_fresh.csv"
+	User time (seconds): 5.82
+	System time (seconds): 0.00
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.83
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4108
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 164
+	Voluntary context switches: 1
+	Involuntary context switches: 19
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 184
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,235 @@
+{
+  "schema": "tkm-render-1.0",
+  "title": "Tom Klootwijk Manifold numerical rendering instance",
+  "attribution": {
+    "name": "Tom Klootwijk",
+    "requester_supplied_identifier": "NL200678942",
+    "requester_supplied_date_of_birth": "1990-07-10",
+    "verification_status": "requester-supplied-not-independently-verified"
+  },
+  "ambient": {
+    "dimension": 7,
+    "coordinates": [
+      "x",
+      "y",
+      "z",
+      "time",
+      "phase",
+      "route_lift",
+      "profile"
+    ],
+    "model": "R3_position x R_time x S1_phase x R_route_lift x R_profile",
+    "metric": "Euclidean product metric for this rendering instance"
+  },
+  "field": {
+    "kind": "generic implicit field",
+    "domain": "p != 0 and |profile| <= 1",
+    "formula": "f(p,h)=||p||-R(p/||p||,h)",
+    "axis_basis": "g_j(n)=(13*(n dot d_j)^12-1)/12",
+    "axis_term": "L(n,h)=(1/7)*sum_j w_j(h)*g_j(n)",
+    "ternary_term": "H=0.72 Re((nx+i ny)^3 e^{i a}) + 0.20 Re((nx+i ny)^9 e^{i b}) + 0.08 Re((nx+i ny)^27 e^{i c})",
+    "vertical_term": "C=(1-nz^2) sin(4 nz + route_lift + 0.25 time)",
+    "radius": "R=1+1.50 L+0.18 H+0.07 C",
+    "zero_level": 0.0,
+    "exact_sdf_claim": false,
+    "regularity_required": true
+  },
+  "projection": {
+    "description": "Fixed 3x7 Fourier projection of the seven orthogonal ambient basis axes",
+    "matrix_rows_are_orthonormal": true,
+    "matrix": [
+      [
+        0.5345224838248488,
+        0.3332693175289931,
+        -0.11894244232135427,
+        -0.4815881171200631,
+        -0.48158811712006316,
+        -0.11894244232135441,
+        0.33326931752899297
+      ],
+      [
+        0.0,
+        0.417906505941275,
+        0.5211208891696024,
+        0.23192061392432994,
+        -0.2319206139243298,
+        -0.5211208891696024,
+        -0.4179065059412751
+      ],
+      [
+        0.5345224838248488,
+        -0.11894244232135427,
+        -0.48158811712006316,
+        0.33326931752899297,
+        0.3332693175289932,
+        -0.48158811712006305,
+        -0.11894244232135454
+      ]
+    ],
+    "normalized_axis_images": [
+      [
+        0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      [
+        0.6086041538445832,
+        0.7631654702578777,
+        -0.2172083076891662
+      ],
+      [
+        -0.16531884035945044,
+        0.7243091650316422,
+        -0.669362319281099
+      ],
+      [
+        -0.7645385442575048,
+        0.3681823580144709,
+        0.5290770885150096
+      ],
+      [
+        -0.7645385442575048,
+        -0.36818235801447063,
+        0.5290770885150098
+      ],
+      [
+        -0.16531884035945063,
+        -0.7243091650316422,
+        -0.6693623192810989
+      ],
+      [
+        0.6086041538445829,
+        -0.7631654702578777,
+        -0.21720830768916666
+      ]
+    ]
+  },
+  "address": {
+    "decimal_label": 943,
+    "alphabet": [
+      0,
+      1,
+      2
+    ],
+    "ternary_symbols": [
+      1,
+      0,
+      2,
+      1,
+      2,
+      2,
+      1
+    ],
+    "reserved_quaternary_code": 3,
+    "semantic_role": "bounded parameter/address selector; not topology and not a one-bit mutation claim"
+  },
+  "visible_slice": {
+    "time": 0.0,
+    "phase": 0.4,
+    "route_lift": -0.6,
+    "profile": 0.5
+  },
+  "flow": {
+    "family": "bounded deterministic closed expression",
+    "time_parameter": "tau in [0,2pi)",
+    "phase": "0.40+0.42 sin(tau)",
+    "route_lift": "-0.60+0.28 cos(0.70 tau)",
+    "profile": "0.55 sin(0.50 tau)"
+  },
+  "route_and_event": {
+    "direction": "n(s)=(cos s, sin s cos 2s, sin s sin 2s)",
+    "guard": "n_z=0",
+    "verified_crossings": [
+      "s=pi/2",
+      "s=3pi/2"
+    ],
+    "tangencies_not_committed_as_crossings": [
+      "s=0",
+      "s=pi",
+      "s=2pi"
+    ]
+  },
+  "render_config": {
+    "address_decimal": 943,
+    "address_width": 7,
+    "amplitude_axes": 1.5,
+    "amplitude_ternary": 0.18,
+    "amplitude_vertical": 0.07,
+    "theta_samples_still": 181,
+    "phi_samples_still": 360,
+    "theta_samples_animation": 49,
+    "phi_samples_animation": 96,
+    "animation_frames": 48,
+    "animation_fps": 16,
+    "event_tolerance": 1e-09
+  },
+  "validation": {
+    "field_kind": "generic implicit field (not asserted to be exact signed distance)",
+    "ambient_dimension": 7,
+    "regular_boundary_dimension": 6,
+    "visible_slice_dimension": 2,
+    "zero_set_residual_max": 1.3322676295501878e-15,
+    "zero_set_residual_rms": 1.6887322517849613e-16,
+    "finite_difference_gradient_norm_min": 1.0000342812362755,
+    "finite_difference_gradient_norm_median": 1.0650622194943735,
+    "finite_difference_gradient_norm_max": 1.7873757493107,
+    "analytic_regularity_argument": "For f(p,h)=||p||-R(p/||p||,h), the radial derivative is exactly 1 on the zero set. Because the certified radius is positive, p is nonzero there; therefore df cannot vanish.",
+    "analytic_radius_lower_bound": 0.5701999999999998,
+    "sampled_radius_min": 0.6875606249299007,
+    "sampled_radius_max": 1.2553005840368814,
+    "mesh": {
+      "watertight": true,
+      "winding_consistent": true,
+      "euler_number": 2,
+      "components": 1
+    }
+  },
+  "outputs": {
+    "still": {
+      "vertices": 64442,
+      "triangles": 128880,
+      "radius_min": 0.686879929881109,
+      "radius_max": 1.2553005840368814,
+      "events": [
+        {
+          "event_id": "crossing-1",
+          "route_parameter": 1.5707963267948966,
+          "guard": "n_z=0",
+          "classification": "crossing",
+          "support": "accepted",
+          "compatibility": "accepted",
+          "residual": 9.712540157264326e-17
+        },
+        {
+          "event_id": "crossing-2",
+          "route_parameter": 4.71238898038469,
+          "guard": "n_z=0",
+          "classification": "crossing",
+          "support": "accepted",
+          "compatibility": "accepted",
+          "residual": 3.4846885196723005e-16
+        }
+      ]
+    },
+    "animation": {
+      "frames": 48,
+      "fps": 16,
+      "vertices_per_frame": 4514,
+      "triangles_per_frame": 9024,
+      "radius_min_over_frames": 0.6940998876126026,
+      "radius_max_over_frames": 1.349937026612957
+    },
+    "glb": {
+      "watertight": true,
+      "winding_consistent": true,
+      "euler_number": 2,
+      "components": 1,
+      "volume": 4.293857834074732,
+      "area": 13.982804564012254
+    },
+    "interactive_html": {
+      "vertices": 19802,
+      "triangles": 39600
+    }
+  }
+}

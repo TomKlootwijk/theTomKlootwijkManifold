@@ -1,0 +1,36 @@
+klb_orbit_bench.exe : CPU expected:
+At line:2 char:72
++ ... nsole.txt'; & .\build-cuda128-vs\Release\klb_orbit_bench.exe .\data\o ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (CPU expected::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Device                      : NVIDIA GeForce RTX 5070 Ti Laptop GPU
+Compute capability          : 12.0
+CUDA global memory          : 12226.562500 MiB
+Reported L2                 : 36864.000000 KiB
+SM count                    : 46
+Memory bus width            : 192 bits
+Predictor                   : coarse Kepler + compiled secular J2
+Reference epoch             : 2026-08-16T05:33:12.693024Z
+Seeds / chain nodes         : 32 / 7
+Query                       : crossing
+Epochs/intervals            : 604800
+Candidates                  : 19353600
+Dense float4 positions      : 19353632
+Dense working set           : 295.312988 MiB
+KLOC1 container             : 3809 bytes
+Working-set ratio           : 81296.432659x
+Auto-wrap stress timeline   : disabled
+Station                     : 52.000000, 5.000000 deg
+Elevation guard             : 10.000000 deg
+Candidates                  : 19353600
+Support survivors           : 19214155
+Compatible survivors        : 19214155
+Verified states/events      : 717
+GPU direct prefix:
+Candidates                  : 19353600
+Support survivors           : 19214154
+Compatible survivors        : 19214154
+Verified states/events      : 717
+error: CPU/GPU orbit query oracle mismatch

@@ -1,0 +1,91 @@
+Device                      : NVIDIA GeForce RTX 5070 Ti Laptop GPU
+Compute capability          : 12.0
+CUDA global memory          : 12226.562500 MiB
+Reported L2                 : 36864.000000 KiB
+SM count                    : 46
+Memory bus width            : 192 bits
+Predictor                   : coarse Kepler + compiled secular J2
+Reference epoch             : 2026-08-16T05:33:12.693024Z
+Seeds / chain nodes         : 32 / 7
+Query                       : crossing
+Epochs/intervals            : 4194304
+Candidates                  : 134217728
+Dense float4 positions      : 134217760
+Dense working set           : 2048.000488 MiB
+KLOC1 container             : 3809 bytes
+Working-set ratio           : 563792.113416x
+Auto-wrap stress timeline   : 604800.000000 s
+Station                     : 52.000000, 5.000000 deg
+Elevation guard             : 10.000000 deg
+Physical-horizon boundary   : repeated bounded timeline for load only
+CPU/GPU oracle prefix       : 4096 epochs, exact counters
+Compacted event-set match   : 4970 sorted events
+
+Mode                        : query_seed_direct
+p50 / p95 / p99             : 26.501227 / 27.129263 / 27.129263 ms
+Inner repeats               : 10
+Rate                        : 5064.585462 M candidates/s
+Candidates                  : 134217728
+Support survivors           : 133241751
+Compatible survivors        : 133241751
+Verified states/events      : 4970
+Verified yield              : 0.003703%
+
+Mode                        : materialize_dense
+p50 / p95 / p99             : 21.356374 / 21.363070 / 21.363070 ms
+Inner repeats               : 12
+Rate                        : 6284.669829 M candidates/s
+Logical traffic             : 100.554717 GB/s
+
+Mode                        : query_dense
+p50 / p95 / p99             : 5.873161 / 6.251955 / 6.251955 ms
+Inner repeats               : 52
+Rate                        : 22852.725167 M candidates/s
+Logical traffic             : 731.287205 GB/s
+Candidates                  : 134217728
+Support survivors           : 133241751
+Compatible survivors        : 133241751
+Verified states/events      : 4970
+Verified yield              : 0.003703%
+
+Mode                        : materialize_plus_query
+p50 / p95 / p99             : 27.179630 / 27.592487 / 27.592487 ms
+Inner repeats               : 10
+Rate                        : 4938.173566 M candidates/s
+Logical traffic             : 237.032331 GB/s
+Candidates                  : 134217728
+Support survivors           : 133241751
+Compatible survivors        : 133241751
+Verified states/events      : 4970
+Verified yield              : 0.003703%
+
+Mode                        : compact_seed_events
+p50 / p95 / p99             : 30.012943 / 30.021664 / 30.021664 ms
+Inner repeats               : 9
+Rate                        : 4471.994922 M candidates/s
+Candidates                  : 134217728
+Support survivors           : 133241751
+Compatible survivors        : 133241751
+Verified states/events      : 4970
+Verified yield              : 0.003703%
+Compacted event count       : 4970
+Event output truncated      : no
+
+Mode                        : compact_dense_events
+p50 / p95 / p99             : 9.806619 / 9.945424 / 9.945424 ms
+Inner repeats               : 28
+Rate                        : 13686.442837 M candidates/s
+Candidates                  : 134217728
+Support survivors           : 133241751
+Compatible survivors        : 133241751
+Verified states/events      : 4970
+Verified yield              : 0.003703%
+Compacted event count       : 4970
+Event output truncated      : no
+
+Direct seed / dense p50     : 4.512260x
+Dense / direct rate         : 4.512260x
+
+Acceptance boundary         : promote only if measured memory savings justify
+                              predictor cost at the required error budget.
+Results: C:\Users\Tom\Documents\TomKlootwijkVentureCorp\Klootwijk\klb_seedchain_gpu_v0.3.0\klb_seedchain_gpu_v0.3.0\orbit_vram_results.csv

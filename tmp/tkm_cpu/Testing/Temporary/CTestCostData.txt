@@ -1,2 +1,2 @@
-tkm_bounded_query_tests 1 0.03428
+tkm_bounded_query_tests 3 0.0033545
 ---

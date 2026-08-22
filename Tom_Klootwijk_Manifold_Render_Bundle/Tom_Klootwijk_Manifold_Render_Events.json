@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "event_id": "crossing-1",
+      "route_parameter": 1.5707963267948966,
+      "guard": "n_z=0",
+      "classification": "crossing",
+      "support": "accepted",
+      "compatibility": "accepted",
+      "residual": 9.712540157264326e-17
+    },
+    {
+      "event_id": "crossing-2",
+      "route_parameter": 4.71238898038469,
+      "guard": "n_z=0",
+      "classification": "crossing",
+      "support": "accepted",
+      "compatibility": "accepted",
+      "residual": 3.4846885196723005e-16
+    }
+  ],
+  "points": [
+    [
+      4.856270078632163e-17,
+      -0.7930890901790275,
+      9.712540157264326e-17
+    ],
+    [
+      -1.7423442598361502e-16,
+      0.9484880381016733,
+      -3.4846885196723005e-16
+    ]
+  ]
+}

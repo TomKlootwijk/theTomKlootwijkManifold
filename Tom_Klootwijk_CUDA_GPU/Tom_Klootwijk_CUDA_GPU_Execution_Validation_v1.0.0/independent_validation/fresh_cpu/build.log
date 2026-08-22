@@ -1,0 +1,22 @@
+$ cmake --build /mnt/data/klb_gpu_audit_build_cpu -j2
+[  6%] Building CXX object CMakeFiles/klb_core.dir/src/format.cpp.o
+[ 13%] Building CXX object CMakeFiles/klb_core.dir/src/ply.cpp.o
+[ 20%] Building CXX object CMakeFiles/klb_core.dir/src/seedchain.cpp.o
+[ 26%] Building CXX object CMakeFiles/klb_core.dir/src/orbit.cpp.o
+[ 33%] Linking CXX static library libklb_core.a
+[ 33%] Built target klb_core
+[ 40%] Building CXX object CMakeFiles/klb_seedchain.dir/src/seedchain_main.cpp.o
+[ 46%] Building CXX object CMakeFiles/klb_pack.dir/src/pack_main.cpp.o
+[ 53%] Linking CXX executable klb_pack
+[ 53%] Built target klb_pack
+[ 60%] Building CXX object CMakeFiles/klb_orbit.dir/src/orbit_main.cpp.o
+[ 66%] Linking CXX executable klb_seedchain
+[ 66%] Built target klb_seedchain
+[ 73%] Building CXX object CMakeFiles/klb_tests.dir/tests/test_cpu.cpp.o
+[ 80%] Linking CXX executable klb_orbit
+[ 80%] Built target klb_orbit
+[ 86%] Building CXX object CMakeFiles/klb_orbit_tests.dir/tests/test_orbit.cpp.o
+[ 93%] Linking CXX executable klb_tests
+[ 93%] Built target klb_tests
+[100%] Linking CXX executable klb_orbit_tests
+[100%] Built target klb_orbit_tests

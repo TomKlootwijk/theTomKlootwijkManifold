@@ -1,0 +1,17 @@
+{
+  "overall_status": "PASS_WITH_DOCUMENTED_FULL_HORIZON_SUPPORT_BOUNDARY",
+  "checks": {
+    "original_manifest": "PASS",
+    "fresh_cpu_build_and_tests": "PASS",
+    "fresh_cpu_full_horizon_determinism": "PASS",
+    "cuda_build_artifacts": "PASS",
+    "cuda_binary_sections": "PASS",
+    "actual_gpu_execution_evidence": "PASS",
+    "gpu_results_file": "PASS",
+    "gpu_results_laptop": "PASS",
+    "gpu_results_vram": "PASS",
+    "gpu_telemetry": "PASS",
+    "full_horizon_cpu_gpu_boundary": "DOCUMENTED_BOUNDARY",
+    "new_gpu_run_in_audit_environment": "NOT_RUN"
+  }
+}

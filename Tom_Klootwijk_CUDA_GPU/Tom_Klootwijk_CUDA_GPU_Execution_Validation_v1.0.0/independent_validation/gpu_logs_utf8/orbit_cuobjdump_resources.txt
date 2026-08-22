@@ -1,0 +1,32 @@
+
+Fatbin ptx code:
+================
+arch = sm_120
+code version = [8,7]
+host = windows
+compile_size = 64bit
+compressed
+identifier = C:/Users/Tom/Documents/TomKlootwijkVentureCorp/Klootwijk/klb_seedchain_gpu_v0.3.0/klb_seedchain_gpu_v0.3.0/src/orbit_bench.cu
+ptxasOptions = -v --generate-line-info 
+
+Fatbin elf code:
+================
+arch = sm_120
+code version = [1,8]
+host = windows
+compile_size = 64bit
+identifier = C:/Users/Tom/Documents/TomKlootwijkVentureCorp/Klootwijk/klb_seedchain_gpu_v0.3.0/klb_seedchain_gpu_v0.3.0/src/orbit_bench.cu
+
+Resource usage:
+ Common:
+  GLOBAL:24 CONSTANT[3]:32768 CONSTANT[4]:8
+ Function _ZN43_GLOBAL__N__afa43a03_14_orbit_bench_cu_main26query_dense_compact_kernelEPKNS_13DensePositionEyNS_11DeviceQueryEPNS_13OrbitCountersEPNS_17CompactOrbitEventEPyy:
+  REG:40 STACK:32 SHARED:1152 LOCAL:0 CONSTANT[0]:1024 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN43_GLOBAL__N__afa43a03_14_orbit_bench_cu_main25query_seed_compact_kernelEyNS_11DeviceQueryEPNS_13OrbitCountersEPNS_17CompactOrbitEventEPyy:
+  REG:52 STACK:32 SHARED:1152 LOCAL:0 CONSTANT[0]:1024 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN43_GLOBAL__N__afa43a03_14_orbit_bench_cu_main24query_dense_count_kernelEPKNS_13DensePositionEyNS_11DeviceQueryEPNS_13OrbitCountersE:
+  REG:33 STACK:32 SHARED:1152 LOCAL:0 CONSTANT[0]:1000 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN43_GLOBAL__N__afa43a03_14_orbit_bench_cu_main23query_seed_count_kernelEyNS_11DeviceQueryEPNS_13OrbitCountersE:
+  REG:46 STACK:32 SHARED:1152 LOCAL:0 CONSTANT[0]:1000 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN43_GLOBAL__N__afa43a03_14_orbit_bench_cu_main25materialize_orbits_kernelEPNS_13DensePositionEyNS_11DeviceQueryE:
+  REG:32 STACK:32 SHARED:0 LOCAL:0 CONSTANT[0]:992 TEXTURE:0 SURFACE:0 SAMPLER:0

@@ -1,0 +1,5 @@
+$ /mnt/data/klb_gpu_audit_build_cpu/klb_orbit verify /mnt/data/klb_gpu_src/klb_seedchain_gpu_v0.3.0/data/orbit/gps_ops_2026-08-16_7d_1s.kloc
+KLOC1 hash chain and payload : valid
+Seeds checked                : 32
+Sampled ECI radius range     : 26071.4 .. 27048.3 km
+Model boundary               : coarse benchmark predictor; not SGP4/navigation

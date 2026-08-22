@@ -1,0 +1,78 @@
+CUDA benchmark binary audit
+2026-08-22T08:58:37+00:00
+
+===== implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_bench.exe =====
+b9c9cd7fd190b9bf7c6ed65ccac230514cab69d6aa298335651f3521c9247cb1  /mnt/data/Tom_Klootwijk_CUDA_GPU_Execution_Validation_v1.0.0/implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_bench.exe
+/mnt/data/Tom_Klootwijk_CUDA_GPU_Execution_Validation_v1.0.0/implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_bench.exe: PE32+ executable for MS Windows 6.00 (console), x86-64, 8 sections
+Time/Date		Sun Aug 16 13:29:49 2026
+ImageBase		0000000140000000
+MajorSubsystemVersion	6
+MinorSubsystemVersion	0
+SizeOfImage		0008a000
+Subsystem		00000003	(Windows CUI)
+Time/Date stamp 		ffffffff
+NVIDIA sections:
+  4 .nv_fatb      00043c68  0000000140043000  0000000140043000  0003ee00  2**2
+  5 .nvFatBi      00000018  0000000140087000  0000000140087000  00082c00  2**2
+
+===== implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_seedchain_bench.exe =====
+e5d48579dcd3ae6a2c1431380552ea4cd132768b4b5f54507bd1f6127200ca35  /mnt/data/Tom_Klootwijk_CUDA_GPU_Execution_Validation_v1.0.0/implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_seedchain_bench.exe
+/mnt/data/Tom_Klootwijk_CUDA_GPU_Execution_Validation_v1.0.0/implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_seedchain_bench.exe: PE32+ executable for MS Windows 6.00 (console), x86-64, 8 sections
+Time/Date		Sun Aug 16 13:30:07 2026
+ImageBase		0000000140000000
+MajorSubsystemVersion	6
+MinorSubsystemVersion	0
+SizeOfImage		0008f000
+Subsystem		00000003	(Windows CUI)
+Time/Date stamp 		ffffffff
+NVIDIA sections:
+  4 .nv_fatb      000460b8  0000000140045000  0000000140045000  00041200  2**2
+  5 .nvFatBi      00000018  000000014008c000  000000014008c000  00087400  2**2
+
+===== implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_orbit_bench.exe =====
+15d8feb318ba7cff102203552613ddb6b167cbb7a83f9dc995263d743770bb3c  /mnt/data/Tom_Klootwijk_CUDA_GPU_Execution_Validation_v1.0.0/implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_orbit_bench.exe
+/mnt/data/Tom_Klootwijk_CUDA_GPU_Execution_Validation_v1.0.0/implementation/klb_seedchain_gpu_v0.3.0/build-cuda128-vs/Release/klb_orbit_bench.exe: PE32+ executable for MS Windows 6.00 (console), x86-64, 8 sections
+Time/Date		Sun Aug 16 13:29:58 2026
+ImageBase		0000000140000000
+MajorSubsystemVersion	6
+MinorSubsystemVersion	0
+SizeOfImage		00192000
+Subsystem		00000003	(Windows CUI)
+Time/Date stamp 		ffffffff
+NVIDIA sections:
+  4 .nv_fatb      001349d8  000000014005a000  000000014005a000  0004e000  2**2
+  5 .nvFatBi      00000018  000000014018f000  000000014018f000  00182a00  2**2
+
+===== Supplied cuobjdump --dump-ptx/--dump-elf/--dump-resource-usage evidence =====
+
+Fatbin ptx code:
+================
+arch = sm_120
+code version = [8,7]
+host = windows
+compile_size = 64bit
+compressed
+identifier = C:/Users/Tom/Documents/TomKlootwijkVentureCorp/Klootwijk/klb_seedchain_gpu_v0.3.0/klb_seedchain_gpu_v0.3.0/src/orbit_bench.cu
+ptxasOptions = -v --generate-line-info 
+
+Fatbin elf code:
+================
+arch = sm_120
+code version = [1,8]
+host = windows
+compile_size = 64bit
+identifier = C:/Users/Tom/Documents/TomKlootwijkVentureCorp/Klootwijk/klb_seedchain_gpu_v0.3.0/klb_seedchain_gpu_v0.3.0/src/orbit_bench.cu
+
+Resource usage:
+ Common:
+  GLOBAL:24 CONSTANT[3]:32768 CONSTANT[4]:8
+ Function _ZN43_GLOBAL__N__afa43a03_14_orbit_bench_cu_main26query_dense_compact_kernelEPKNS_13DensePositionEyNS_11DeviceQueryEPNS_13OrbitCountersEPNS_17CompactOrbitEventEPyy:
+  REG:40 STACK:32 SHARED:1152 LOCAL:0 CONSTANT[0]:1024 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN43_GLOBAL__N__afa43a03_14_orbit_bench_cu_main25query_seed_compact_kernelEyNS_11DeviceQueryEPNS_13OrbitCountersEPNS_17CompactOrbitEventEPyy:
+  REG:52 STACK:32 SHARED:1152 LOCAL:0 CONSTANT[0]:1024 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN43_GLOBAL__N__afa43a03_14_orbit_bench_cu_main24query_dense_count_kernelEPKNS_13DensePositionEyNS_11DeviceQueryEPNS_13OrbitCountersE:
+  REG:33 STACK:32 SHARED:1152 LOCAL:0 CONSTANT[0]:1000 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN43_GLOBAL__N__afa43a03_14_orbit_bench_cu_main23query_seed_count_kernelEyNS_11DeviceQueryEPNS_13OrbitCountersE:
+  REG:46 STACK:32 SHARED:1152 LOCAL:0 CONSTANT[0]:1000 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN43_GLOBAL__N__afa43a03_14_orbit_bench_cu_main25materialize_orbits_kernelEPNS_13DensePositionEyNS_11DeviceQueryE:
+  REG:32 STACK:32 SHARED:0 LOCAL:0 CONSTANT[0]:992 TEXTURE:0 SURFACE:0 SAMPLER:0

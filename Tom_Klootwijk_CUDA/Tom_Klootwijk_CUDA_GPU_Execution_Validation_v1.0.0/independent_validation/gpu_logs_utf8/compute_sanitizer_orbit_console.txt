@@ -1,0 +1,91 @@
+========= COMPUTE-SANITIZER
+Device                      : NVIDIA GeForce RTX 5070 Ti Laptop GPU
+Compute capability          : 12.0
+CUDA global memory          : 12226.562500 MiB
+Reported L2                 : 36864.000000 KiB
+SM count                    : 46
+Memory bus width            : 192 bits
+Predictor                   : coarse Kepler + compiled secular J2
+Reference epoch             : 2026-08-16T05:33:12.693024Z
+Seeds / chain nodes         : 32 / 7
+Query                       : crossing
+Epochs/intervals            : 65536
+Candidates                  : 2097152
+Dense float4 positions      : 2097184
+Dense working set           : 32.000488 MiB
+KLOC1 container             : 3809 bytes
+Working-set ratio           : 8809.384090x
+Auto-wrap stress timeline   : disabled
+Station                     : 52.000000, 5.000000 deg
+Elevation guard             : 10.000000 deg
+CPU/GPU oracle prefix       : 4096 epochs, exact counters
+Compacted event-set match   : 80 sorted events
+
+Mode                        : query_seed_direct
+p50 / p95 / p99             : 0.873824 / 0.873824 / 0.873824 ms
+Inner repeats               : 1
+Rate                        : 2399.970702 M candidates/s
+Candidates                  : 2097152
+Support survivors           : 2077222
+Compatible survivors        : 2077222
+Verified states/events      : 80
+Verified yield              : 0.003815%
+
+Mode                        : materialize_dense
+p50 / p95 / p99             : 0.692608 / 0.692608 / 0.692608 ms
+Inner repeats               : 1
+Rate                        : 3027.952324 M candidates/s
+Logical traffic             : 48.447237 GB/s
+
+Mode                        : query_dense
+p50 / p95 / p99             : 1.199296 / 1.199296 / 1.199296 ms
+Inner repeats               : 1
+Rate                        : 1748.652546 M candidates/s
+Logical traffic             : 55.956881 GB/s
+Candidates                  : 2097152
+Support survivors           : 2077222
+Compatible survivors        : 2077222
+Verified states/events      : 80
+Verified yield              : 0.003815%
+
+Mode                        : materialize_plus_query
+p50 / p95 / p99             : 1.736800 / 1.736800 / 1.736800 ms
+Inner repeats               : 1
+Rate                        : 1207.480455 M candidates/s
+Logical traffic             : 57.959062 GB/s
+Candidates                  : 2097152
+Support survivors           : 2077222
+Compatible survivors        : 2077222
+Verified states/events      : 80
+Verified yield              : 0.003815%
+
+Mode                        : compact_seed_events
+p50 / p95 / p99             : 0.914848 / 0.914848 / 0.914848 ms
+Inner repeats               : 1
+Rate                        : 2292.350130 M candidates/s
+Candidates                  : 2097152
+Support survivors           : 2077222
+Compatible survivors        : 2077222
+Verified states/events      : 80
+Verified yield              : 0.003815%
+Compacted event count       : 80
+Event output truncated      : no
+
+Mode                        : compact_dense_events
+p50 / p95 / p99             : 1.209568 / 1.209568 / 1.209568 ms
+Inner repeats               : 1
+Rate                        : 1733.802448 M candidates/s
+Candidates                  : 2097152
+Support survivors           : 2077222
+Compatible survivors        : 2077222
+Verified states/events      : 80
+Verified yield              : 0.003815%
+Compacted event count       : 80
+Event output truncated      : no
+
+Direct seed / dense p50     : 0.728614x
+Dense / direct rate         : 0.728614x
+
+Acceptance boundary         : promote only if measured memory savings justify
+                              predictor cost at the required error budget.
+========= ERROR SUMMARY: 0 errors

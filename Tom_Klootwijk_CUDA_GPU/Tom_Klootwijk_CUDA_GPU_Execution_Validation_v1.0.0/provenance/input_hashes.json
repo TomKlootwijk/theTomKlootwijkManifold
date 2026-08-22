@@ -1,0 +1,15 @@
+{
+  "schema": "tom-klootwijk-cuda-validation-input-provenance-v1",
+  "inputs": [
+    {
+      "name": "klb_seedchain_gpu_v0.3.0(5).zip",
+      "sha256": "c3e00e94ff1c3c13ac9ae76ea84a95117551e022375cefda8c706a7bb14d1ad4",
+      "role": "requester-supplied CUDA/GPU implementation and execution evidence"
+    },
+    {
+      "name": "Tom_Klootwijk_CTG_Substrate_v1.0.0.pdf",
+      "sha256": "7aeaa9a5573012cd3bc0c6b4dc80583f77da854db466093d34480e1c4651422b",
+      "role": "formal chrono-topological-geometric specification"
+    }
+  ]
+}

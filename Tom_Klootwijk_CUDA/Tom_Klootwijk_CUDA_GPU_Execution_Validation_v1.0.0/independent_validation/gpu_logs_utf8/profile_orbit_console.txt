@@ -1,0 +1,37 @@
+==PROF== Connected to process 7020 (C:\Users\Tom\Documents\TomKlootwijkVentureCorp\Klootwijk\klb_seedchain_gpu_v0.3.0\klb_seedchain_gpu_v0.3.0\build-cuda128-vs\Release\klb_orbit_bench.exe)
+==ERROR== ERR_NVGPUCTRPERM - The user does not have permission to access NVIDIA GPU Performance Counters on the target device 0. For instructions on enabling permissions and to get more information see https://developer.nvidia.com/ERR_NVGPUCTRPERM
+==PROF== Disconnected from process 7020
+Device                      : NVIDIA GeForce RTX 5070 Ti Laptop GPU
+Compute capability          : 12.0
+CUDA global memory          : 12226.562500 MiB
+Reported L2                 : 36864.000000 KiB
+SM count                    : 46
+Memory bus width            : 192 bits
+Predictor                   : coarse Kepler + compiled secular J2
+Reference epoch             : 2026-08-16T05:33:12.693024Z
+Seeds / chain nodes         : 32 / 7
+Query                       : crossing
+Epochs/intervals            : 1048576
+Candidates                  : 33554432
+Dense float4 positions      : 33554464
+Dense working set           : 512.000488 MiB
+KLOC1 container             : 3809 bytes
+Working-set ratio           : 140948.129168x
+Auto-wrap stress timeline   : 604800.000000 s
+Station                     : 52.000000, 5.000000 deg
+Elevation guard             : 10.000000 deg
+Physical-horizon boundary   : repeated bounded timeline for load only
+
+Mode                        : query_seed_direct
+p50 / p95 / p99             : 6.700480 / 6.700480 / 6.700480 ms
+Inner repeats               : 1
+Rate                        : 5007.765426 M candidates/s
+Candidates                  : 33554432
+Support survivors           : 33311183
+Compatible survivors        : 33311183
+Verified states/events      : 1243
+Verified yield              : 0.003704%
+
+Acceptance boundary         : promote only if measured memory savings justify
+                              predictor cost at the required error budget.
+Nsight Compute report: C:\Users\Tom\Documents\TomKlootwijkVentureCorp\Klootwijk\klb_seedchain_gpu_v0.3.0\klb_seedchain_gpu_v0.3.0\orbit_seed_profile.ncu-rep

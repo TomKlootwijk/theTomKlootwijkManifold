@@ -1,0 +1,45 @@
+Audit environment probe
+2026-08-22T08:55:16+00:00
+Linux 31e8477fdba0 6.18.35 #1 SMP Mon Jul 27 18:07:50 UTC 2026 x86_64 GNU/Linux
+
+PATH=/opt/apply_patch/bin:/opt/imagemagick/bin:/opt/pyvenv/bin:/usr/local/swift/usr/bin:/usr/local/go/bin:/opt/nvm/versions/node/v22.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.sdkman/candidates/kotlin/current/bin
+
+nvidia-smi           NOT FOUND
+nvcc                 NOT FOUND
+cuobjdump            NOT FOUND
+nvdisasm             NOT FOUND
+ncu                  NOT FOUND
+compute-sanitizer    NOT FOUND
+gcc                  /usr/bin/gcc
+gcc (Debian 14.2.0-19) 14.2.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+g++                  /usr/bin/g++
+g++ (Debian 14.2.0-19) 14.2.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+cmake                /usr/bin/cmake
+cmake version 3.31.6
+
+ctest                /usr/bin/ctest
+ctest version 3.31.6
+
+ninja                /usr/bin/ninja
+1.12.1
+clang                /usr/local/swift/usr/bin/clang
+clang version 17.0.0 (https://github.com/swiftlang/llvm-project.git 10999b6d034fe318f3d56c83bddb6572593a8bb0)
+Target: x86_64-unknown-linux-gnu
+llvm-objdump         /usr/local/swift/usr/bin/llvm-objdump
+LLVM (http://llvm.org/):
+  LLVM version 17.0.0
+objdump              /usr/bin/objdump
+GNU objdump (GNU Binutils for Debian) 2.44
+Copyright (C) 2025 Free Software Foundation, Inc.
+python3              /opt/pyvenv/bin/python3
+Python 3.13.5
+
+CUDA libraries visible to ldconfig:
+none
+
+PCI display devices:
+lspci not installed
+
+/dev GPU nodes:
