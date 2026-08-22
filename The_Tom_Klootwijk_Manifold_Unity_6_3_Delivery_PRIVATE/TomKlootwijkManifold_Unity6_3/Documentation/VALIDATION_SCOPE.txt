@@ -1,0 +1,19 @@
+VALIDATION SCOPE
+
+PASS:
+- Explicit definition and complete regular-value proof of a smooth 7-manifold.
+- Global orthonormal tangent-frame proof.
+- Independent numerical checks at floating-point precision.
+- Base-4 arithmetic and XOR/Hamming-distance checks.
+- Static UPM package structure, JSON, delimiter, privacy, and content checks.
+
+NOT EXECUTED IN THE BUILD ENVIRONMENT:
+- Unity Editor package import.
+- Unity C# compilation.
+- URP shader compilation.
+- Runtime/GPU rendering on target hardware.
+
+NOT CLAIMED:
+- Machine-checked proof in a theorem prover.
+- Government identity verification.
+- Legal registration, priority, exclusivity, or external peer-review recognition.

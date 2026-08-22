@@ -1,0 +1,14 @@
+PUBLIC-SAFE AUTHOR RECORD
+
+Definition name: The Tom Klootwijk Manifold
+Author name: Tom Klootwijk
+BSN string: masked/withheld in this public copy
+Date of birth: masked; full date is in the private record
+Age on occasion date: 36
+Occasion local timestamp: 2026-08-22T06:34:39+02:00
+Occasion UTC timestamp: 2026-08-22T04:34:39Z
+Edition: U6.3-A36
+Document ID: TKM-U63-A36-20260822-063439
+Author-record SHA-256 fingerprint: 7d85cc5019309659b8279866b0bf6dde69ef18373d25dc71051fe8824ee2e3b4
+
+The fingerprint is a checksum/namespace tag, not identity verification or a digital signature.

@@ -1,0 +1,21 @@
+{
+  "name": "com.tomklootwijk.manifold",
+  "version": "1.0.0",
+  "displayName": "The Tom Klootwijk Manifold",
+  "description": "A rigorous 7-torus definition with a deterministic 3D projected-slice visualizer and an optional rounded SDF surrogate for Unity 6.3 URP.",
+  "unity": "6000.3",
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "17.3.0"
+  },
+  "keywords": ["manifold", "torus", "procedural", "projection", "sdf", "urp"],
+  "author": {
+    "name": "Tom Klootwijk"
+  },
+  "samples": [
+    {
+      "displayName": "Projected 7-Torus Demo Notes",
+      "description": "Setup notes for the projected slice and rounded SDF surrogate.",
+      "path": "Samples~/Projected7Torus"
+    }
+  ]
+}

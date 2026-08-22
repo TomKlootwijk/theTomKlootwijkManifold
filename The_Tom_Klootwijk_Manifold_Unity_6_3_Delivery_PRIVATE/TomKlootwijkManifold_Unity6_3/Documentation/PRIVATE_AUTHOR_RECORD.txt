@@ -1,0 +1,16 @@
+PRIVATE - CONTAINS SENSITIVE PERSONAL DATA - DO NOT PUBLISH
+
+Definition name: The Tom Klootwijk Manifold
+Author name supplied: Tom Klootwijk
+BSN string supplied (unverified): NL200678942
+Date of birth supplied: 10-07-1990
+Age on occasion date: 36
+Occasion local timestamp: 2026-08-22T06:34:39+02:00 (Europe/Amsterdam, request capture)
+Occasion UTC timestamp: 2026-08-22T04:34:39Z
+Edition: U6.3-A36
+Document ID: TKM-U63-A36-20260822-063439
+Canonical author record: Tom Klootwijk|NL200678942|1990-07-10
+SHA-256 fingerprint: 7d85cc5019309659b8279866b0bf6dde69ef18373d25dc71051fe8824ee2e3b4
+
+Identifier-format note:
+The nine numeric digits satisfy the Dutch 11-test arithmetic checksum. This is only a format check. It does not verify issuance, ownership, identity, authorship, priority, or legal status.

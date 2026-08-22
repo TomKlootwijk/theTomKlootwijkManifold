@@ -1,0 +1,74 @@
+{
+  "document_id": "TKM-U63-A36-20260822-063439",
+  "target": {
+    "unity": "6000.3.22f1",
+    "urp": "17.3.0"
+  },
+  "formal_definition": {
+    "status": "PASS",
+    "intrinsic_dimension": 7,
+    "ambient_dimension": 14,
+    "regular_value_jacobian_rank_on_manifold": 7,
+    "max_sampled_constraint_error": 8.881784197001252e-16,
+    "max_sampled_tangent_off_diagonal_dot": 0.0,
+    "max_sampled_tangent_diagonal_error": 8.881784197001252e-16
+  },
+  "source_number_checks": {
+    "973_base4": "33031",
+    "943_base4": "32233",
+    "937_base4": "32221",
+    "943_xor_937": 6,
+    "943_to_937_binary_hamming_distance": 2,
+    "single_bit_transition_claim": "FAIL"
+  },
+  "private_identifier_format_check": {
+    "eleven_test_weighted_sum": 154,
+    "passes_arithmetic_checksum": true,
+    "identity_verified": false
+  },
+  "personalization": {
+    "author_record_sha256": "7d85cc5019309659b8279866b0bf6dde69ef18373d25dc71051fe8824ee2e3b4",
+    "projection_pair_errors": [
+      {
+        "u_norm_error": 0.0,
+        "v_norm_error": 0.0,
+        "dot_abs": 8.673617379884035e-18
+      },
+      {
+        "u_norm_error": 0.0,
+        "v_norm_error": 0.0,
+        "dot_abs": 2.0816681711721685e-16
+      },
+      {
+        "u_norm_error": 1.1102230246251565e-16,
+        "v_norm_error": 0.0,
+        "dot_abs": 0.0
+      },
+      {
+        "u_norm_error": 1.1102230246251565e-16,
+        "v_norm_error": 1.1102230246251565e-16,
+        "dot_abs": 5.551115123125783e-17
+      },
+      {
+        "u_norm_error": 0.0,
+        "v_norm_error": 1.1102230246251565e-16,
+        "dot_abs": 1.6653345369377348e-16
+      },
+      {
+        "u_norm_error": 1.1102230246251565e-16,
+        "v_norm_error": 1.1102230246251565e-16,
+        "dot_abs": 1.713039432527097e-16
+      },
+      {
+        "u_norm_error": 0.0,
+        "v_norm_error": 0.0,
+        "dot_abs": 0.0
+      }
+    ]
+  },
+  "implementation_validation": {
+    "python_math_validator": "PASS",
+    "file_structure_and_manifest": "PASS",
+    "unity_editor_import_compile_shader_gpu_run": "NOT EXECUTED - Unity Editor unavailable in build environment"
+  }
+}

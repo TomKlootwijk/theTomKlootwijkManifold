@@ -1,0 +1,85 @@
+{
+  "schema": "tom-klootwijk-manifold-delivery/1.0",
+  "document_id": "TKM-U63-A36-20260822-063439",
+  "definition_name": "The Tom Klootwijk Manifold",
+  "occasion": {
+    "local_iso8601": "2026-08-22T06:34:39+02:00",
+    "timezone": "Europe/Amsterdam",
+    "utc_iso8601": "2026-08-22T04:34:39Z",
+    "author_age": 36,
+    "edition_code": "U6.3-A36"
+  },
+  "author_metadata": {
+    "name": "Tom Klootwijk",
+    "private_record_path": "Documentation/PRIVATE_AUTHOR_RECORD.txt",
+    "public_record_path": "Documentation/PUBLIC_AUTHOR_RECORD.txt",
+    "record_sha256": "7d85cc5019309659b8279866b0bf6dde69ef18373d25dc71051fe8824ee2e3b4",
+    "identity_verified": false,
+    "note": "The full supplied BSN and birth date are confined to private documentation/source files."
+  },
+  "formal_object": {
+    "product_literal": "K_TK(r) = Product_{i=0}^6 S^1(r_i), r_i > 0",
+    "implicit_literal": "K_TK(r) = {x in R^14 : x_(2i)^2 + x_(2i+1)^2 = r_i^2, i=0,...,6}",
+    "intrinsic_dimension": 7,
+    "ambient_dimension": 14,
+    "diffeomorphism_type": "7-torus T^7",
+    "proof": "Regular-value rank proof plus global orthonormal frame proof",
+    "proof_assistant_checked": false
+  },
+  "unity_target": {
+    "editor_baseline": "6000.3.22f1",
+    "package_minimum": "6000.3",
+    "render_pipeline": "Universal Render Pipeline",
+    "urp_version": "17.3.0",
+    "upm_package": "com.tomklootwijk.manifold@1.0.0"
+  },
+  "validation": {
+    "mathematics": "PASS",
+    "numerical_checks": "PASS",
+    "static_package_checks": "PASS",
+    "unity_editor_import_compile_shader_gpu": "NOT EXECUTED - Unity Editor unavailable in build environment"
+  },
+  "selected_artifacts": [
+    {
+      "path": "Documentation/The_Tom_Klootwijk_Manifold_Formal_Specification_PRIVATE.pdf",
+      "bytes": 255362,
+      "sha256": "15b24d7074077da4e8483ff7f14e45a896129b07e0342fc9bfab1f7d9941b4ac"
+    },
+    {
+      "path": "Documentation/The_Tom_Klootwijk_Manifold_Formal_Specification_PUBLIC.pdf",
+      "bytes": 255267,
+      "sha256": "4d51e251aa373edfa6df04b73176f7b82564e914954073b7cb1e57d1202b918d"
+    },
+    {
+      "path": "Documentation/The_Tom_Klootwijk_Manifold_Definition_Card_PUBLIC.pdf",
+      "bytes": 82230,
+      "sha256": "9cd4833865aa5272b4bc64957a2c6546edab9a5897e495e7fc61f6c90844db88"
+    },
+    {
+      "path": "UnityPackage/com.tomklootwijk.manifold-1.0.0.tgz",
+      "bytes": 10117,
+      "sha256": "3de66ed832c509210f95cd72f95eadd007f4b6964c3497fd7cfa84020c90d8ac"
+    },
+    {
+      "path": "UnityPackage/com.tomklootwijk.manifold/package.json",
+      "bytes": 707,
+      "sha256": "52b4e8330bc2849fc5acf943b1bab6bfa15d23fa83c0529dedbb523dc7594d77"
+    },
+    {
+      "path": "Validation/validation_report.json",
+      "bytes": 2106,
+      "sha256": "3feedf7f88386c0fe1bf5be7db4d12e3335f927999ce9e11550c266f0b6e5085"
+    },
+    {
+      "path": "Validation/package_validation_report.json",
+      "bytes": 1777,
+      "sha256": "74d835e51ca8964ae19bc5ca292747a484e2255a1ab5c1d740407d3811f81192"
+    },
+    {
+      "path": "Source/source_dossier.pdf",
+      "bytes": 297553,
+      "sha256": "5004ef709ddd2de3350069642fdd7c78f4cdf6aeea15a2e703b952766f6b97d2"
+    }
+  ],
+  "privacy_classification": "PRIVATE DELIVERY: contains a full supplied BSN in explicitly marked files."
+}

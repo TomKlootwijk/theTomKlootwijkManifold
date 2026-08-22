@@ -1,0 +1,28 @@
+THE TOM KLOOTWIJK MANIFOLD - COMPACT LITERAL DEFINITIONS
+Document ID: TKM-U63-A36-20260822-063439
+
+For r_i > 0 and i = 0,...,6:
+
+PRODUCT LITERAL
+K_TK(r) := Product_{i=0}^6 S^1(r_i).
+
+IMPLICIT / LEVEL-SET LITERAL
+K_TK(r) := { x in R^14 : x_{2i}^2 + x_{2i+1}^2 = r_i^2, i=0,...,6 }.
+Equivalently F_i(x) := x_{2i}^2 + x_{2i+1}^2 - r_i^2 = 0.
+
+PARAMETRIC LITERAL
+Phi_alpha(theta)_{2i}   := r_i cos(theta_i + phi_i),
+Phi_alpha(theta)_{2i+1} := r_i sin(theta_i + phi_i).
+
+METRIC / ORTHOGONAL-FRAME LITERAL
+g := Sum_{i=0}^6 r_i^2 dtheta_i^2,
+E_i := r_i^(-1) partial/partial theta_i,
+g(E_i,E_j) = delta_ij.
+
+UNITY 3D VISUALIZATION LITERAL
+X(u,v,t) := P Phi_alpha((m_i u + n_i v + omega_i t)_{i=0}^6),
+where P:R^14->R^3 is a fixed linear projection.
+
+FORMAL TYPE
+K_TK is a smooth, compact, connected 7-manifold diffeomorphic to T^7.
+The 3D Unity object is a projected 2D periodic slice, not the full 7D manifold.

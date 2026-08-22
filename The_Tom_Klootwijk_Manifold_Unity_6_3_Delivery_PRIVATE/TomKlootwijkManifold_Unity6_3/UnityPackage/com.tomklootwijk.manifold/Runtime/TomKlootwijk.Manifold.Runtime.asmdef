@@ -1,0 +1,14 @@
+{
+  "name": "TomKlootwijk.Manifold.Runtime",
+  "rootNamespace": "TomKlootwijk.Manifold",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "scope": "Static structure, syntax-delimiter, metadata, privacy, and content checks; not a Unity compiler or GPU test.",
+  "required_files_missing": [],
+  "json_parse": {
+    "package.json": "PASS",
+    "Editor/TomKlootwijk.Manifold.Editor.asmdef": "PASS",
+    "Runtime/TomKlootwijk.Manifold.Runtime.asmdef": "PASS",
+    "Tests/Runtime/TomKlootwijk.Manifold.Tests.asmdef": "PASS"
+  },
+  "delimiter_balance": {
+    "Editor/TKManifoldMenu.cs": {
+      "status": "PASS"
+    },
+    "Runtime/Shaders/TKProjectedSliceURP.shader": {
+      "status": "PASS"
+    },
+    "Runtime/Shaders/TKRoundedSDFSurrogateURP.shader": {
+      "status": "PASS"
+    },
+    "Runtime/TKAuthorMetadata.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKManifoldMath.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKManifoldVolume.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKPersonalizedParameters.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKProjectedAxesGizmo.cs": {
+      "status": "PASS"
+    },
+    "Runtime/TKProjectedSlice.cs": {
+      "status": "PASS"
+    },
+    "Tests/Runtime/TKManifoldTests.cs": {
+      "status": "PASS"
+    }
+  },
+  "runtime_sensitive_token_hits": {},
+  "manifest_checks": {
+    "name": true,
+    "version": true,
+    "unity": true,
+    "urp_dependency": true
+  },
+  "content_checks": {
+    "fingerprint_embedded": true,
+    "exact_dimensions_present": true,
+    "projected_slice_disclaimer_present": true,
+    "sdf_surrogate_disclaimer_present": true,
+    "urp_core_include_present": true,
+    "tests_include_hamming_distance_two": true
+  },
+  "file_count": 18,
+  "package_tree_sha256": "761dd9465860048829b6565b8074e217e2ce8ae1df61f792951d6545fb21922d",
+  "unity_editor_compile_shader_gpu": "NOT EXECUTED - Unity Editor unavailable"
+}

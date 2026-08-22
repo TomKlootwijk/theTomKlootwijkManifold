@@ -1,0 +1,15 @@
+{
+  "name": "TomKlootwijk.Manifold.Tests",
+  "rootNamespace": "TomKlootwijk.Manifold.Tests",
+  "references": ["TomKlootwijk.Manifold.Runtime"],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": ["TestAssemblies"]
+}
