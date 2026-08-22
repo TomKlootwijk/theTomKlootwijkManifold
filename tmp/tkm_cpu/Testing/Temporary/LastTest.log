@@ -1,0 +1,19 @@
+Start testing: Aug 22 11:31 W. Europe Daylight Time
+----------------------------------------------------------
+1/1 Testing: tkm_bounded_query_tests
+1/1 Test: tkm_bounded_query_tests
+Command: "C:/Users/Tom/Documents/theTomKlootwijkManifold/tmp/tkm_cpu/tkm_tests.exe"
+Directory: C:/Users/Tom/Documents/theTomKlootwijkManifold/tmp/tkm_cpu
+"tkm_bounded_query_tests" start time: Aug 22 11:31 W. Europe Daylight Time
+Output:
+----------------------------------------------------------
+All TKM bounded-query tests passed.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"tkm_bounded_query_tests" end time: Aug 22 11:31 W. Europe Daylight Time
+"tkm_bounded_query_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 22 11:31 W. Europe Daylight Time

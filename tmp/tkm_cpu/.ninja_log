@@ -1,0 +1,5 @@
+# ninja log v7
+20	725	8090942716909700	CMakeFiles/tkm_demo.dir/src/demo.cpp.obj	914b80ffe4550783
+25	839	8090942716959689	CMakeFiles/tkm_tests.dir/tests/test_tkm.cpp.obj	5c02c1dc5a8ac6d
+725	846	8090942723959982	tkm_demo.exe	cdc47123c5e988a2
+839	940	8090942725102838	tkm_tests.exe	23897a5e30111de5

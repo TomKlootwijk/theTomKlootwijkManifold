@@ -1,0 +1,7 @@
+# ninja log v7
+18	676	8090943044675300	CMakeFiles/tkm_demo.dir/src/demo.cpp.obj	914b80ffe4550783
+677	789	8090943051276816	tkm_demo.exe	cdc47123c5e988a2
+22	809	8090943044716847	CMakeFiles/tkm_tests.dir/tests/test_tkm.cpp.obj	5c02c1dc5a8ac6d
+810	922	8090943052596136	tkm_tests.exe	23897a5e30111de5
+25	2899	8090943044746857	CMakeFiles/tkm_cuda_smoke.dir/src/cuda_query.cu.obj	7357ea553240ac29
+2900	3015	8090943073496232	tkm_cuda_smoke.exe	5470a0a2f332530a
