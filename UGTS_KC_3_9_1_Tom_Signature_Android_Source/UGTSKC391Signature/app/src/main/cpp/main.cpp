@@ -31,11 +31,9 @@ void android_main(android_app* app) {
         android_poll_source* source=nullptr;
         const int timeout=(engine.ready() && engine.focused())?0:-1;
         int events=0;
-        while (ALooper_pollOnce(timeout,nullptr,&events,reinterpret_cast<void**>(&source))>=0) {
-            if (source) source->process(app,source);
-            if (app->destroyRequested) break;
-            if (timeout==0) break;
-        }
+        ALooper_pollOnce(timeout,nullptr,&events,reinterpret_cast<void**>(&source));
+        if (source) source->process(app,source);
+        if (app->destroyRequested) break;
         const auto now=clock::now();
         const float dt=std::chrono::duration<float>(now-previous).count();
         previous=now;
